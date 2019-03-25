@@ -1,0 +1,984 @@
+@prefix : <http://data_entity_ontology/data_entity.owl#> .
+@prefix data_entity_ontology: <http://data_entity_ontology.owl#> .
+@prefix data_entity_ontology1: <http://data_entity_ontology.owl/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix deo: <http://data_entity_ontology.owl#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix op: <http://ex.com/patients_2.xlsx/op/patients_2#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix protege: <http://protege.stanford.edu/plugins/owl/protege#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix swrla: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+deo:DE_000000001 a owl:DatatypeProperty ;
+    rdfs:label "dp:represents"@en ;
+    obo:IAO_0000600 "A data property in which the literal value represents (or denotes) another entity." ;
+    dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
+    dc:date "2018-07-21T05:15:08+00:00"^^xsd:dateTime ;
+    rdfs:subPropertyOf deo:DE_000000010 .
+
+deo:DE_000000005 a owl:ObjectProperty ;
+    rdfs:label "obsolete object property"@en ;
+    dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
+    dc:date "2018-07-19T22:18:16+00:00"^^xsd:dateTime .
+
+deo:DE_000000009 a owl:DatatypeProperty ;
+    rdfs:label "dp:literal value"@en ;
+    obo:IAO_0000115 "A data property that relates an entity to a literal." ;
+    dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
+    dc:date "2018-07-19T22:31:12+00:00"^^xsd:dateTime ;
+    rdfs:subPropertyOf data_entity_ontology1:obsolete_data_property .
+
+deo:DE_000000011 a owl:DatatypeProperty ;
+    rdfs:label "dp:sematic type"@en ;
+    obo:IAO_0000600 "A metadata property in which the literal value denotes an entity that provides meaning about the entity related to the metadata property." ;
+    dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
+    dc:date "2018-07-19T22:42:08+00:00"^^xsd:dateTime ;
+    rdfs:subPropertyOf deo:DE_000000010 .
+
+deo:DE_000000012 a owl:DatatypeProperty ;
+    rdfs:label "dp:specified value"@en ;
+    obo:IAO_0000600 "A metadata property that specifies the literal value that represents the semantic type, or, in other words, the literal value that denotes some entity." ;
+    dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
+    dc:date "2018-07-19T22:53:13+00:00"^^xsd:dateTime ;
+    rdfs:subPropertyOf deo:DE_000000010 .
+
+deo:DE_000000013 a owl:ObjectProperty ;
+    rdfs:label "op:represents"@en ;
+    obo:IAO_0000600 "An object property that holds between an data entity and another entity that is represented by the data entity." ;
+    dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
+    dc:date "2018-07-19T22:56:37+00:00"^^xsd:dateTime ;
+    rdfs:subPropertyOf data_entity_ontology1:object_property .
+
+deo:DE_000000014 a owl:ObjectProperty ;
+    rdfs:label "op:is about"@en ;
+    dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
+    dc:date "2018-07-19T22:57:17+00:00"^^xsd:dateTime ;
+    rdfs:subPropertyOf data_entity_ontology1:object_property ;
+    owl:inverseOf deo:DE_000000021 .
+
+deo:DE_000000015 a owl:AnnotationProperty ;
+    rdfs:label "ap:defines attribute"@en ;
+    obo:IAO_0000115 "An annotation property that specifies the data attribute that is being defined." ;
+    dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
+    dc:date "2018-07-19T23:00:30+00:00"^^xsd:dateTime .
+
+deo:DE_000000016 a owl:AnnotationProperty ;
+    rdfs:label "ap:represents"@en ;
+    obo:IAO_0000600 "An annotation property in which the value represents (or denotes) another entity." ;
+    dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
+    dc:date "2018-07-19T23:04:52+00:00"^^xsd:dateTime .
+
+deo:DE_000000024 a owl:DatatypeProperty ;
+    rdfs:label "dp:semantic datatype"@en ;
+    obo:IAO_0000600 "A data property in which the literal value specifies the entity type -- such as owl:Class, owl:ObjectProperty, etc. -- of the semantic type." ;
+    dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
+    dc:date "2018-07-21T05:16:22+00:00"^^xsd:dateTime ;
+    rdfs:subPropertyOf deo:DE_000000010 .
+
+deo:DE_000000025 a owl:DatatypeProperty ;
+    rdfs:label "dp:record value"@en ;
+    obo:IAO_0000115 "A data entity value that holds between a data record and a literal." ;
+    dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
+    dc:date "2018-07-21T05:34:51+00:00"^^xsd:dateTime ;
+    rdfs:subPropertyOf data_entity_ontology1:obsolete_data_property .
+
+deo:DE_000000026 a owl:DatatypeProperty ;
+    rdfs:label "dp:field value"@en ;
+    obo:IAO_0000115 "A data entity value that holds between a data field and a literal." ;
+    dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
+    dc:date "2018-07-21T05:35:55+00:00"^^xsd:dateTime ;
+    rdfs:subPropertyOf data_entity_ontology1:obsolete_data_property .
+
+deo:DE_000000027 a owl:AnnotationProperty ;
+    rdfs:label "ap:defines"@en ;
+    dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
+    dc:date "2019-03-15T02:29:17+00:00"^^xsd:dateTime .
+
+deo:DE_000000028 a owl:AnnotationProperty ;
+    rdfs:label "ap:defined by"@en ;
+    dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
+    dc:date "2019-03-15T02:29:25+00:00"^^xsd:dateTime .
+
+data_entity_ontology1:obsolete_annotation_property a owl:AnnotationProperty ;
+    rdfs:label "obsolete annotation property"@en ;
+    dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
+    dc:date "2018-07-19T22:23:40+00:00"^^xsd:dateTime .
+
+<http://data_entity_ontology/data_entity.owl> a owl:Ontology ;
+    protege:defaultLanguage "en"^^xsd:string ;
+    dc:creator "Aditya Muralidharan",
+        "Bill Duncan <http://orcid.org/0000-0001-9625-1899>",
+        "Jon Kiddy",
+        "Phil Whalen" ;
+    owl:versionIRI <http://data_entity_ontology/2019-03-20/data_entity.owl> .
+
+<http://ex.com/patients_2.xlsx/dp/patients_2#DOB> a owl:DatatypeProperty ;
+    rdfs:label "dp:patients_2.DOB" ;
+    rdfs:subPropertyOf <http://ex.com/patients_2.xlsx/dp#patients_2> .
+
+<http://ex.com/patients_2.xlsx/dp/patients_2#sex> a owl:DatatypeProperty ;
+    rdfs:label "dp:patients_2.sex" ;
+    rdfs:subPropertyOf <http://ex.com/patients_2.xlsx/dp#patients_2> .
+
+<http://ex.com/patients_2.xlsx/dp/patients_2#subject_id> a owl:DatatypeProperty ;
+    rdfs:label "dp:patients_2.subject_id" ;
+    rdfs:subPropertyOf <http://ex.com/patients_2.xlsx/dp#patients_2> .
+
+<http://ex.com/patients_2.xlsx/i/record/patients_2#i:patients_2_record_0> a <http://ex.com/patients_2.xlsx/cls/record#patients_2> ;
+    rdfs:label "i:patients_2_record_0" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> ;
+    op:DOB <http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_0_DOB> ;
+    op:sex <http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_0_sex> ;
+    op:subject_id <http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_0_subject_id> .
+
+<http://ex.com/patients_2.xlsx/i/record/patients_2#i:patients_2_record_1> a <http://ex.com/patients_2.xlsx/cls/record#patients_2> ;
+    rdfs:label "i:patients_2_record_1" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> ;
+    op:DOB <http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_1_DOB> ;
+    op:sex <http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_1_sex> ;
+    op:subject_id <http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_1_subject_id> .
+
+<http://ex.com/patients_2.xlsx/i/record/patients_2#i:patients_2_record_2> a <http://ex.com/patients_2.xlsx/cls/record#patients_2> ;
+    rdfs:label "i:patients_2_record_2" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> ;
+    op:DOB <http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_2_DOB> ;
+    op:sex <http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_2_sex> ;
+    op:subject_id <http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_2_subject_id> .
+
+<http://ex.com/patients_2.xlsx/i/record/patients_2#i:patients_2_record_3> a <http://ex.com/patients_2.xlsx/cls/record#patients_2> ;
+    rdfs:label "i:patients_2_record_3" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> ;
+    op:DOB <http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_3_DOB> ;
+    op:sex <http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_3_sex> ;
+    op:subject_id <http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_3_subject_id> .
+
+<http://ex.com/patients_2.xlsx/i/record/patients_2#i:patients_2_record_4> a <http://ex.com/patients_2.xlsx/cls/record#patients_2> ;
+    rdfs:label "i:patients_2_record_4" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> ;
+    op:DOB <http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_4_DOB> ;
+    op:sex <http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_4_sex> ;
+    op:subject_id <http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_4_subject_id> .
+
+<http://ex.com/patients_2.xlsx/i/record/patients_2#i:patients_2_record_5> a <http://ex.com/patients_2.xlsx/cls/record#patients_2> ;
+    rdfs:label "i:patients_2_record_5" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> ;
+    op:DOB <http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_5_DOB> ;
+    op:sex <http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_5_sex> ;
+    op:subject_id <http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_5_subject_id> .
+
+<http://ex.com/patients_2.xlsx/i/record/patients_2#i:patients_2_record_6> a <http://ex.com/patients_2.xlsx/cls/record#patients_2> ;
+    rdfs:label "i:patients_2_record_6" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> ;
+    op:DOB <http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_6_DOB> ;
+    op:sex <http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_6_sex> ;
+    op:subject_id <http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_6_subject_id> .
+
+<http://ex.com/patients_2.xlsx/i/record/patients_2#i:patients_2_record_7> a <http://ex.com/patients_2.xlsx/cls/record#patients_2> ;
+    rdfs:label "i:patients_2_record_7" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> ;
+    op:DOB <http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_7_DOB> ;
+    op:sex <http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_7_sex> ;
+    op:subject_id <http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_7_subject_id> .
+
+<http://ex.com/patients_2.xlsx/i/record/patients_2#i:patients_2_record_8> a <http://ex.com/patients_2.xlsx/cls/record#patients_2> ;
+    rdfs:label "i:patients_2_record_8" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> ;
+    op:DOB <http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_8_DOB> ;
+    op:sex <http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_8_sex> ;
+    op:subject_id <http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_8_subject_id> .
+
+<http://ex.com/patients_2.xlsx/i/record/patients_2#i:patients_2_record_9> a <http://ex.com/patients_2.xlsx/cls/record#patients_2> ;
+    rdfs:label "i:patients_2_record_9" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> ;
+    op:DOB <http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_9_DOB> ;
+    op:sex <http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_9_sex> ;
+    op:subject_id <http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_9_subject_id> .
+
+op:DOB a owl:ObjectProperty ;
+    rdfs:label "op:patients_2.DOB" ;
+    rdfs:subPropertyOf <http://ex.com/patients_2.xlsx/op#patients_2> .
+
+op:sex a owl:ObjectProperty ;
+    rdfs:label "op:patients_2.sex" ;
+    rdfs:subPropertyOf <http://ex.com/patients_2.xlsx/op#patients_2> .
+
+op:subject_id a owl:ObjectProperty ;
+    rdfs:label "op:patients_2.subject_id" ;
+    rdfs:subPropertyOf <http://ex.com/patients_2.xlsx/op#patients_2> .
+
+protege:defaultLanguage a owl:AnnotationProperty .
+
+obo:IAO_0000002 a owl:NamedIndividual ;
+    rdfs:label "example to be eventually removed"@en .
+
+obo:IAO_0000103 a owl:NamedIndividual ;
+    rdfs:label "failed exploratory term"@en ;
+    obo:IAO_0000115 "The term was used in an attempt to structure part of the ontology but in retrospect failed to do a good job"@en ;
+    obo:IAO_0000117 "Person:Alan Ruttenberg"^^xsd:string .
+
+obo:IAO_0000111 a owl:AnnotationProperty ;
+    rdfs:label "editor preferred term"@en ;
+    obo:IAO_0000111 "editor preferred term"@en ;
+    obo:IAO_0000114 obo:IAO_0000122 ;
+    obo:IAO_0000115 "The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)"@en ;
+    obo:IAO_0000117 "PERSON:Daniel Schober"@en ;
+    obo:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en .
+
+obo:IAO_0000112 a owl:AnnotationProperty ;
+    rdfs:label "example of usage"@en ;
+    obo:IAO_0000111 "example"@en ;
+    obo:IAO_0000114 obo:IAO_0000122 ;
+    obo:IAO_0000115 "A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold."@en ;
+    obo:IAO_0000117 "PERSON:Daniel Schober"@en ;
+    obo:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en .
+
+obo:IAO_0000113 a owl:AnnotationProperty ;
+    rdfs:label "in branch"@en ;
+    obo:IAO_0000111 "in branch"@en ;
+    obo:IAO_0000115 "An annotation property indicating which module the terms belong to. This is currently experimental and not implemented yet."@en ;
+    obo:IAO_0000117 "GROUP:OBI"@en ;
+    obo:IAO_0000119 "OBI_0000277"@en .
+
+obo:IAO_0000114 a owl:AnnotationProperty ;
+    rdfs:label "has curation status"@en ;
+    obo:IAO_0000111 "has curation status"@en ;
+    obo:IAO_0000117 "PERSON:Alan Ruttenberg"@en,
+        "PERSON:Bill Bug"@en,
+        "PERSON:Melanie Courtot"@en ;
+    obo:IAO_0000119 "OBI_0000281"@en .
+
+obo:IAO_0000115 a owl:AnnotationProperty ;
+    rdfs:label "definition"@en ;
+    obo:IAO_0000111 "definition"@en ;
+    obo:IAO_0000114 obo:IAO_0000122 ;
+    obo:IAO_0000115 "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en ;
+    obo:IAO_0000116 """2012-04-05: 
+Barry Smith
+
+The official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions'  is terrible.
+
+Can you fix to something like:
+
+A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.
+
+Alan Ruttenberg
+
+Your proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. 
+
+On the specifics of the proposed definition:
+
+We don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. 
+
+Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
+
+We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  """@en ;
+    obo:IAO_0000117 "PERSON:Daniel Schober"@en ;
+    obo:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en .
+
+obo:IAO_0000116 a owl:AnnotationProperty ;
+    rdfs:label "editor note"@en ;
+    obo:IAO_0000111 "editor note"@en ;
+    obo:IAO_0000114 obo:IAO_0000122 ;
+    obo:IAO_0000115 "An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology."@en ;
+    obo:IAO_0000117 "PERSON:Daniel Schober"@en ;
+    obo:IAO_0000119 "GROUP:OBI:<http://purl.obfoundry.org/obo/obi>"@en .
+
+obo:IAO_0000117 a owl:AnnotationProperty ;
+    rdfs:label "term editor"@en ;
+    obo:IAO_0000111 "term editor"@en ;
+    obo:IAO_0000114 obo:IAO_0000122 ;
+    obo:IAO_0000115 "Name of editor entering the term in the file. The term editor is a point of contact for information regarding the term. The term editor may be, but is not always, the author of the definition, which may have been worked upon by several people"@en ;
+    obo:IAO_0000116 "20110707, MC: label update to term editor and definition modified accordingly. See https://github.com/information-artifact-ontology/IAO/issues/115."@en ;
+    obo:IAO_0000117 "PERSON:Daniel Schober"@en ;
+    obo:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en .
+
+obo:IAO_0000118 a owl:AnnotationProperty ;
+    rdfs:label "alternative term"@en ;
+    obo:IAO_0000111 "alternative term"@en ;
+    obo:IAO_0000114 obo:IAO_0000125 ;
+    obo:IAO_0000115 "An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)"@en ;
+    obo:IAO_0000117 "PERSON:Daniel Schober"@en ;
+    obo:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en .
+
+obo:IAO_0000119 a owl:AnnotationProperty ;
+    rdfs:label "definition source"@en ;
+    obo:IAO_0000111 "definition source"@en ;
+    obo:IAO_0000114 obo:IAO_0000122 ;
+    obo:IAO_0000115 "formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007"@en ;
+    obo:IAO_0000117 "PERSON:Daniel Schober"@en ;
+    obo:IAO_0000119 "Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w"^^xsd:string,
+        "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en .
+
+obo:IAO_0000224 a owl:NamedIndividual ;
+    rdfs:label "core"@en ;
+    obo:IAO_0000115 "Core is an instance of a grouping of terms from an ontology or ontologies. It is used by the ontology to identify main classes."@en ;
+    obo:IAO_0000117 "PERSON: Alan Ruttenberg"@en,
+        "PERSON: Melanie Courtot"@en .
+
+obo:IAO_0000231 a owl:AnnotationProperty ;
+    rdfs:label "has obsolescence reason"@en ;
+    obo:IAO_0000111 "has obsolescence reason"@en ;
+    obo:IAO_0000115 "Relates an annotation property to an obsolescence reason. The values of obsolescence reasons come from a list of predefined terms, instances of the class obsolescence reason specification."@en ;
+    obo:IAO_0000117 "PERSON:Alan Ruttenberg"@en,
+        "PERSON:Melanie Courtot"@en .
+
+obo:IAO_0000232 a owl:AnnotationProperty ;
+    rdfs:label "curator note"@en ;
+    obo:IAO_0000111 "curator note"@en ;
+    obo:IAO_0000114 obo:IAO_0000122 ;
+    obo:IAO_0000115 "An administrative note of use for a curator but of no use for a user"@en ;
+    obo:IAO_0000117 "PERSON:Alan Ruttenberg"@en .
+
+obo:IAO_0000233 a owl:AnnotationProperty ;
+    rdfs:label "term tracker item"@en ;
+    obo:IAO_0000111 "term tracker item" ;
+    obo:IAO_0000112 "the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/" ;
+    obo:IAO_0000114 obo:IAO_0000125 ;
+    obo:IAO_0000115 "An IRI or similar locator for a request or discussion of an ontology term." ;
+    obo:IAO_0000117 "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg" ;
+    obo:IAO_0000119 "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg" ;
+    rdfs:comment "The 'tracker item' can associate a tracker with a specific ontology term." .
+
+obo:IAO_0000234 a owl:AnnotationProperty ;
+    rdfs:label "ontology term requester"@en ;
+    obo:IAO_0000114 obo:IAO_0000125 ;
+    obo:IAO_0000115 "The name of the person, project, or organization that motivated inclusion of an ontology term by requesting its addition." ;
+    obo:IAO_0000117 "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg" ;
+    obo:IAO_0000119 "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg" ;
+    rdfs:comment "The 'term requester' can credit the person, organization or project who request the ontology term." .
+
+obo:IAO_0000410 a owl:NamedIndividual ;
+    rdfs:label "universal"^^xsd:string ;
+    obo:IAO_0000116 "Hard to give a definition for. Intuitively a \"natural kind\" rather than a collection of any old things, which a class is able to be, formally. At the meta level, universals are defined as positives, are disjoint with their siblings, have single asserted parents."^^xsd:string ;
+    obo:IAO_0000117 "Alan Ruttenberg"^^xsd:string ;
+    obo:IAO_0000119 "A Formal Theory of Substances, Qualities, and Universals, http://ontology.buffalo.edu/bfo/SQU.pdf"^^xsd:string .
+
+obo:IAO_0000411 a owl:AnnotationProperty ;
+    rdfs:label "is denotator type"^^xsd:string ;
+    obo:IAO_0000111 "is denotator type"@en ;
+    obo:IAO_0000115 "relates an class defined in an ontology, to the type of it's denotator"^^xsd:string ;
+    obo:IAO_0000116 "In OWL 2 add AnnotationPropertyRange('is denotator type' 'denotator type')"^^xsd:string ;
+    obo:IAO_0000117 "Alan Ruttenberg"^^xsd:string .
+
+obo:IAO_0000412 a owl:AnnotationProperty ;
+    rdfs:label "imported from"@en ;
+    obo:IAO_0000111 "imported from"@en ;
+    obo:IAO_0000114 obo:IAO_0000125 ;
+    obo:IAO_0000115 "For external terms/classes, the ontology from which the term was imported"@en ;
+    obo:IAO_0000117 "PERSON:Alan Ruttenberg"@en,
+        "PERSON:Melanie Courtot"@en ;
+    obo:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en .
+
+obo:IAO_0000420 a owl:NamedIndividual ;
+    rdfs:label "defined class"^^xsd:string ;
+    obo:IAO_0000115 "A defined class is a class that is defined by a set of logically necessary and sufficient conditions but is not a universal"^^xsd:string ;
+    obo:IAO_0000116 "\"definitions\", in some readings, always are given by necessary and sufficient conditions. So one must be careful (and this is difficult sometimes) to distinguish between defined classes and universal."^^xsd:string ;
+    obo:IAO_0000117 "Alan Ruttenberg"^^xsd:string .
+
+obo:IAO_0000421 a owl:NamedIndividual ;
+    rdfs:label "named class expression"^^xsd:string ;
+    obo:IAO_0000115 "A named class expression is a logical expression that is given a name. The name can be used in place of the expression."^^xsd:string ;
+    obo:IAO_0000116 "named class expressions are used in order to have more concise logical definition but their extensions may not be interesting classes on their own. In languages such as OWL, with no provisions for macros, these show up as actuall classes. Tools may with to not show them as such, and to replace uses of the macros with their expansions"^^xsd:string ;
+    obo:IAO_0000117 "Alan Ruttenberg"^^xsd:string .
+
+obo:IAO_0000424 a owl:AnnotationProperty ;
+    rdfs:label "expand expression to"@en ;
+    obo:IAO_0000111 "expand expression to"@en ;
+    obo:IAO_0000112 """ObjectProperty: RO_0002104
+Label: has plasma membrane part
+Annotations: IAO_0000424 "http://purl.obolibrary.org/obo/BFO_0000051 some (http://purl.org/obo/owl/GO#GO_0005886 and http://purl.obolibrary.org/obo/BFO_0000051 some ?Y)"
+"""@en ;
+    obo:IAO_0000115 "A macro expansion tag applied to an object property (or possibly a data property)  which can be used by a macro-expansion engine to generate more complex expressions from simpler ones"@en ;
+    obo:IAO_0000117 "Chris Mungall"^^xsd:string .
+
+obo:IAO_0000425 a owl:AnnotationProperty ;
+    rdfs:label "expand assertion to"@en ;
+    obo:IAO_0000111 "expand assertion to"@en ;
+    obo:IAO_0000112 """ObjectProperty: RO???
+Label: spatially disjoint from
+Annotations: expand_assertion_to "DisjointClasses: (http://purl.obolibrary.org/obo/BFO_0000051 some ?X)  (http://purl.obolibrary.org/obo/BFO_0000051 some ?Y)"
+"""@en ;
+    obo:IAO_0000115 "A macro expansion tag applied to an annotation property which can be expanded into a more detailed axiom."@en ;
+    obo:IAO_0000117 "Chris Mungall"@en .
+
+obo:IAO_0000426 a owl:AnnotationProperty ;
+    rdfs:label "first order logic expression"@en ;
+    obo:IAO_0000111 "first order logic expression"@en ;
+    obo:IAO_0000117 "PERSON:Alan Ruttenberg"@en .
+
+obo:IAO_0000427 a owl:AnnotationProperty ;
+    rdfs:label "antisymmetric property"@en ;
+    obo:IAO_0000111 "antisymmetric property"@en ;
+    obo:IAO_0000112 "part_of antisymmetric property xsd:true"@en ;
+    obo:IAO_0000115 "use boolean value xsd:true to indicate that the property is an antisymmetric property"@en ;
+    obo:IAO_0000117 "Alan Ruttenberg"@en .
+
+obo:IAO_0000589 a owl:AnnotationProperty ;
+    rdfs:label "OBO foundry unique label"@en ;
+    obo:IAO_0000111 "OBO foundry unique label"@en ;
+    obo:IAO_0000114 obo:IAO_0000125 ;
+    obo:IAO_0000115 "An alternative name for a class or property which is unique across the OBO Foundry."@en ;
+    obo:IAO_0000116 "The intended usage of that property is as follow: OBO foundry unique labels are automatically generated based on regular expressions provided by each ontology, so that SO could specify unique label = 'sequence ' + [label], etc. , MA could specify 'mouse + [label]' etc. Upon importing terms, ontology developers can choose to use the 'OBO foundry unique label' for an imported term or not. The same applies to tools ."^^xsd:string ;
+    obo:IAO_0000117 "PERSON:Alan Ruttenberg"@en,
+        "PERSON:Bjoern Peters"@en,
+        "PERSON:Chris Mungall"@en,
+        "PERSON:Melanie Courtot"@en ;
+    obo:IAO_0000119 "GROUP:OBO Foundry <http://obofoundry.org/>"@en .
+
+obo:IAO_0000596 a owl:AnnotationProperty ;
+    rdfs:label "has ID digit count"@en ;
+    obo:IAO_0000112 """Ontology: <http://purl.obolibrary.org/obo/ro/idrange/>
+  Annotations: 
+     'has ID prefix': "http://purl.obolibrary.org/obo/RO_"
+     'has ID digit count' : 7,
+     rdfs:label "RO id policy"
+     'has ID policy for': "RO\"""" ;
+    obo:IAO_0000115 "Relates an ontology used to record id policy to the number of digits in the URI. The URI is: the 'has ID prefix\" annotation property value concatenated with an integer in the id range (left padded with \"0\"s to make this many digits)" ;
+    obo:IAO_0000117 "Person:Alan Ruttenberg" .
+
+obo:IAO_0000597 a owl:AnnotationProperty ;
+    rdfs:label "has ID range allocated to"@en ;
+    obo:IAO_0000112 """Datatype: idrange:1
+Annotations: 'has ID range allocated to': "Chris Mungall"
+EquivalentTo: xsd:integer[> 2151 , <= 2300]
+""" ;
+    obo:IAO_0000115 "Relates a datatype that encodes a range of integers to the name of the person or organization who can use those ids constructed in that range to define new terms" ;
+    obo:IAO_0000117 "Person:Alan Ruttenberg" .
+
+obo:IAO_0000598 a owl:AnnotationProperty ;
+    rdfs:label "has ID policy for" ;
+    obo:IAO_0000112 """Ontology: <http://purl.obolibrary.org/obo/ro/idrange/>
+  Annotations: 
+     'has ID prefix': "http://purl.obolibrary.org/obo/RO_"
+     'has ID digit count' : 7,
+     rdfs:label "RO id policy"
+     'has ID policy for': "RO\"""" ;
+    obo:IAO_0000115 "Relating an ontology used to record id policy to the ontology namespace whose policy it manages" ;
+    obo:IAO_0000117 "Person:Alan Ruttenberg" .
+
+obo:IAO_0000599 a owl:AnnotationProperty ;
+    rdfs:label "has ID prefix"@en ;
+    obo:IAO_0000112 """Ontology: <http://purl.obolibrary.org/obo/ro/idrange/>
+  Annotations: 
+     'has ID prefix': "http://purl.obolibrary.org/obo/RO_"
+     'has ID digit count' : 7,
+     rdfs:label "RO id policy"
+     'has ID policy for': "RO\"""" ;
+    obo:IAO_0000115 "Relates an ontology used to record id policy to a prefix concatenated with an integer in the id range (left padded with \"0\"s to make this many digits) to construct an ID for a term being created." ;
+    obo:IAO_0000117 "Person:Alan Ruttenberg" .
+
+obo:IAO_0000600 a owl:AnnotationProperty ;
+    rdfs:label "elucidation"@en ;
+    obo:IAO_0000111 "elucidation"@en ;
+    obo:IAO_0000117 "person:Alan Ruttenberg"@en ;
+    obo:IAO_0000119 "Person:Barry Smith"@en ;
+    obo:IAO_0000600 "Primitive terms in a highest-level ontology such as BFO are terms which are so basic to our understanding of reality that there is no way of defining them in a non-circular fashion. For these, therefore, we can provide only elucidations, supplemented by examples and by axioms"@en .
+
+obo:IAO_0000601 a owl:AnnotationProperty ;
+    rdfs:label "has associated axiom(nl)"@en ;
+    obo:IAO_0000111 "has associated axiom(nl)"@en ;
+    obo:IAO_0000117 "Person:Alan Ruttenberg"@en ;
+    obo:IAO_0000119 "Person:Alan Ruttenberg"@en ;
+    obo:IAO_0000600 "An axiom associated with a term expressed using natural language"@en .
+
+obo:IAO_0000602 a owl:AnnotationProperty ;
+    rdfs:label "has associated axiom(fol)"@en ;
+    obo:IAO_0000111 "has associated axiom(fol)"@en ;
+    obo:IAO_0000117 "Person:Alan Ruttenberg"@en ;
+    obo:IAO_0000119 "Person:Alan Ruttenberg"@en ;
+    obo:IAO_0000600 "An axiom expressed in first order logic using CLIF syntax"@en .
+
+obo:IAO_0000603 a owl:AnnotationProperty ;
+    rdfs:label "is allocated id range"@en ;
+    obo:IAO_0000111 "is allocated id range"@en ;
+    obo:IAO_0000115 "Add as annotation triples in the granting ontology"@en,
+        "Relates an ontology IRI to an (inclusive) range of IRIs in an OBO name space. The range is give as, e.g. \"IAO_0020000-IAO_0020999\""@en ;
+    obo:IAO_0000117 "PERSON:Alan Ruttenberg"@en .
+
+obo:IAO_0010000 a owl:AnnotationProperty ;
+    rdfs:label "has axiom label"@en ;
+    obo:IAO_0000111 "has axiom id"@en ;
+    obo:IAO_0000117 "Person:Alan Ruttenberg"@en ;
+    obo:IAO_0000119 "Person:Alan Ruttenberg"@en ;
+    obo:IAO_0000600 "A URI that is intended to be unique label for an axiom used for tracking change to the ontology. For an axiom expressed in different languages, each expression is given the same URI"@en .
+
+obo:IAO_0100001 a owl:AnnotationProperty ;
+    rdfs:label "term replaced by"@en ;
+    obo:IAO_0000111 "term replaced by"@en ;
+    obo:IAO_0000114 obo:IAO_0000125 ;
+    obo:IAO_0000115 "Add as annotation triples in the granting ontology"@en,
+        "Use on obsolete terms, relating the term to another term that can be used as a substitute"@en ;
+    obo:IAO_0000117 "Person:Alan Ruttenberg"@en ;
+    obo:IAO_0000119 "Person:Alan Ruttenberg"@en .
+
+dc:contributor a owl:AnnotationProperty .
+
+dc:coverage a owl:AnnotationProperty .
+
+dc:creator a owl:AnnotationProperty .
+
+dc:date a owl:AnnotationProperty .
+
+dc:description a owl:AnnotationProperty .
+
+dc:format a owl:AnnotationProperty .
+
+dc:identifier a owl:AnnotationProperty .
+
+dc:language a owl:AnnotationProperty .
+
+dc:publisher a owl:AnnotationProperty .
+
+dc:relation a owl:AnnotationProperty .
+
+dc:rights a owl:AnnotationProperty .
+
+dc:source a owl:AnnotationProperty .
+
+dc:subject a owl:AnnotationProperty .
+
+dc:title a owl:AnnotationProperty .
+
+dc:type a owl:AnnotationProperty .
+
+swrla:isRuleEnabled a owl:AnnotationProperty .
+
+oboInOwl:is_inferred a owl:AnnotationProperty .
+
+deo:DE_000000004 a owl:Class ;
+    rdfs:label "cls:data row"@en ;
+    obo:IAO_0000115 "A data collection that consists of an horizontally structured ordered list of related data fields within a data table in which each data field belongs to a different data column." ;
+    dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
+    dc:date "2018-07-20T02:18:58+00:00"^^xsd:dateTime ;
+    rdfs:subClassOf deo:DE_000000002 .
+
+deo:DE_000000006 a owl:Class ;
+    rdfs:label "cls:data table column"@en ;
+    obo:IAO_0000115 "A data collection that consists of a vertically structured ordered list of data fields with each data field belonging to the same data column." ;
+    dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
+    dc:date "2018-07-20T02:19:26+00:00"^^xsd:dateTime ;
+    rdfs:subClassOf deo:DE_000000002 .
+
+deo:DE_000000008 a owl:DatatypeProperty ;
+    rdfs:label "dp:value"@en ;
+    obo:IAO_0000115 "A data property that relates a data entity to a literal." ;
+    dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
+    dc:date "2018-07-19T22:24:52+00:00"^^xsd:dateTime ;
+    rdfs:subPropertyOf data_entity_ontology1:data_property .
+
+deo:DE_000000019 a owl:ObjectProperty ;
+    rdfs:label "op:has member"@en ;
+    dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
+    dc:date "2018-07-20T04:06:45+00:00"^^xsd:dateTime ;
+    rdfs:subPropertyOf data_entity_ontology1:object_property ;
+    owl:inverseOf deo:DE_000000020 .
+
+deo:DE_000000021 a owl:ObjectProperty ;
+    rdfs:label "op:inverse is about"@en ;
+    dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
+    dc:date "2018-07-20T04:07:32+00:00"^^xsd:dateTime ;
+    rdfs:subPropertyOf data_entity_ontology1:object_property .
+
+deo:DE_000000022 a owl:ObjectProperty ;
+    rdfs:label "op:has field"@en ;
+    dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
+    dc:date "2018-07-20T04:08:03+00:00"^^xsd:dateTime ;
+    rdfs:subPropertyOf deo:DE_000000019 ;
+    owl:inverseOf deo:DE_000000023 .
+
+deo:DE_000000023 a owl:ObjectProperty ;
+    rdfs:label "op:field of"@en ;
+    dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
+    dc:date "2018-07-20T04:08:16+00:00"^^xsd:dateTime ;
+    rdfs:subPropertyOf deo:DE_000000020 .
+
+data_entity_ontology1:data_property a owl:DatatypeProperty ;
+    rdfs:label "data property"@en ;
+    dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
+    dc:date "2018-07-19T22:15:49+00:00"^^xsd:dateTime .
+
+<http://ex.com/patients_2.xlsx/cls/table#patients_2> a owl:Class ;
+    rdfs:label "cls:patients_2 table" ;
+    rdfs:subClassOf deo:DE_000000018 .
+
+<http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_0_DOB> a <http://ex.com/patients_2.xlsx/cls/patients_2#DOB> ;
+    rdfs:label "i:patients_2_record_0_DOB" ;
+    deo:DE_000000008 "1953-01-01" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> .
+
+<http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_0_sex> a <http://ex.com/patients_2.xlsx/cls/patients_2#sex> ;
+    rdfs:label "i:patients_2_record_0_sex" ;
+    deo:DE_000000008 "Male" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> .
+
+<http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_0_subject_id> a <http://ex.com/patients_2.xlsx/cls/patients_2#subject_id> ;
+    rdfs:label "i:patients_2_record_0_subject_id" ;
+    deo:DE_000000008 "P1" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> .
+
+<http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_1_DOB> a <http://ex.com/patients_2.xlsx/cls/patients_2#DOB> ;
+    rdfs:label "i:patients_2_record_1_DOB" ;
+    deo:DE_000000008 "1963-01-02" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> .
+
+<http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_1_sex> a <http://ex.com/patients_2.xlsx/cls/patients_2#sex> ;
+    rdfs:label "i:patients_2_record_1_sex" ;
+    deo:DE_000000008 "Female" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> .
+
+<http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_1_subject_id> a <http://ex.com/patients_2.xlsx/cls/patients_2#subject_id> ;
+    rdfs:label "i:patients_2_record_1_subject_id" ;
+    deo:DE_000000008 "P2" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> .
+
+<http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_2_DOB> a <http://ex.com/patients_2.xlsx/cls/patients_2#DOB> ;
+    rdfs:label "i:patients_2_record_2_DOB" ;
+    deo:DE_000000008 "1973-01-03" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> .
+
+<http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_2_sex> a <http://ex.com/patients_2.xlsx/cls/patients_2#sex> ;
+    rdfs:label "i:patients_2_record_2_sex" ;
+    deo:DE_000000008 "Male" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> .
+
+<http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_2_subject_id> a <http://ex.com/patients_2.xlsx/cls/patients_2#subject_id> ;
+    rdfs:label "i:patients_2_record_2_subject_id" ;
+    deo:DE_000000008 "P3" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> .
+
+<http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_3_DOB> a <http://ex.com/patients_2.xlsx/cls/patients_2#DOB> ;
+    rdfs:label "i:patients_2_record_3_DOB" ;
+    deo:DE_000000008 "1983-01-04" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> .
+
+<http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_3_sex> a <http://ex.com/patients_2.xlsx/cls/patients_2#sex> ;
+    rdfs:label "i:patients_2_record_3_sex" ;
+    deo:DE_000000008 "Female" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> .
+
+<http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_3_subject_id> a <http://ex.com/patients_2.xlsx/cls/patients_2#subject_id> ;
+    rdfs:label "i:patients_2_record_3_subject_id" ;
+    deo:DE_000000008 "P4" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> .
+
+<http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_4_DOB> a <http://ex.com/patients_2.xlsx/cls/patients_2#DOB> ;
+    rdfs:label "i:patients_2_record_4_DOB" ;
+    deo:DE_000000008 "1993-01-05" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> .
+
+<http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_4_sex> a <http://ex.com/patients_2.xlsx/cls/patients_2#sex> ;
+    rdfs:label "i:patients_2_record_4_sex" ;
+    deo:DE_000000008 "Male" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> .
+
+<http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_4_subject_id> a <http://ex.com/patients_2.xlsx/cls/patients_2#subject_id> ;
+    rdfs:label "i:patients_2_record_4_subject_id" ;
+    deo:DE_000000008 "P5" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> .
+
+<http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_5_DOB> a <http://ex.com/patients_2.xlsx/cls/patients_2#DOB> ;
+    rdfs:label "i:patients_2_record_5_DOB" ;
+    deo:DE_000000008 "1957-01-06" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> .
+
+<http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_5_sex> a <http://ex.com/patients_2.xlsx/cls/patients_2#sex> ;
+    rdfs:label "i:patients_2_record_5_sex" ;
+    deo:DE_000000008 "Female" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> .
+
+<http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_5_subject_id> a <http://ex.com/patients_2.xlsx/cls/patients_2#subject_id> ;
+    rdfs:label "i:patients_2_record_5_subject_id" ;
+    deo:DE_000000008 "P6" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> .
+
+<http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_6_DOB> a <http://ex.com/patients_2.xlsx/cls/patients_2#DOB> ;
+    rdfs:label "i:patients_2_record_6_DOB" ;
+    deo:DE_000000008 "1967-01-07" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> .
+
+<http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_6_sex> a <http://ex.com/patients_2.xlsx/cls/patients_2#sex> ;
+    rdfs:label "i:patients_2_record_6_sex" ;
+    deo:DE_000000008 "Male" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> .
+
+<http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_6_subject_id> a <http://ex.com/patients_2.xlsx/cls/patients_2#subject_id> ;
+    rdfs:label "i:patients_2_record_6_subject_id" ;
+    deo:DE_000000008 "P7" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> .
+
+<http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_7_DOB> a <http://ex.com/patients_2.xlsx/cls/patients_2#DOB> ;
+    rdfs:label "i:patients_2_record_7_DOB" ;
+    deo:DE_000000008 "1977-01-08" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> .
+
+<http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_7_sex> a <http://ex.com/patients_2.xlsx/cls/patients_2#sex> ;
+    rdfs:label "i:patients_2_record_7_sex" ;
+    deo:DE_000000008 "Female" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> .
+
+<http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_7_subject_id> a <http://ex.com/patients_2.xlsx/cls/patients_2#subject_id> ;
+    rdfs:label "i:patients_2_record_7_subject_id" ;
+    deo:DE_000000008 "P8" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> .
+
+<http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_8_DOB> a <http://ex.com/patients_2.xlsx/cls/patients_2#DOB> ;
+    rdfs:label "i:patients_2_record_8_DOB" ;
+    deo:DE_000000008 "1987-01-09" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> .
+
+<http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_8_sex> a <http://ex.com/patients_2.xlsx/cls/patients_2#sex> ;
+    rdfs:label "i:patients_2_record_8_sex" ;
+    deo:DE_000000008 "Male" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> .
+
+<http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_8_subject_id> a <http://ex.com/patients_2.xlsx/cls/patients_2#subject_id> ;
+    rdfs:label "i:patients_2_record_8_subject_id" ;
+    deo:DE_000000008 "P9" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> .
+
+<http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_9_DOB> a <http://ex.com/patients_2.xlsx/cls/patients_2#DOB> ;
+    rdfs:label "i:patients_2_record_9_DOB" ;
+    deo:DE_000000008 "1997-01-10" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> .
+
+<http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_9_sex> a <http://ex.com/patients_2.xlsx/cls/patients_2#sex> ;
+    rdfs:label "i:patients_2_record_9_sex" ;
+    deo:DE_000000008 "Female" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> .
+
+<http://ex.com/patients_2.xlsx/i/field/patients_2#i:patients_2_record_9_subject_id> a <http://ex.com/patients_2.xlsx/cls/patients_2#subject_id> ;
+    rdfs:label "i:patients_2_record_9_subject_id" ;
+    deo:DE_000000008 "P10" ;
+    deo:DE_000000020 <http://ex.com/patients_2.xlsx/i/table#patients_2> .
+
+obo:IAO_0000120 a owl:NamedIndividual ;
+    rdfs:label "metadata complete"@en ;
+    obo:IAO_0000115 "Class has all its metadata, but is either not guaranteed to be in its final location in the asserted IS_A hierarchy or refers to another class that is not complete."@en .
+
+obo:IAO_0000121 a owl:NamedIndividual ;
+    rdfs:label "organizational term"@en ;
+    obo:IAO_0000115 "term created to ease viewing/sort terms for development purpose, and will not be included in a release"@en .
+
+obo:IAO_0000123 a owl:NamedIndividual ;
+    rdfs:label "metadata incomplete"@en ;
+    obo:IAO_0000115 "Class is being worked on; however, the metadata (including definition) are not complete or sufficiently clear to the branch editors."@en .
+
+obo:IAO_0000124 a owl:NamedIndividual ;
+    rdfs:label "uncurated"@en ;
+    obo:IAO_0000115 "Nothing done yet beyond assigning a unique class ID and proposing a preferred term."@en .
+
+obo:IAO_0000226 a owl:NamedIndividual ;
+    rdfs:label "placeholder removed"@en .
+
+obo:IAO_0000227 a owl:NamedIndividual ;
+    rdfs:label "terms merged"@en ;
+    obo:IAO_0000116 "An editor note should explain what were the merged terms and the reason for the merge."@en .
+
+obo:IAO_0000228 a owl:NamedIndividual ;
+    rdfs:label "term imported"@en ;
+    obo:IAO_0000116 "This is to be used when the original term has been replaced by a term imported from an other ontology. An editor note should indicate what is the URI of the new term to use."@en .
+
+obo:IAO_0000229 a owl:NamedIndividual ;
+    rdfs:label "term split"@en ;
+    obo:IAO_0000116 "This is to be used when a term has been split in two or more new terms. An editor note should indicate the reason for the split and indicate the URIs of the new terms created."@en .
+
+obo:IAO_0000423 a owl:NamedIndividual ;
+    rdfs:label "to be replaced with external ontology term"@en ;
+    obo:IAO_0000115 "Terms with this status should eventually replaced with a term from another ontology."@en ;
+    obo:IAO_0000117 "Alan Ruttenberg"@en ;
+    obo:IAO_0000119 "group:OBI"@en .
+
+obo:IAO_0000428 a owl:NamedIndividual ;
+    rdfs:label "requires discussion"@en ;
+    obo:IAO_0000115 "A term that is metadata complete, has been reviewed, and problems have been identified that require discussion before release. Such a term requires editor note(s) to identify the outstanding issues."@en ;
+    obo:IAO_0000117 "Alan Ruttenberg"@en ;
+    obo:IAO_0000119 "group:OBI"@en .
+
+oboInOwl:ObsoleteClass a owl:Class ;
+    rdfs:label "obsolete class" ;
+    dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
+    dc:date "2018-05-28T14:20:18+00:00"^^xsd:dateTime ;
+    rdfs:subClassOf owl:Thing .
+
+deo:DE_000000003 a owl:Class ;
+    rdfs:label "cls:data record"@en ;
+    obo:IAO_0000115 "A data collection that consists of and ordered list of related data fields." ;
+    dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
+    dc:date "2018-07-19T21:57:44+00:00"^^xsd:dateTime ;
+    rdfs:comment "The data values of the fields do not have to be of the same datatype. Often a data record represented as single row in a table, but not always." ;
+    rdfs:subClassOf deo:DE_000000002 .
+
+deo:DE_000000007 a owl:Class ;
+    rdfs:label "cls:data field"@en ;
+    obo:IAO_0000115 "A datum that is a member of some record." ;
+    dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
+    dc:date "2018-07-20T02:20:17+00:00"^^xsd:dateTime ;
+    rdfs:subClassOf deo:DE_000000017 .
+
+deo:DE_000000018 a owl:Class ;
+    rdfs:label "cls:data table"@en ;
+    obo:IAO_0000115 "A data collection that consists of one or more data colums and zero or more data rows." ;
+    dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
+    dc:date "2018-07-20T04:01:52+00:00"^^xsd:dateTime ;
+    rdfs:subClassOf deo:DE_000000002 .
+
+deo:DE_000000020 a owl:ObjectProperty ;
+    rdfs:label "op:member of"@en ;
+    dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
+    dc:date "2018-07-20T04:07:02+00:00"^^xsd:dateTime ;
+    rdfs:subPropertyOf data_entity_ontology1:object_property .
+
+deo:DE_000000017 a owl:Class ;
+    rdfs:label "cls:datum"@en ;
+    obo:IAO_0000600 "An  atomic (or single) data entity." ;
+    dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
+    dc:date "2018-07-20T02:20:23+00:00"^^xsd:dateTime ;
+    rdfs:subClassOf deo:DE_000000000 .
+
+deo:entity a owl:Class ;
+    dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
+    dc:date "2018-05-28T14:19:23+00:00"^^xsd:dateTime ;
+    rdfs:subClassOf owl:Thing .
+
+<http://ex.com/patients_2.xlsx/cls/field#patients_2> a owl:Class ;
+    rdfs:label "cls:patients_2 field" ;
+    rdfs:subClassOf deo:DE_000000007 .
+
+<http://ex.com/patients_2.xlsx/dp#patients_2> a owl:DatatypeProperty ;
+    rdfs:label "dp:patients_2 value" ;
+    rdfs:subPropertyOf deo:DE_000000008 .
+
+<http://ex.com/patients_2.xlsx/op#patients_2> a owl:ObjectProperty ;
+    rdfs:label "op:patients_2 property" ;
+    rdfs:subPropertyOf deo:DE_000000022 .
+
+deo:DE_000000010 a owl:DatatypeProperty ;
+    rdfs:label "dp:metadata property"@en ;
+    obo:IAO_0000600 "A data property in which the data value is used to provide information about another entity or value." ;
+    dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
+    dc:date "2018-07-19T22:35:34+00:00"^^xsd:dateTime ;
+    rdfs:subPropertyOf data_entity_ontology1:obsolete_data_property .
+
+data_entity_ontology1:obsolete_data_property a owl:DatatypeProperty ;
+    rdfs:label "obsolete data property"@en ;
+    dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
+    dc:date "2018-07-19T22:19:27+00:00"^^xsd:dateTime .
+
+deo:DE_000000000 a owl:Class ;
+    rdfs:label "cls:data entity"@en ;
+    obo:IAO_0000600 "Information that exists (or is concretized) as a sequence of symbols that can undergo information processing." ;
+    dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
+    dc:date "2018-07-19T21:34:07+00:00"^^xsd:dateTime ;
+    rdfs:subClassOf deo:entity .
+
+data_entity_ontology1:object_property a owl:ObjectProperty ;
+    rdfs:label "object property"@en ;
+    dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
+    dc:date "2018-07-19T21:48:52+00:00"^^xsd:dateTime .
+
+obo:IAO_0000125 a owl:NamedIndividual ;
+    rdfs:label "pending final vetting"@en ;
+    obo:IAO_0000115 "All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the term editor."@en .
+
+obo:IAO_0000122 a owl:NamedIndividual ;
+    rdfs:label "ready for release"@en ;
+    obo:IAO_0000115 "Class has undergone final review, is ready for use, and will be included in the next release. Any class lacking \"ready_for_release\" should be considered likely to change place in hierarchy, have its definition refined, or be obsoleted in the next release.  Those classes deemed \"ready_for_release\" will also derived from a chain of ancestor classes that are also \"ready_for_release.\""@en .
+
+deo:DE_000000002 a owl:Class ;
+    rdfs:label "cls:data collection"@en ;
+    obo:IAO_0000115 "A data entity that consists of (or has its members) one or more data entities." ;
+    dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
+    dc:date "2018-07-19T21:55:42+00:00"^^xsd:dateTime ;
+    rdfs:subClassOf deo:DE_000000000 .
+
+<http://ex.com/patients_2.xlsx/cls/patients_2#DOB> a owl:Class ;
+    rdfs:label "cls:patients_2.DOB" ;
+    rdfs:subClassOf <http://ex.com/patients_2.xlsx/cls/field#patients_2> .
+
+<http://ex.com/patients_2.xlsx/cls/patients_2#sex> a owl:Class ;
+    rdfs:label "cls:patients_2.sex" ;
+    rdfs:subClassOf <http://ex.com/patients_2.xlsx/cls/field#patients_2> .
+
+<http://ex.com/patients_2.xlsx/cls/patients_2#subject_id> a owl:Class ;
+    rdfs:label "cls:patients_2.subject_id" ;
+    rdfs:subClassOf <http://ex.com/patients_2.xlsx/cls/field#patients_2> .
+
+<http://ex.com/patients_2.xlsx/cls/record#patients_2> a owl:Class ;
+    rdfs:label "cls:patients_2 record" ;
+    rdfs:subClassOf deo:DE_000000003 .
+
+<http://ex.com/patients_2.xlsx/i/table#patients_2> a <http://ex.com/patients_2.xlsx/cls/table#patients_2>,
+        owl:NamedIndividual ;
+    rdfs:label "i:patients_2 table" .
+
+[] a owl:Axiom ;
+    oboInOwl:is_inferred "true"^^xsd:string ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource deo:DE_000000018 ;
+    owl:annotatedTarget deo:DE_000000002 .
+
+[] a owl:Axiom ;
+    oboInOwl:is_inferred "true"^^xsd:string ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource deo:DE_000000000 ;
+    owl:annotatedTarget deo:entity .
+
+[] a owl:Axiom ;
+    oboInOwl:is_inferred "true"^^xsd:string ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource deo:DE_000000003 ;
+    owl:annotatedTarget deo:DE_000000002 .
+
+[] a owl:Axiom ;
+    oboInOwl:is_inferred "true"^^xsd:string ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource deo:DE_000000002 ;
+    owl:annotatedTarget deo:DE_000000000 .
+
+[] a owl:Axiom ;
+    oboInOwl:is_inferred "true"^^xsd:string ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource oboInOwl:ObsoleteClass ;
+    owl:annotatedTarget owl:Thing .
+
+[] a owl:Axiom ;
+    oboInOwl:is_inferred "true"^^xsd:string ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource deo:entity ;
+    owl:annotatedTarget owl:Thing .
+
+[] a owl:AllDifferent ;
+    owl:distinctMembers ( obo:IAO_0000120 obo:IAO_0000121 obo:IAO_0000122 obo:IAO_0000123 obo:IAO_0000124 obo:IAO_0000125 obo:IAO_0000423 obo:IAO_0000428 ) .
+
+[] a owl:Axiom ;
+    oboInOwl:is_inferred "true"^^xsd:string ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource deo:DE_000000017 ;
+    owl:annotatedTarget deo:DE_000000000 .
+
+[] a owl:Axiom ;
+    oboInOwl:is_inferred "true"^^xsd:string ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource deo:DE_000000004 ;
+    owl:annotatedTarget deo:DE_000000002 .
+
+[] a owl:AllDifferent ;
+    owl:distinctMembers ( obo:IAO_0000226 obo:IAO_0000227 obo:IAO_0000228 obo:IAO_0000229 ) .
+
+[] a owl:Axiom ;
+    oboInOwl:is_inferred "true"^^xsd:string ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource deo:DE_000000007 ;
+    owl:annotatedTarget deo:DE_000000017 .
+
+[] a owl:Axiom ;
+    oboInOwl:is_inferred "true"^^xsd:string ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource deo:DE_000000006 ;
+    owl:annotatedTarget deo:DE_000000002 .
+

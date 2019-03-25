@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="imports" prefer="public" xml:base="">
+        <uri name="http://purl.roswellpark.org/ontology_annotations_import.owl" uri="imports/ontology_annotations_import.owl"/>
+    </group>
+</catalog>

@@ -1,0 +1,123 @@
+{
+	"base_iri": "http://ex.com/patients_2.xlsx/",
+	"table":
+	{
+		"class":
+		{
+			"subclass_of": "http://data_entity_ontology.owl#DE_000000018",
+			"rdfs:label": "cls:patients_2 table",
+			"iri": "http://ex.com/patients_2.xlsx/cls/table#patients_2"
+		},
+		"individual":
+		{
+			"type": "http://ex.com/patients_2.xlsx/cls/table#patients_2",
+			"name": "patients_2",
+			"rdfs:label": "i:patients_2 table",
+			"iri": "http://ex.com/patients_2.xlsx/i/table#patients_2"
+		},
+		"record":
+		{
+			"class":
+			{
+				"subclass_of": "http://data_entity_ontology.owl#DE_000000003",
+				"rdfs:label": "cls:patients_2 record",
+				"iri": "http://ex.com/patients_2.xlsx/cls/record#patients_2"
+			},
+			"individual":
+			{
+				"base_iri": "http://ex.com/patients_2.xlsx/i/record/patients_2#"
+			}
+		},
+		"field":
+		{
+			"class":
+			{
+				"subclass_of": "http://data_entity_ontology.owl#DE_000000007",
+				"rdfs:label": "cls:patients_2 field",
+				"iri": "http://ex.com/patients_2.xlsx/cls/field#patients_2"
+			},
+			"object_property":
+			{
+				"subproperty_of": "http://data_entity_ontology.owl#DE_000000022",
+				"rdfs:label": "op:patients_2 property",
+				"iri": "http://ex.com/patients_2.xlsx/op#patients_2"
+			},
+			"data_property":
+			{
+				"subproperty_of": "http://data_entity_ontology.owl#DE_000000008",
+				"rdfs:label": "dp:patients_2 value",
+				"iri": "http://ex.com/patients_2.xlsx/dp#patients_2"
+			},
+			"individual":
+			{
+				"base_iri": "http://ex.com/patients_2.xlsx/i/field/patients_2#"
+			}
+		}
+	},
+	"field":
+	{
+		"class":
+		{
+			"subject_id":
+			 {
+			 	"subclass_of": "http://ex.com/patients_2.xlsx/cls/field#patients_2",
+			 	"iri": "http://ex.com/patients_2.xlsx/cls/patients_2#subject_id",
+			 	"rdfs:label": "cls:patients_2.subject_id"
+			 },
+			"sex":
+			 {
+			 	"subclass_of": "http://ex.com/patients_2.xlsx/cls/field#patients_2",
+			 	"iri": "http://ex.com/patients_2.xlsx/cls/patients_2#sex",
+			 	"rdfs:label": "cls:patients_2.sex"
+			 },
+			"DOB":
+			 {
+			 	"subclass_of": "http://ex.com/patients_2.xlsx/cls/field#patients_2",
+			 	"iri": "http://ex.com/patients_2.xlsx/cls/patients_2#DOB",
+			 	"rdfs:label": "cls:patients_2.DOB"
+			}
+		},
+		"object_property":
+		{
+			"subject_id":
+			 {
+			 	"subproperty_of": "http://ex.com/patients_2.xlsx/op#patients_2",
+			 	"iri": "http://ex.com/patients_2.xlsx/op/patients_2#subject_id",
+			 	"rdfs:label": "op:patients_2.subject_id"
+			 },
+			"sex":
+			 {
+			 	"subproperty_of": "http://ex.com/patients_2.xlsx/op#patients_2",
+			 	"iri": "http://ex.com/patients_2.xlsx/op/patients_2#sex",
+			 	"rdfs:label": "op:patients_2.sex"
+			 },
+			 "DOB":
+			 {
+			 	"subproperty_of": "http://ex.com/patients_2.xlsx/op#patients_2",
+			 	"iri": "http://ex.com/patients_2.xlsx/op/patients_2#DOB",
+			 	"rdfs:label": "op:patients_2.DOB"
+			 }
+		},
+		"data_property":
+		{
+			"subject_id":
+			 {
+			 	"subproperty_of": "http://ex.com/patients_2.xlsx/dp#patients_2",
+			 	"iri": "http://ex.com/patients_2.xlsx/dp/patients_2#subject_id",
+			 	"rdfs:label": "dp:patients_2.subject_id"
+			 },
+			"sex":
+			 {
+			 	"subproperty_of": "http://ex.com/patients_2.xlsx/dp#patients_2",
+			 	"iri": "http://ex.com/patients_2.xlsx/dp/patients_2#sex",
+			 	"rdfs:label": "dp:patients_2.sex"
+			 },
+			 "DOB":
+			 {
+			 	"subproperty_of": "http://ex.com/patients_2.xlsx/dp#patients_2",
+			 	"iri": "http://ex.com/patients_2.xlsx/dp/patients_2#DOB",
+			 	"rdfs:label": "dp:patients_2.DOB"
+			 }
+		}
+  }
+}

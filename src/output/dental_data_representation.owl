@@ -1,0 +1,654 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://dental_data_representation.owl#"
+     xml:base="http://dental_data_representation.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:data_entity_ontology1="http://data_entity_ontology.owl/"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:data_entity_ontology="http://data_entity_ontology.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://dental_data_representation.owl">
+        <owl:imports rdf:resource="http://data_entity_ontology/2019-03-20/data_entity.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dental_data_representation.owl#data_field_specification -->
+
+    <owl:Class rdf:about="http://dental_data_representation.owl#data_field_specification">
+        <rdfs:subClassOf rdf:resource="http://dental_data_representation.owl#data_specification"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-21T02:10:12Z</dc:date>
+        <rdfs:label>data field specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dental_data_representation.owl#data_specification -->
+
+    <owl:Class rdf:about="http://dental_data_representation.owl#data_specification">
+        <rdfs:subClassOf rdf:resource="http://data_entity_ontology.owl#entity"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-21T02:11:17Z</dc:date>
+        <rdfs:label>data specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dental_data_representation.owl#semantic_value_specification -->
+
+    <owl:Class rdf:about="http://dental_data_representation.owl#semantic_value_specification">
+        <rdfs:subClassOf rdf:resource="http://dental_data_representation.owl#data_specification"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-21T02:10:46Z</dc:date>
+        <rdfs:label>semantic value specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dental_data_representation.owl#cls:gender_field_specification -->
+
+    <owl:Class rdf:about="http://dental_data_representation.owl#cls:gender_field_specification">
+        <rdfs:subClassOf rdf:resource="http://dental_data_representation.owl#data_field_specification"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-21T02:12:06Z</dc:date>
+        <rdfs:label>cls:gender field specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dental_data_representation.owl#cls:gender_value_specification -->
+
+    <owl:Class rdf:about="http://dental_data_representation.owl#cls:gender_value_specification">
+        <rdfs:subClassOf rdf:resource="http://dental_data_representation.owl#semantic_value_specification"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-21T02:12:48Z</dc:date>
+        <rdfs:label>cls:gender value specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ex.com/patients_1.xlsx/cls/patients_1#gender -->
+
+    <rdf:Description rdf:about="http://ex.com/patients_1.xlsx/cls/patients_1#gender">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000013"/>
+                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/gender"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <data_entity_ontology:DE_000000028 rdf:resource="http://dental_data_representation.owl#i:gender_field_specification"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://ex.com/patients_1.xlsx/cls/patients_1#patient_id -->
+
+    <rdf:Description rdf:about="http://ex.com/patients_1.xlsx/cls/patients_1#patient_id">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000013"/>
+                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/patient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://ex.com/patients_2.xlsx/cls/patients_2#sex -->
+
+    <rdf:Description rdf:about="http://ex.com/patients_2.xlsx/cls/patients_2#sex">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000013"/>
+                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/gender"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <data_entity_ontology:DE_000000028 rdf:resource="http://dental_data_representation.owl#i:gender_field_specification"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://ex.com/patients_2.xlsx/cls/patients_2#subject_id -->
+
+    <rdf:Description rdf:about="http://ex.com/patients_2.xlsx/cls/patients_2#subject_id">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000013"/>
+                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/patient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dental_data_representation.owl#i:female_gender_value_specification -->
+
+    <owl:NamedIndividual rdf:about="http://dental_data_representation.owl#i:female_gender_value_specification">
+        <rdf:type rdf:resource="http://dental_data_representation.owl#cls:gender_value_specification"/>
+        <data_entity_ontology:DE_000000008>F</data_entity_ontology:DE_000000008>
+        <data_entity_ontology:DE_000000008>Female</data_entity_ontology:DE_000000008>
+        <data_entity_ontology:DE_000000016 rdf:resource="http://simple-dental-ontology.owl/female_gender"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-21T02:20:30Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dental_data_representation.owl#i:gender_field_specification -->
+
+    <owl:NamedIndividual rdf:about="http://dental_data_representation.owl#i:gender_field_specification">
+        <rdf:type rdf:resource="http://dental_data_representation.owl#cls:gender_field_specification"/>
+        <data_entity_ontology:DE_000000019 rdf:resource="http://dental_data_representation.owl#i:female_gender_value_specification"/>
+        <data_entity_ontology:DE_000000019 rdf:resource="http://dental_data_representation.owl#i:male_gender_value_specification"/>
+        <data_entity_ontology:DE_000000027 rdf:resource="http://ex.com/patients_1.xlsx/cls/patients_1#gender"/>
+        <data_entity_ontology:DE_000000027 rdf:resource="http://ex.com/patients_2.xlsx/cls/patients_2#sex"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-21T02:15:55Z</dc:date>
+        <rdfs:label>i:gender field specification</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dental_data_representation.owl#i:male_gender_value_specification -->
+
+    <owl:NamedIndividual rdf:about="http://dental_data_representation.owl#i:male_gender_value_specification">
+        <rdf:type rdf:resource="http://dental_data_representation.owl#cls:gender_value_specification"/>
+        <data_entity_ontology:DE_000000008>M</data_entity_ontology:DE_000000008>
+        <data_entity_ontology:DE_000000008>Male</data_entity_ontology:DE_000000008>
+        <data_entity_ontology:DE_000000016 rdf:resource="http://simple-dental-ontology.owl/male_gender"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-21T02:16:34Z</dc:date>
+        <rdfs:label>i:male gender value specification</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ex.com/patients_1.xlsx/cls/patients_1#gender"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000008"/>
+                <owl:hasValue>F</owl:hasValue>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000013"/>
+                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/female_gender"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ex.com/patients_1.xlsx/cls/patients_1#gender"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000008"/>
+                <owl:hasValue>M</owl:hasValue>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000013"/>
+                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/male_gender"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ex.com/patients_2.xlsx/cls/patients_2#sex"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000008"/>
+                <owl:hasValue>Female</owl:hasValue>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000013"/>
+                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/female_gender"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ex.com/patients_2.xlsx/cls/patients_2#sex"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000008"/>
+                <owl:hasValue>Male</owl:hasValue>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000013"/>
+                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/male_gender"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ex.com/services_1.xlsx/cls/services_1#surface"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000008"/>
+                <owl:hasValue>b</owl:hasValue>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000013"/>
+                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/buccal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ex.com/services_1.xlsx/cls/services_1#surface"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000008"/>
+                <owl:hasValue>d</owl:hasValue>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000013"/>
+                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/distal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ex.com/services_1.xlsx/cls/services_1#surface"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000008"/>
+                <owl:hasValue>f</owl:hasValue>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000013"/>
+                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/facial"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ex.com/services_1.xlsx/cls/services_1#surface"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000008"/>
+                <owl:hasValue>l</owl:hasValue>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000013"/>
+                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/lingual"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ex.com/services_1.xlsx/cls/services_1#surface"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000008"/>
+                <owl:hasValue>m</owl:hasValue>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000013"/>
+                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/mesial"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ex.com/services_1.xlsx/cls/services_1#surface"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000008"/>
+                <owl:hasValue>o</owl:hasValue>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000013"/>
+                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/occlusal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ex.com/services_1.xlsx/cls/services_1#tooth"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000008"/>
+                <owl:hasValue>1</owl:hasValue>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000013"/>
+                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/tooth_1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ex.com/services_1.xlsx/cls/services_1#tooth"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000008"/>
+                <owl:hasValue>2</owl:hasValue>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000013"/>
+                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/tooth_2"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ex.com/services_1.xlsx/cls/services_1#tooth"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000008"/>
+                <owl:hasValue>3</owl:hasValue>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000013"/>
+                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/tooth_3"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ex.com/services_1.xlsx/cls/services_1#tooth"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000008"/>
+                <owl:hasValue>4</owl:hasValue>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000013"/>
+                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/tooth_4"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ex.com/services_2.xlsx/cls/services_2#surface"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000008"/>
+                <owl:hasValue>b</owl:hasValue>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000013"/>
+                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/buccal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ex.com/services_2.xlsx/cls/services_2#surface"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000008"/>
+                <owl:hasValue>d</owl:hasValue>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000013"/>
+                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/distal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ex.com/services_2.xlsx/cls/services_2#surface"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000008"/>
+                <owl:hasValue>f</owl:hasValue>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000013"/>
+                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/facial"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ex.com/services_2.xlsx/cls/services_2#surface"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000008"/>
+                <owl:hasValue>l</owl:hasValue>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000013"/>
+                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/lingual"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ex.com/services_2.xlsx/cls/services_2#surface"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000008"/>
+                <owl:hasValue>m</owl:hasValue>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000013"/>
+                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/mesial"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ex.com/services_2.xlsx/cls/services_2#surface"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000008"/>
+                <owl:hasValue>o</owl:hasValue>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000013"/>
+                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/occlusal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ex.com/services_2.xlsx/cls/services_2#tooth_num"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000008"/>
+                <owl:hasValue>15</owl:hasValue>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000013"/>
+                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/tooth_15"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ex.com/services_2.xlsx/cls/services_2#tooth_num"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000008"/>
+                <owl:hasValue>16</owl:hasValue>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000013"/>
+                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/tooth_16"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ex.com/services_2.xlsx/cls/services_2#tooth_num"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000008"/>
+                <owl:hasValue>17</owl:hasValue>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000013"/>
+                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/tooth_17"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ex.com/services_2.xlsx/cls/services_2#tooth_num"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000008"/>
+                <owl:hasValue>18</owl:hasValue>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000013"/>
+                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/tooth_18"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://data_entity_ontology.owl#DE_000000007"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000013"/>
+                        <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/patient"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000023"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://data_entity_ontology.owl#DE_000000003"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000022"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://data_entity_ontology.owl#DE_000000007"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000013"/>
+                                                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/female_gender"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000013"/>
+                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/female_patient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://data_entity_ontology.owl#DE_000000007"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000013"/>
+                        <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/patient"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000023"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://data_entity_ontology.owl#DE_000000003"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000022"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://data_entity_ontology.owl#DE_000000007"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000013"/>
+                                                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/male_gender"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://data_entity_ontology.owl#DE_000000013"/>
+                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/male_patient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

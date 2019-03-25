@@ -1,0 +1,50 @@
+"@context":
+{
+  "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+	"label": "rdfs:label", 
+	"deo": "http://data_entity_ontology.owl#",
+	"data_record": "deo:DE_000000003",
+	"data_field": "deo:DE_000000007",
+	"value": "deo:DE_000000008",
+	"member_of": 
+	{
+		"@id": "deo:DE_000000020",
+		"@type": "@id"
+	},
+	"op": "http://ex.com/services_2.xlsx/op/services_2#",
+	"procedure_id": 
+	{ 
+		"@id": "op:procedure_id", 
+		"@type": "@id" 
+	},
+	"procedure_code": 
+	{ 
+		"@id": "op:procedure_code", 
+		"@type": "@id" 
+	},
+	"procedure_date": 
+	{ 
+		"@id": "op:procedure_date", 
+		"@type": "@id" 
+	},
+	"subject_id": 
+	{ 
+		"@id": "op:subject_id", 
+		"@type": "@id" 
+	},
+	"tooth_num": 
+	{ 
+		"@id": "op:tooth_num", 
+		"@type": "@id" 
+	},
+	"surface": 
+	{ 
+		"@id": "op:surface", 
+		"@type": "@id" 
+	},
+	"provider_id": 
+	{ 
+		"@id": "op:provider_id", 
+		"@type": "@id" 
+	}
+}

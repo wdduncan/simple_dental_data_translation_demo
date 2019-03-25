@@ -1,0 +1,287 @@
+@prefix deo: <http://data_entity_ontology.owl#> .
+@prefix op: <http://ex.com/patients_1.xlsx/op/patients_1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ex.com/patients_1.xlsx/dp/patients_1#birth_date> a <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+    rdfs:label "dp:birth_date" ;
+    rdfs:subPropertyOf <http://ex.com/patients_1.xlsx/dp#patients_1> .
+
+<http://ex.com/patients_1.xlsx/dp/patients_1#gender> a <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+    rdfs:label "dp:gender" ;
+    rdfs:subPropertyOf <http://ex.com/patients_1.xlsx/dp#patients_1> .
+
+<http://ex.com/patients_1.xlsx/dp/patients_1#patient_id> a <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+    rdfs:label "dp:patient_id" ;
+    rdfs:subPropertyOf <http://ex.com/patients_1.xlsx/dp#patients_1> .
+
+<http://ex.com/patients_1.xlsx/i/record/patients_1#i:patients_1_record_0> a <http://ex.com/patients_1.xlsx/cls/record#patients_1> ;
+    rdfs:label "i:patients_1_record_0" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" ;
+    op:birth_date <http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_0_birth_date> ;
+    op:gender <http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_0_gender> ;
+    op:patient_id <http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_0_patient_id> .
+
+<http://ex.com/patients_1.xlsx/i/record/patients_1#i:patients_1_record_1> a <http://ex.com/patients_1.xlsx/cls/record#patients_1> ;
+    rdfs:label "i:patients_1_record_1" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" ;
+    op:birth_date <http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_1_birth_date> ;
+    op:gender <http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_1_gender> ;
+    op:patient_id <http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_1_patient_id> .
+
+<http://ex.com/patients_1.xlsx/i/record/patients_1#i:patients_1_record_2> a <http://ex.com/patients_1.xlsx/cls/record#patients_1> ;
+    rdfs:label "i:patients_1_record_2" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" ;
+    op:birth_date <http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_2_birth_date> ;
+    op:gender <http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_2_gender> ;
+    op:patient_id <http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_2_patient_id> .
+
+<http://ex.com/patients_1.xlsx/i/record/patients_1#i:patients_1_record_3> a <http://ex.com/patients_1.xlsx/cls/record#patients_1> ;
+    rdfs:label "i:patients_1_record_3" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" ;
+    op:birth_date <http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_3_birth_date> ;
+    op:gender <http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_3_gender> ;
+    op:patient_id <http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_3_patient_id> .
+
+<http://ex.com/patients_1.xlsx/i/record/patients_1#i:patients_1_record_4> a <http://ex.com/patients_1.xlsx/cls/record#patients_1> ;
+    rdfs:label "i:patients_1_record_4" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" ;
+    op:birth_date <http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_4_birth_date> ;
+    op:gender <http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_4_gender> ;
+    op:patient_id <http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_4_patient_id> .
+
+<http://ex.com/patients_1.xlsx/i/record/patients_1#i:patients_1_record_5> a <http://ex.com/patients_1.xlsx/cls/record#patients_1> ;
+    rdfs:label "i:patients_1_record_5" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" ;
+    op:birth_date <http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_5_birth_date> ;
+    op:gender <http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_5_gender> ;
+    op:patient_id <http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_5_patient_id> .
+
+<http://ex.com/patients_1.xlsx/i/record/patients_1#i:patients_1_record_6> a <http://ex.com/patients_1.xlsx/cls/record#patients_1> ;
+    rdfs:label "i:patients_1_record_6" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" ;
+    op:birth_date <http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_6_birth_date> ;
+    op:gender <http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_6_gender> ;
+    op:patient_id <http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_6_patient_id> .
+
+<http://ex.com/patients_1.xlsx/i/record/patients_1#i:patients_1_record_7> a <http://ex.com/patients_1.xlsx/cls/record#patients_1> ;
+    rdfs:label "i:patients_1_record_7" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" ;
+    op:birth_date <http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_7_birth_date> ;
+    op:gender <http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_7_gender> ;
+    op:patient_id <http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_7_patient_id> .
+
+<http://ex.com/patients_1.xlsx/i/record/patients_1#i:patients_1_record_8> a <http://ex.com/patients_1.xlsx/cls/record#patients_1> ;
+    rdfs:label "i:patients_1_record_8" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" ;
+    op:birth_date <http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_8_birth_date> ;
+    op:gender <http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_8_gender> ;
+    op:patient_id <http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_8_patient_id> .
+
+<http://ex.com/patients_1.xlsx/i/record/patients_1#i:patients_1_record_9> a <http://ex.com/patients_1.xlsx/cls/record#patients_1> ;
+    rdfs:label "i:patients_1_record_9" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" ;
+    op:birth_date <http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_9_birth_date> ;
+    op:gender <http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_9_gender> ;
+    op:patient_id <http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_9_patient_id> .
+
+<http://ex.com/patients_1.xlsx/i/table#patients_1> a <http://ex.com/patients_1.xlsx/cls/table#patients_1>,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    rdfs:label "i:patients_1 table" .
+
+op:birth_date a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    rdfs:label "op:birth_date" ;
+    rdfs:subPropertyOf <http://ex.com/patients_1.xlsx/op#patients_1> .
+
+op:gender a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    rdfs:label "op:gender" ;
+    rdfs:subPropertyOf <http://ex.com/patients_1.xlsx/op#patients_1> .
+
+op:patient_id a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    rdfs:label "op:patient_id" ;
+    rdfs:subPropertyOf <http://ex.com/patients_1.xlsx/op#patients_1> .
+
+<http://ex.com/patients_1.xlsx/cls/table#patients_1> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "cls:patients_1 table" ;
+    rdfs:subClassOf deo:DE_000000018 .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_0_birth_date> a <http://ex.com/patients_1.xlsx/cls/patients_1#birth_date> ;
+    rdfs:label "i:patients_1_record_0_birth_date" ;
+    deo:DE_000000008 "1950-01-01" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_0_gender> a <http://ex.com/patients_1.xlsx/cls/patients_1#gender> ;
+    rdfs:label "i:patients_1_record_0_gender" ;
+    deo:DE_000000008 "M" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_0_patient_id> a <http://ex.com/patients_1.xlsx/cls/patients_1#patient_id> ;
+    rdfs:label "i:patients_1_record_0_patient_id" ;
+    deo:DE_000000008 "10001" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_1_birth_date> a <http://ex.com/patients_1.xlsx/cls/patients_1#birth_date> ;
+    rdfs:label "i:patients_1_record_1_birth_date" ;
+    deo:DE_000000008 "1960-01-02" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_1_gender> a <http://ex.com/patients_1.xlsx/cls/patients_1#gender> ;
+    rdfs:label "i:patients_1_record_1_gender" ;
+    deo:DE_000000008 "F" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_1_patient_id> a <http://ex.com/patients_1.xlsx/cls/patients_1#patient_id> ;
+    rdfs:label "i:patients_1_record_1_patient_id" ;
+    deo:DE_000000008 "10002" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_2_birth_date> a <http://ex.com/patients_1.xlsx/cls/patients_1#birth_date> ;
+    rdfs:label "i:patients_1_record_2_birth_date" ;
+    deo:DE_000000008 "1970-01-03" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_2_gender> a <http://ex.com/patients_1.xlsx/cls/patients_1#gender> ;
+    rdfs:label "i:patients_1_record_2_gender" ;
+    deo:DE_000000008 "M" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_2_patient_id> a <http://ex.com/patients_1.xlsx/cls/patients_1#patient_id> ;
+    rdfs:label "i:patients_1_record_2_patient_id" ;
+    deo:DE_000000008 "10003" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_3_birth_date> a <http://ex.com/patients_1.xlsx/cls/patients_1#birth_date> ;
+    rdfs:label "i:patients_1_record_3_birth_date" ;
+    deo:DE_000000008 "1980-01-04" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_3_gender> a <http://ex.com/patients_1.xlsx/cls/patients_1#gender> ;
+    rdfs:label "i:patients_1_record_3_gender" ;
+    deo:DE_000000008 "F" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_3_patient_id> a <http://ex.com/patients_1.xlsx/cls/patients_1#patient_id> ;
+    rdfs:label "i:patients_1_record_3_patient_id" ;
+    deo:DE_000000008 "10004" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_4_birth_date> a <http://ex.com/patients_1.xlsx/cls/patients_1#birth_date> ;
+    rdfs:label "i:patients_1_record_4_birth_date" ;
+    deo:DE_000000008 "1990-01-05" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_4_gender> a <http://ex.com/patients_1.xlsx/cls/patients_1#gender> ;
+    rdfs:label "i:patients_1_record_4_gender" ;
+    deo:DE_000000008 "M" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_4_patient_id> a <http://ex.com/patients_1.xlsx/cls/patients_1#patient_id> ;
+    rdfs:label "i:patients_1_record_4_patient_id" ;
+    deo:DE_000000008 "10005" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_5_birth_date> a <http://ex.com/patients_1.xlsx/cls/patients_1#birth_date> ;
+    rdfs:label "i:patients_1_record_5_birth_date" ;
+    deo:DE_000000008 "1955-01-06" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_5_gender> a <http://ex.com/patients_1.xlsx/cls/patients_1#gender> ;
+    rdfs:label "i:patients_1_record_5_gender" ;
+    deo:DE_000000008 "F" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_5_patient_id> a <http://ex.com/patients_1.xlsx/cls/patients_1#patient_id> ;
+    rdfs:label "i:patients_1_record_5_patient_id" ;
+    deo:DE_000000008 "10006" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_6_birth_date> a <http://ex.com/patients_1.xlsx/cls/patients_1#birth_date> ;
+    rdfs:label "i:patients_1_record_6_birth_date" ;
+    deo:DE_000000008 "1965-01-07" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_6_gender> a <http://ex.com/patients_1.xlsx/cls/patients_1#gender> ;
+    rdfs:label "i:patients_1_record_6_gender" ;
+    deo:DE_000000008 "M" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_6_patient_id> a <http://ex.com/patients_1.xlsx/cls/patients_1#patient_id> ;
+    rdfs:label "i:patients_1_record_6_patient_id" ;
+    deo:DE_000000008 "10007" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_7_birth_date> a <http://ex.com/patients_1.xlsx/cls/patients_1#birth_date> ;
+    rdfs:label "i:patients_1_record_7_birth_date" ;
+    deo:DE_000000008 "1975-01-08" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_7_gender> a <http://ex.com/patients_1.xlsx/cls/patients_1#gender> ;
+    rdfs:label "i:patients_1_record_7_gender" ;
+    deo:DE_000000008 "F" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_7_patient_id> a <http://ex.com/patients_1.xlsx/cls/patients_1#patient_id> ;
+    rdfs:label "i:patients_1_record_7_patient_id" ;
+    deo:DE_000000008 "10008" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_8_birth_date> a <http://ex.com/patients_1.xlsx/cls/patients_1#birth_date> ;
+    rdfs:label "i:patients_1_record_8_birth_date" ;
+    deo:DE_000000008 "1985-01-09" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_8_gender> a <http://ex.com/patients_1.xlsx/cls/patients_1#gender> ;
+    rdfs:label "i:patients_1_record_8_gender" ;
+    deo:DE_000000008 "M" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_8_patient_id> a <http://ex.com/patients_1.xlsx/cls/patients_1#patient_id> ;
+    rdfs:label "i:patients_1_record_8_patient_id" ;
+    deo:DE_000000008 "10009" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_9_birth_date> a <http://ex.com/patients_1.xlsx/cls/patients_1#birth_date> ;
+    rdfs:label "i:patients_1_record_9_birth_date" ;
+    deo:DE_000000008 "1995-01-10" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_9_gender> a <http://ex.com/patients_1.xlsx/cls/patients_1#gender> ;
+    rdfs:label "i:patients_1_record_9_gender" ;
+    deo:DE_000000008 "F" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#i:patients_1_record_9_patient_id> a <http://ex.com/patients_1.xlsx/cls/patients_1#patient_id> ;
+    rdfs:label "i:patients_1_record_9_patient_id" ;
+    deo:DE_000000008 "10010" ;
+    deo:DE_000000020 "http://ex.com/patients_1.xlsx/i/table#patients_1" .
+
+<http://ex.com/patients_1.xlsx/cls/field#patients_1> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "cls:patients_1 field" ;
+    rdfs:subClassOf deo:DE_000000007 .
+
+<http://ex.com/patients_1.xlsx/dp#patients_1> a <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+    rdfs:label "dp:patients_1 value" ;
+    rdfs:subPropertyOf deo:DE_000000008 .
+
+<http://ex.com/patients_1.xlsx/op#patients_1> a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    rdfs:label "op:patients_1 property" ;
+    rdfs:subPropertyOf deo:DE_000000022 .
+
+<http://ex.com/patients_1.xlsx/cls/patients_1#birth_date> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "cls:birth_date" ;
+    rdfs:subClassOf <http://ex.com/patients_1.xlsx/cls/field#patients_1> .
+
+<http://ex.com/patients_1.xlsx/cls/patients_1#gender> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "cls:gender" ;
+    rdfs:subClassOf <http://ex.com/patients_1.xlsx/cls/field#patients_1> .
+
+<http://ex.com/patients_1.xlsx/cls/patients_1#patient_id> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "cls:patient_id" ;
+    rdfs:subClassOf <http://ex.com/patients_1.xlsx/cls/field#patients_1> .
+
+<http://ex.com/patients_1.xlsx/cls/record#patients_1> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "cls:patients_1 record" ;
+    rdfs:subClassOf deo:DE_000000003 .
+

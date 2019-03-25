@@ -1,0 +1,30 @@
+"@context":
+{
+  "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+	"label": "rdfs:label", 
+	"deo": "http://data_entity_ontology.owl#",
+	"data_record": "deo:DE_000000003",
+	"data_field": "deo:DE_000000007",
+	"value": "deo:DE_000000008",
+	"member_of": 
+	{
+		"@id": "deo:DE_000000020",
+		"@type": "@id"
+	},
+	"op": "http://ex.com/patients_2.xlsx/op/patients_2#",
+	"subject_id": 
+	{ 
+		"@id": "op:subject_id", 
+		"@type": "@id" 
+	},
+	"sex": 
+	{ 
+		"@id": "op:sex", 
+		"@type": "@id" 
+	},
+	"DOB": 
+	{ 
+		"@id": "op:DOB", 
+		"@type": "@id"
+	}
+}

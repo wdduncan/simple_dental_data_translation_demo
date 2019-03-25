@@ -1,0 +1,1102 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://simple-dental-ontology.owl#"
+     xml:base="http://simple-dental-ontology.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://simple-dental-ontology.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://simple-dental-ontology.owl/has_part -->
+
+    <owl:ObjectProperty rdf:about="http://simple-dental-ontology.owl/has_part">
+        <owl:inverseOf rdf:resource="http://simple-dental-ontology.owl/part_of"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T04:03:20Z</dc:date>
+        <rdfs:label>has part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/has_participant -->
+
+    <owl:ObjectProperty rdf:about="http://simple-dental-ontology.owl/has_participant">
+        <owl:inverseOf rdf:resource="http://simple-dental-ontology.owl/particpates_in"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T04:04:10Z</dc:date>
+        <rdfs:label>has participant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/has_quality -->
+
+    <owl:ObjectProperty rdf:about="http://simple-dental-ontology.owl/has_quality">
+        <owl:inverseOf rdf:resource="http://simple-dental-ontology.owl/quality_of"/>
+        <rdfs:label>has quality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/is_about -->
+
+    <owl:ObjectProperty rdf:about="http://simple-dental-ontology.owl/is_about">
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</obo:IAO_0000117>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-09T04:33:50Z</dc:date>
+        <rdfs:label>is about</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/part_of -->
+
+    <owl:ObjectProperty rdf:about="http://simple-dental-ontology.owl/part_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T04:03:17Z</dc:date>
+        <rdfs:label>part of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/particpates_in -->
+
+    <owl:ObjectProperty rdf:about="http://simple-dental-ontology.owl/particpates_in">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T04:04:00Z</dc:date>
+        <rdfs:label>participates in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/quality_of -->
+
+    <owl:ObjectProperty rdf:about="http://simple-dental-ontology.owl/quality_of">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T04:05:04Z</dc:date>
+        <rdfs:label>quality of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://simple-dental-ontology.owl/birth_date -->
+
+    <owl:DatatypeProperty rdf:about="http://simple-dental-ontology.owl/birth_date">
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</obo:IAO_0000117>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-12-11T18:33:13Z</dc:date>
+        <rdfs:label>birth date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/service_date -->
+
+    <owl:DatatypeProperty rdf:about="http://simple-dental-ontology.owl/service_date">
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</obo:IAO_0000117>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-09T04:32:40Z</dc:date>
+        <rdfs:label>service date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://simple-dental-ontology.owl/D2140 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/D2140">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/service_code"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</obo:IAO_0000117>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-09T04:34:54Z</dc:date>
+        <rdfs:label>D2140</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/D2150 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/D2150">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/service_code"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</obo:IAO_0000117>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-09T04:35:03Z</dc:date>
+        <rdfs:label>D2150</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/D2160 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/D2160">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/service_code"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</obo:IAO_0000117>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-09T04:35:10Z</dc:date>
+        <rdfs:label>D2160</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/D2161 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/D2161">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/service_code"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</obo:IAO_0000117>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-09T04:35:17Z</dc:date>
+        <rdfs:label>D2161</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/D2330 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/D2330">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/service_code"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</obo:IAO_0000117>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-09T04:35:36Z</dc:date>
+        <rdfs:label>D2330</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/D2331 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/D2331">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/service_code"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</obo:IAO_0000117>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-09T04:35:41Z</dc:date>
+        <rdfs:label>D2331</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/D2332 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/D2332">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/service_code"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</obo:IAO_0000117>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-09T04:35:51Z</dc:date>
+        <rdfs:label>D2332</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/D2335 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/D2335">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/service_code"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</obo:IAO_0000117>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-09T04:36:26Z</dc:date>
+        <rdfs:label>D2335</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/amalagam -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/amalagam">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/restoration_material"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:48:13Z</dc:date>
+        <rdfs:label>amalgam</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/amalgam_restoration -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/amalgam_restoration">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://simple-dental-ontology.owl/restoration_procedure"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://simple-dental-ontology.owl/has_participant"/>
+                        <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/amalagam"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T04:02:37Z</dc:date>
+        <rdfs:label>amalgam restoration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/buccal -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/buccal">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth_surface"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</obo:IAO_0000117>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-09T05:56:09Z</dc:date>
+        <rdfs:label>buccal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/canine -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/canine">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth_11"/>
+                            <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth_22"/>
+                            <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth_27"/>
+                            <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth_6"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:51:17Z</dc:date>
+        <rdfs:label>canine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/distal -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/distal">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth_surface"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</obo:IAO_0000117>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-09T05:55:43Z</dc:date>
+        <rdfs:label>distal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/entity -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/entity">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:46:01Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/facial -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/facial">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth_surface"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</obo:IAO_0000117>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-09T05:55:46Z</dc:date>
+        <rdfs:label>facial</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/female_gender -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/female_gender">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/gender"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:47:07Z</dc:date>
+        <rdfs:label>female gender</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/female_patient -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/female_patient">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://simple-dental-ontology.owl/patient"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://simple-dental-ontology.owl/has_quality"/>
+                        <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/female_gender"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:47:29Z</dc:date>
+        <rdfs:label>female patient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/gender -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/gender">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/entity"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:46:25Z</dc:date>
+        <rdfs:label>gender</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/human -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/human">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/entity"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:46:32Z</dc:date>
+        <rdfs:label>human</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/incisal -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/incisal">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth_surface"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</obo:IAO_0000117>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-09T05:56:41Z</dc:date>
+        <rdfs:label>incisal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/incisor -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/incisor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth_10"/>
+                            <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth_22"/>
+                            <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth_23"/>
+                            <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth_24"/>
+                            <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth_25"/>
+                            <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth_26"/>
+                            <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth_7"/>
+                            <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth_8"/>
+                            <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth_9"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:51:26Z</dc:date>
+        <rdfs:label>incisor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/lingual -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/lingual">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth_surface"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</obo:IAO_0000117>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-09T05:56:04Z</dc:date>
+        <rdfs:label>lingual</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/male_gender -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/male_gender">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/gender"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:47:01Z</dc:date>
+        <rdfs:label>male gender</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/male_patient -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/male_patient">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://simple-dental-ontology.owl/patient"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://simple-dental-ontology.owl/has_quality"/>
+                        <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/male_gender"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:47:21Z</dc:date>
+        <rdfs:label>male patient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/mesial -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/mesial">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth_surface"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</obo:IAO_0000117>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-09T05:55:26Z</dc:date>
+        <rdfs:label>mesial</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/molar -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/molar">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth_1"/>
+                            <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth_14"/>
+                            <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth_15"/>
+                            <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth_16"/>
+                            <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth_17"/>
+                            <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth_18"/>
+                            <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth_19"/>
+                            <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth_2"/>
+                            <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth_3"/>
+                            <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth_30"/>
+                            <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth_31"/>
+                            <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth_32"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:51:21Z</dc:date>
+        <rdfs:label>molar</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/occlusal -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/occlusal">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth_surface"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</obo:IAO_0000117>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-09T05:55:39Z</dc:date>
+        <rdfs:label>occlusal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/patient -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/patient">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/human"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:46:36Z</dc:date>
+        <rdfs:label>patient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/premolar -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/premolar">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth_12"/>
+                            <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth_13"/>
+                            <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth_20"/>
+                            <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth_21"/>
+                            <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth_28"/>
+                            <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth_29"/>
+                            <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth_4"/>
+                            <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth_5"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:51:24Z</dc:date>
+        <rdfs:label>premolar</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/provider -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/provider">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/human"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:46:42Z</dc:date>
+        <rdfs:label>provider</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/resin -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/resin">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/restoration_material"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:48:19Z</dc:date>
+        <rdfs:label>resin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/resin_restoration -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/resin_restoration">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://simple-dental-ontology.owl/restoration_procedure"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://simple-dental-ontology.owl/has_participant"/>
+                        <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/resin"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T04:02:48Z</dc:date>
+        <rdfs:label>resin restoration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/restoration_material -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/restoration_material">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/entity"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:48:04Z</dc:date>
+        <rdfs:label>restoration material</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/restoration_procedure -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/restoration_procedure">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/entity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://simple-dental-ontology.owl/has_participant"/>
+                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/restoration_material"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://simple-dental-ontology.owl/has_participant"/>
+                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/tooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:47:48Z</dc:date>
+        <rdfs:label>restoration procedure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/restored_surface -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/restored_surface">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth_surface"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://simple-dental-ontology.owl/has_part"/>
+                        <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/restoration_material"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</obo:IAO_0000117>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-10T04:41:23Z</dc:date>
+        <rdfs:label>restored surface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/restored_tooth -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/restored_tooth">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://simple-dental-ontology.owl/tooth"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://simple-dental-ontology.owl/has_part"/>
+                        <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/restoration_material"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</obo:IAO_0000117>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-10T04:42:05Z</dc:date>
+        <rdfs:label>restored tooth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/service_code -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/service_code">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/entity"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</obo:IAO_0000117>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-09T04:34:25Z</dc:date>
+        <rdfs:label>service code</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/tooth -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/tooth">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/entity"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:47:52Z</dc:date>
+        <rdfs:label>tooth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/tooth_1 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/tooth_1">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:48:49Z</dc:date>
+        <rdfs:label>tooth 1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/tooth_10 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/tooth_10">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:49:29Z</dc:date>
+        <rdfs:label>tooth 10</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/tooth_11 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/tooth_11">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:49:33Z</dc:date>
+        <rdfs:label>tooth 11</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/tooth_12 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/tooth_12">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:49:36Z</dc:date>
+        <rdfs:label>tooth 12</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/tooth_13 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/tooth_13">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:49:40Z</dc:date>
+        <rdfs:label>tooth 13</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/tooth_14 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/tooth_14">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:49:46Z</dc:date>
+        <rdfs:label>tooth 14</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/tooth_15 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/tooth_15">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:49:49Z</dc:date>
+        <rdfs:label>tooth 15</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/tooth_16 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/tooth_16">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:49:53Z</dc:date>
+        <rdfs:label>tooth 16</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/tooth_17 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/tooth_17">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:49:57Z</dc:date>
+        <rdfs:label>tooth 17</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/tooth_18 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/tooth_18">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:50:01Z</dc:date>
+        <rdfs:label>tooth 18</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/tooth_19 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/tooth_19">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:50:04Z</dc:date>
+        <rdfs:label>tooth 19</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/tooth_2 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/tooth_2">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:48:54Z</dc:date>
+        <rdfs:label>tooth 2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/tooth_20 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/tooth_20">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:50:08Z</dc:date>
+        <rdfs:label>tooth 20</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/tooth_21 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/tooth_21">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:58:29Z</dc:date>
+        <rdfs:label>tooth 21</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/tooth_22 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/tooth_22">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:50:10Z</dc:date>
+        <rdfs:label>tooth 22</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/tooth_23 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/tooth_23">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:50:14Z</dc:date>
+        <rdfs:label>tooth 23</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/tooth_24 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/tooth_24">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:50:18Z</dc:date>
+        <rdfs:label>tooth 24</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/tooth_25 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/tooth_25">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:50:21Z</dc:date>
+        <rdfs:label>tooth 25</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/tooth_26 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/tooth_26">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:50:25Z</dc:date>
+        <rdfs:label>tooth 26</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/tooth_27 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/tooth_27">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:50:30Z</dc:date>
+        <rdfs:label>tooth 27</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/tooth_28 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/tooth_28">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:50:33Z</dc:date>
+        <rdfs:label>tooth 28</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/tooth_29 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/tooth_29">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:50:37Z</dc:date>
+        <rdfs:label>tooth 29</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/tooth_3 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/tooth_3">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:48:59Z</dc:date>
+        <rdfs:label>tooth 3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/tooth_30 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/tooth_30">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:50:40Z</dc:date>
+        <rdfs:label>tooth 30</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/tooth_31 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/tooth_31">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:50:43Z</dc:date>
+        <rdfs:label>tooth 31</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/tooth_32 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/tooth_32">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:50:46Z</dc:date>
+        <rdfs:label>tooth 32</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/tooth_4 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/tooth_4">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:49:04Z</dc:date>
+        <rdfs:label>tooth 4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/tooth_5 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/tooth_5">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:49:07Z</dc:date>
+        <rdfs:label>tooth 5</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/tooth_6 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/tooth_6">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:49:11Z</dc:date>
+        <rdfs:label>tooth 6</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/tooth_7 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/tooth_7">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:49:15Z</dc:date>
+        <rdfs:label>tooth 7</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/tooth_8 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/tooth_8">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:49:18Z</dc:date>
+        <rdfs:label>tooth 8</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/tooth_9 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/tooth_9">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/tooth"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:49:24Z</dc:date>
+        <rdfs:label>tooth 9</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://simple-dental-ontology.owl/tooth_surface -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/tooth_surface">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/entity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://simple-dental-ontology.owl/part_of"/>
+                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/tooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</obo:IAO_0000117>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-09T05:55:22Z</dc:date>
+        <rdfs:label>tooth surface</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

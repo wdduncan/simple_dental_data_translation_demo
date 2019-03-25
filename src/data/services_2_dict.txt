@@ -1,0 +1,195 @@
+{
+	"base_iri": "http://ex.com/services_2.xlsx/",
+	"table":
+	{
+		"class":
+		{
+			"subclass_of": "http://data_entity_ontology.owl#DE_000000018",
+			"rdfs:label": "cls:services_2 table",
+			"iri": "http://ex.com/services_2.xlsx/cls/table#services_2"
+		},
+		"individual":
+		{
+			"type": "http://ex.com/services_2.xlsx/cls/table#services_2",
+			"name": "services_2",
+			"rdfs:label": "i:services_2 table",
+			"iri": "http://ex.com/services_2.xlsx/i/table#services_2"
+		},
+		"record":
+		{
+			"class":
+			{
+				"subclass_of": "http://data_entity_ontology.owl#DE_000000003",
+				"rdfs:label": "cls:services_2 record",
+				"iri": "http://ex.com/services_2.xlsx/cls/record#services_2"
+			},
+			"individual":
+			{
+				"base_iri": "http://ex.com/services_2.xlsx/i/record/services_2#"
+			}
+		},
+		"field":
+		{
+			"class":
+			{
+				"subclass_of": "http://data_entity_ontology.owl#DE_000000007",
+				"rdfs:label": "cls:services_2 field",
+				"iri": "http://ex.com/services_2.xlsx/cls/field#services_2"
+			},
+			"object_property":
+			{
+				"subproperty_of": "http://data_entity_ontology.owl#DE_000000022",
+				"rdfs:label": "op:services_2 property",
+				"iri": "http://ex.com/services_2.xlsx/op#services_2"
+			},
+			"data_property":
+			{
+				"subproperty_of": "http://data_entity_ontology.owl#DE_000000008",
+				"rdfs:label": "dp:services_2 value",
+				"iri": "http://ex.com/services_2.xlsx/dp#services_2"
+			},
+			"individual":
+			{
+				"base_iri": "http://ex.com/services_2.xlsx/i/field/services_2#"
+			}
+		}
+	},
+	"field":
+	{
+		"class":
+		{
+			"procedure_id":
+			 {
+			 	"subclass_of": "http://ex.com/services_2.xlsx/cls/field#services_2",
+			 	"iri": "http://ex.com/services_2.xlsx/cls/services_2#procedure_id",
+			 	"rdfs:label": "cls:services_2.procedure_id"
+			 },
+			"procedure_code":
+			 {
+			 	"subclass_of": "http://ex.com/services_2.xlsx/cls/field#services_2",
+			 	"iri": "http://ex.com/services_2.xlsx/cls/services_2#procedure_code",
+			 	"rdfs:label": "cls:services_2.procedure_code"
+			},
+			"procedure_date":
+			 {
+			 	"subclass_of": "http://ex.com/services_2.xlsx/cls/field#services_2",
+			 	"iri": "http://ex.com/services_2.xlsx/cls/services_2#procedure_date",
+			 	"rdfs:label": "cls:services_2.procedure_date"
+			},
+			"subject_id":
+			 {
+			 	"subclass_of": "http://ex.com/services_2.xlsx/cls/field#services_2",
+			 	"iri": "http://ex.com/services_2.xlsx/cls/services_2#subject_id",
+			 	"rdfs:label": "cls:services_2.subject_id"
+			 },
+			"tooth_num":
+			 {
+			 	"subclass_of": "http://ex.com/services_2.xlsx/cls/field#services_2",
+			 	"iri": "http://ex.com/services_2.xlsx/cls/services_2#tooth_num",
+			 	"rdfs:label": "cls:services_2.tooth_num"
+			},
+			"surface":
+			 {
+			 	"subclass_of": "http://ex.com/services_2.xlsx/cls/field#services_2",
+			 	"iri": "http://ex.com/services_2.xlsx/cls/services_2#surface",
+			 	"rdfs:label": "cls:services_2.surface"
+			},
+			"provider_id":
+			 {
+			 	"subclass_of": "http://ex.com/services_2.xlsx/cls/field#services_2",
+			 	"iri": "http://ex.com/services_2.xlsx/cls/services_2#provider_id",
+			 	"rdfs:label": "cls:services_2.provider_id"
+			}
+		},
+		"object_property":
+		{
+			"procedure_id":
+			 {
+			 	"subproperty_of": "http://ex.com/services_2.xlsx/op#services_2",
+			 	"iri": "http://ex.com/services_2.xlsx/op/services_2#procedure_id",
+			 	"rdfs:label": "op:services_2.procedure_id"
+			 },
+			"procedure_code":
+			 {
+			 	"subproperty_of": "http://ex.com/services_2.xlsx/op#services_2",
+			 	"iri": "http://ex.com/services_2.xlsx/op/services_2#procedure_code",
+			 	"rdfs:label": "op:services_2.procedure_code"
+			},
+			"procedure_date":
+			 {
+			 	"subproperty_of": "http://ex.com/services_2.xlsx/op#services_2",
+			 	"iri": "http://ex.com/services_2.xlsx/op/services_2#procedure_date",
+			 	"rdfs:label": "op:services_2.procedure_date"
+			},
+			"subject_id":
+			 {
+			 	"subproperty_of": "http://ex.com/services_2.xlsx/op#services_2",
+			 	"iri": "http://ex.com/services_2.xlsx/op/services_2#subject_id",
+			 	"rdfs:label": "op:services_2.subject_id"
+			 },
+			"tooth_num":
+			 {
+			 	"subproperty_of": "http://ex.com/services_2.xlsx/op#services_2",
+			 	"iri": "http://ex.com/services_2.xlsx/op/services_2#tooth_num",
+			 	"rdfs:label": "op:services_2.tooth_num"
+			},
+			"surface":
+			 {
+			 	"subproperty_of": "http://ex.com/services_2.xlsx/op#services_2",
+			 	"iri": "http://ex.com/services_2.xlsx/op/services_2#surface",
+			 	"rdfs:label": "op:services_2.surface"
+			},
+			"provider_id":
+			 {
+			 	"subproperty_of": "http://ex.com/services_2.xlsx/op#services_2",
+			 	"iri": "http://ex.com/services_2.xlsx/op/services_2#provider_id",
+			 	"rdfs:label": "op:services_2.provider_id"
+			}
+		},
+		"data_property":
+		{
+			"procedure_id":
+			 {
+			 	"subproperty_of": "http://ex.com/services_2.xlsx/dp#services_2",
+			 	"iri": "http://ex.com/services_2.xlsx/dp/services_2#procedure_id",
+			 	"rdfs:label": "dp:services_2.procedure_id"
+			 },
+			"procedure_code":
+			 {
+			 	"subproperty_of": "http://ex.com/services_2.xlsx/dp#services_2",
+			 	"iri": "http://ex.com/services_2.xlsx/dp/services_2#procedure_code",
+			 	"rdfs:label": "dp:services_2.procedure_code"
+			},
+			"procedure_date":
+			 {
+			 	"subproperty_of": "http://ex.com/services_2.xlsx/dp#services_2",
+			 	"iri": "http://ex.com/services_2.xlsx/dp/services_2#procedure_date",
+			 	"rdfs:label": "dp:services_2.procedure_date"
+			},
+			"subject_id":
+			 {
+			 	"subproperty_of": "http://ex.com/services_2.xlsx/dp#services_2",
+			 	"iri": "http://ex.com/services_2.xlsx/dp/services_2#subject_id",
+			 	"rdfs:label": "dp:services_2.subject_id"
+			 },
+			"tooth_num":
+			 {
+			 	"subproperty_of": "http://ex.com/services_2.xlsx/dp#services_2",
+			 	"iri": "http://ex.com/services_2.xlsx/dp/services_2#tooth_num",
+			 	"rdfs:label": "dp:services_2.tooth_num"
+			},
+			"surface":
+			 {
+			 	"subproperty_of": "http://ex.com/services_2.xlsx/dp#services_2",
+			 	"iri": "http://ex.com/services_2.xlsx/dp/services_2#surface",
+			 	"rdfs:label": "dp:services_2.surface"
+			},
+			"provider_id":
+			 {
+			 	"subproperty_of": "http://ex.com/services_2.xlsx/dp#services_2",
+			 	"iri": "http://ex.com/services_2.xlsx/dp/services_2#provider_id",
+			 	"rdfs:label": "dp:services_2.provider_id"
+			}
+		}
+  }
+}

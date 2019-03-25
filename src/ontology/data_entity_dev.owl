@@ -1,0 +1,503 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://data_entity_ontology/data_entity.owl#"
+     xml:base="http://data_entity_ontology/data_entity.owl"
+     xmlns:annotation="http://purl.roswellpark.org/ontology/annotation/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:data_entity_ontology1="http://data_entity_ontology.owl/"
+     xmlns:purl="http://purl.roswellpark.org/ontology/"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:data_entity_ontology="http://data_entity_ontology.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:ontology="http://purl.roswellpark.org/ontology#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://data_entity_ontology/data_entity.owl">
+        <owl:imports rdf:resource="http://purl.roswellpark.org/ontology_annotations_import.owl"/>
+        <dc:creator>Phil Whalen</dc:creator>
+        <dc:creator>Jon Kiddy</dc:creator>
+        <dc:creator>Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:creator>Aditya Muralidharan</dc:creator>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000015 -->
+
+    <owl:AnnotationProperty rdf:about="http://data_entity_ontology.owl#DE_000000015">
+        <obo:IAO_0000115>An annotation property that specifies the data attribute that is being defined.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-19T23:00:30Z</dc:date>
+        <rdfs:label xml:lang="en">ap:defines attribute</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000016 -->
+
+    <owl:AnnotationProperty rdf:about="http://data_entity_ontology.owl#DE_000000016">
+        <obo:IAO_0000600>An annotation property in which the value represents (or denotes) another entity.</obo:IAO_0000600>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-19T23:04:52Z</dc:date>
+        <rdfs:label xml:lang="en">ap:represents</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000027 -->
+
+    <owl:AnnotationProperty rdf:about="http://data_entity_ontology.owl#DE_000000027">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-15T02:29:17Z</dc:date>
+        <rdfs:label xml:lang="en">ap:defines</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000028 -->
+
+    <owl:AnnotationProperty rdf:about="http://data_entity_ontology.owl#DE_000000028">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-15T02:29:25Z</dc:date>
+        <rdfs:label xml:lang="en">ap:defined by</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://data_entity_ontology.owl/obsolete_annotation_property -->
+
+    <owl:AnnotationProperty rdf:about="http://data_entity_ontology.owl/obsolete_annotation_property">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-19T22:23:40Z</dc:date>
+        <rdfs:label xml:lang="en">obsolete annotation property</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000600 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000600"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000005 -->
+
+    <owl:ObjectProperty rdf:about="http://data_entity_ontology.owl#DE_000000005">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-19T22:18:16Z</dc:date>
+        <rdfs:label xml:lang="en">obsolete object property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000013 -->
+
+    <owl:ObjectProperty rdf:about="http://data_entity_ontology.owl#DE_000000013">
+        <rdfs:subPropertyOf rdf:resource="http://data_entity_ontology.owl/object_property"/>
+        <obo:IAO_0000600>An object property that holds between an data entity and another entity that is represented by the data entity.</obo:IAO_0000600>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-19T22:56:37Z</dc:date>
+        <rdfs:label xml:lang="en">op:represents</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000014 -->
+
+    <owl:ObjectProperty rdf:about="http://data_entity_ontology.owl#DE_000000014">
+        <rdfs:subPropertyOf rdf:resource="http://data_entity_ontology.owl/object_property"/>
+        <owl:inverseOf rdf:resource="http://data_entity_ontology.owl#DE_000000021"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-19T22:57:17Z</dc:date>
+        <rdfs:label xml:lang="en">op:is about</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000019 -->
+
+    <owl:ObjectProperty rdf:about="http://data_entity_ontology.owl#DE_000000019">
+        <rdfs:subPropertyOf rdf:resource="http://data_entity_ontology.owl/object_property"/>
+        <owl:inverseOf rdf:resource="http://data_entity_ontology.owl#DE_000000020"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-20T04:06:45Z</dc:date>
+        <rdfs:label xml:lang="en">op:has member</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000020 -->
+
+    <owl:ObjectProperty rdf:about="http://data_entity_ontology.owl#DE_000000020">
+        <rdfs:subPropertyOf rdf:resource="http://data_entity_ontology.owl/object_property"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-20T04:07:02Z</dc:date>
+        <rdfs:label xml:lang="en">op:member of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000021 -->
+
+    <owl:ObjectProperty rdf:about="http://data_entity_ontology.owl#DE_000000021">
+        <rdfs:subPropertyOf rdf:resource="http://data_entity_ontology.owl/object_property"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-20T04:07:32Z</dc:date>
+        <rdfs:label xml:lang="en">op:inverse is about</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000022 -->
+
+    <owl:ObjectProperty rdf:about="http://data_entity_ontology.owl#DE_000000022">
+        <rdfs:subPropertyOf rdf:resource="http://data_entity_ontology.owl#DE_000000019"/>
+        <owl:inverseOf rdf:resource="http://data_entity_ontology.owl#DE_000000023"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-20T04:08:03Z</dc:date>
+        <rdfs:label xml:lang="en">op:has field</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000023 -->
+
+    <owl:ObjectProperty rdf:about="http://data_entity_ontology.owl#DE_000000023">
+        <rdfs:subPropertyOf rdf:resource="http://data_entity_ontology.owl#DE_000000020"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-20T04:08:16Z</dc:date>
+        <rdfs:label xml:lang="en">op:field of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data_entity_ontology.owl/object_property -->
+
+    <owl:ObjectProperty rdf:about="http://data_entity_ontology.owl/object_property">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-19T21:48:52Z</dc:date>
+        <rdfs:label xml:lang="en">object property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000001 -->
+
+    <owl:DatatypeProperty rdf:about="http://data_entity_ontology.owl#DE_000000001">
+        <rdfs:subPropertyOf rdf:resource="http://data_entity_ontology.owl#DE_000000010"/>
+        <obo:IAO_0000600>A data property in which the literal value represents (or denotes) another entity.</obo:IAO_0000600>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-21T05:15:08Z</dc:date>
+        <rdfs:label xml:lang="en">dp:represents</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000008 -->
+
+    <owl:DatatypeProperty rdf:about="http://data_entity_ontology.owl#DE_000000008">
+        <rdfs:subPropertyOf rdf:resource="http://data_entity_ontology.owl/data_property"/>
+        <obo:IAO_0000115>A data property that relates a data entity to a literal.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-19T22:24:52Z</dc:date>
+        <rdfs:label xml:lang="en">dp:value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000009 -->
+
+    <owl:DatatypeProperty rdf:about="http://data_entity_ontology.owl#DE_000000009">
+        <rdfs:subPropertyOf rdf:resource="http://data_entity_ontology.owl/obsolete_data_property"/>
+        <obo:IAO_0000115>A data property that relates an entity to a literal.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-19T22:31:12Z</dc:date>
+        <rdfs:label xml:lang="en">dp:literal value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000010 -->
+
+    <owl:DatatypeProperty rdf:about="http://data_entity_ontology.owl#DE_000000010">
+        <rdfs:subPropertyOf rdf:resource="http://data_entity_ontology.owl/obsolete_data_property"/>
+        <obo:IAO_0000600>A data property in which the data value is used to provide information about another entity or value.</obo:IAO_0000600>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-19T22:35:34Z</dc:date>
+        <rdfs:label xml:lang="en">dp:metadata property</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000011 -->
+
+    <owl:DatatypeProperty rdf:about="http://data_entity_ontology.owl#DE_000000011">
+        <rdfs:subPropertyOf rdf:resource="http://data_entity_ontology.owl#DE_000000010"/>
+        <obo:IAO_0000600>A metadata property in which the literal value denotes an entity that provides meaning about the entity related to the metadata property.</obo:IAO_0000600>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-19T22:42:08Z</dc:date>
+        <rdfs:label xml:lang="en">dp:sematic type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000012 -->
+
+    <owl:DatatypeProperty rdf:about="http://data_entity_ontology.owl#DE_000000012">
+        <rdfs:subPropertyOf rdf:resource="http://data_entity_ontology.owl#DE_000000010"/>
+        <obo:IAO_0000600>A metadata property that specifies the literal value that represents the semantic type, or, in other words, the literal value that denotes some entity.</obo:IAO_0000600>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-19T22:53:13Z</dc:date>
+        <rdfs:label xml:lang="en">dp:specified value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000024 -->
+
+    <owl:DatatypeProperty rdf:about="http://data_entity_ontology.owl#DE_000000024">
+        <rdfs:subPropertyOf rdf:resource="http://data_entity_ontology.owl#DE_000000010"/>
+        <obo:IAO_0000600>A data property in which the literal value specifies the entity type -- such as owl:Class, owl:ObjectProperty, etc. -- of the semantic type.</obo:IAO_0000600>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-21T05:16:22Z</dc:date>
+        <rdfs:label xml:lang="en">dp:semantic datatype</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000025 -->
+
+    <owl:DatatypeProperty rdf:about="http://data_entity_ontology.owl#DE_000000025">
+        <rdfs:subPropertyOf rdf:resource="http://data_entity_ontology.owl/obsolete_data_property"/>
+        <obo:IAO_0000115>A data entity value that holds between a data record and a literal.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-21T05:34:51Z</dc:date>
+        <rdfs:label xml:lang="en">dp:record value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000026 -->
+
+    <owl:DatatypeProperty rdf:about="http://data_entity_ontology.owl#DE_000000026">
+        <rdfs:subPropertyOf rdf:resource="http://data_entity_ontology.owl/obsolete_data_property"/>
+        <obo:IAO_0000115>A data entity value that holds between a data field and a literal.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-21T05:35:55Z</dc:date>
+        <rdfs:label xml:lang="en">dp:field value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data_entity_ontology.owl/data_property -->
+
+    <owl:DatatypeProperty rdf:about="http://data_entity_ontology.owl/data_property">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-19T22:15:49Z</dc:date>
+        <rdfs:label xml:lang="en">data property</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data_entity_ontology.owl/obsolete_data_property -->
+
+    <owl:DatatypeProperty rdf:about="http://data_entity_ontology.owl/obsolete_data_property">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-19T22:19:27Z</dc:date>
+        <rdfs:label xml:lang="en">obsolete data property</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000000 -->
+
+    <owl:Class rdf:about="http://data_entity_ontology.owl#DE_000000000">
+        <rdfs:subClassOf rdf:resource="http://data_entity_ontology.owl#entity"/>
+        <obo:IAO_0000600>Information that exists (or is concretized) as a sequence of symbols that can undergo information processing.</obo:IAO_0000600>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-19T21:34:07Z</dc:date>
+        <rdfs:label xml:lang="en">cls:data entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000002 -->
+
+    <owl:Class rdf:about="http://data_entity_ontology.owl#DE_000000002">
+        <rdfs:subClassOf rdf:resource="http://data_entity_ontology.owl#DE_000000000"/>
+        <obo:IAO_0000115>A data entity that consists of (or has its members) one or more data entities.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-19T21:55:42Z</dc:date>
+        <rdfs:label xml:lang="en">cls:data collection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000003 -->
+
+    <owl:Class rdf:about="http://data_entity_ontology.owl#DE_000000003">
+        <rdfs:subClassOf rdf:resource="http://data_entity_ontology.owl#DE_000000002"/>
+        <obo:IAO_0000115>A data collection that consists of and ordered list of related data fields.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-19T21:57:44Z</dc:date>
+        <rdfs:comment>The data values of the fields do not have to be of the same datatype. Often a data record represented as single row in a table, but not always.</rdfs:comment>
+        <rdfs:label xml:lang="en">cls:data record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000004 -->
+
+    <owl:Class rdf:about="http://data_entity_ontology.owl#DE_000000004">
+        <rdfs:subClassOf rdf:resource="http://data_entity_ontology.owl#DE_000000002"/>
+        <obo:IAO_0000115>A data collection that consists of an horizontally structured ordered list of related data fields within a data table in which each data field belongs to a different data column.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-20T02:18:58Z</dc:date>
+        <rdfs:label xml:lang="en">cls:data row</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000006 -->
+
+    <owl:Class rdf:about="http://data_entity_ontology.owl#DE_000000006">
+        <rdfs:subClassOf rdf:resource="http://data_entity_ontology.owl#DE_000000002"/>
+        <obo:IAO_0000115>A data collection that consists of a vertically structured ordered list of data fields with each data field belonging to the same data column.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-20T02:19:26Z</dc:date>
+        <rdfs:label xml:lang="en">cls:data table column</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000007 -->
+
+    <owl:Class rdf:about="http://data_entity_ontology.owl#DE_000000007">
+        <rdfs:subClassOf rdf:resource="http://data_entity_ontology.owl#DE_000000017"/>
+        <obo:IAO_0000115>A datum that is a member of some record.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-20T02:20:17Z</dc:date>
+        <rdfs:label xml:lang="en">cls:data field</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000017 -->
+
+    <owl:Class rdf:about="http://data_entity_ontology.owl#DE_000000017">
+        <rdfs:subClassOf rdf:resource="http://data_entity_ontology.owl#DE_000000000"/>
+        <obo:IAO_0000600>An  atomic (or single) data entity.</obo:IAO_0000600>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-20T02:20:23Z</dc:date>
+        <rdfs:label xml:lang="en">cls:datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000018 -->
+
+    <owl:Class rdf:about="http://data_entity_ontology.owl#DE_000000018">
+        <rdfs:subClassOf rdf:resource="http://data_entity_ontology.owl#DE_000000002"/>
+        <obo:IAO_0000115>A data collection that consists of one or more data colums and zero or more data rows.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-20T04:01:52Z</dc:date>
+        <rdfs:label xml:lang="en">cls:data table</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://data_entity_ontology.owl#entity -->
+
+    <owl:Class rdf:about="http://data_entity_ontology.owl#entity">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-28T14:19:23Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-28T14:20:18Z</dc:date>
+        <rdfs:label>obsolete class</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

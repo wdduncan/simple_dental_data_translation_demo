@@ -1,0 +1,587 @@
+@prefix deo: <http://data_entity_ontology.owl#> .
+@prefix op: <http://ex.com/services_1.xlsx/op/services_1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ex.com/services_1.xlsx/dp/services_1#patient_id> a <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+    rdfs:label "dp:services_1.patient_id" ;
+    rdfs:subPropertyOf <http://ex.com/services_1.xlsx/dp#services_1> .
+
+<http://ex.com/services_1.xlsx/dp/services_1#provider_id> a <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+    rdfs:label "dp:services_1.provider_id" ;
+    rdfs:subPropertyOf <http://ex.com/services_1.xlsx/dp#services_1> .
+
+<http://ex.com/services_1.xlsx/dp/services_1#service_code> a <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+    rdfs:label "dp:services_1.service_code" ;
+    rdfs:subPropertyOf <http://ex.com/services_1.xlsx/dp#services_1> .
+
+<http://ex.com/services_1.xlsx/dp/services_1#service_date> a <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+    rdfs:label "dp:services_1.service_date" ;
+    rdfs:subPropertyOf <http://ex.com/services_1.xlsx/dp#services_1> .
+
+<http://ex.com/services_1.xlsx/dp/services_1#service_id> a <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+    rdfs:label "dp:services_1.service_id" ;
+    rdfs:subPropertyOf <http://ex.com/services_1.xlsx/dp#services_1> .
+
+<http://ex.com/services_1.xlsx/dp/services_1#surface> a <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+    rdfs:label "dp:services_1.surface" ;
+    rdfs:subPropertyOf <http://ex.com/services_1.xlsx/dp#services_1> .
+
+<http://ex.com/services_1.xlsx/dp/services_1#tooth> a <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+    rdfs:label "dp:services_1.tooth" ;
+    rdfs:subPropertyOf <http://ex.com/services_1.xlsx/dp#services_1> .
+
+<http://ex.com/services_1.xlsx/i/record/services_1#i:services_1_record_0> a <http://ex.com/services_1.xlsx/cls/record#services_1> ;
+    rdfs:label "i:services_1_record_0" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" ;
+    op:patient_id <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_0_patient_id> ;
+    op:provider_id <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_0_provider_id> ;
+    op:service_code <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_0_service_code> ;
+    op:service_date <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_0_service_date> ;
+    op:service_id <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_0_service_id> ;
+    op:surface <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_0_surface> ;
+    op:tooth <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_0_tooth> .
+
+<http://ex.com/services_1.xlsx/i/record/services_1#i:services_1_record_1> a <http://ex.com/services_1.xlsx/cls/record#services_1> ;
+    rdfs:label "i:services_1_record_1" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" ;
+    op:patient_id <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_1_patient_id> ;
+    op:provider_id <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_1_provider_id> ;
+    op:service_code <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_1_service_code> ;
+    op:service_date <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_1_service_date> ;
+    op:service_id <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_1_service_id> ;
+    op:surface <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_1_surface> ;
+    op:tooth <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_1_tooth> .
+
+<http://ex.com/services_1.xlsx/i/record/services_1#i:services_1_record_2> a <http://ex.com/services_1.xlsx/cls/record#services_1> ;
+    rdfs:label "i:services_1_record_2" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" ;
+    op:patient_id <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_2_patient_id> ;
+    op:provider_id <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_2_provider_id> ;
+    op:service_code <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_2_service_code> ;
+    op:service_date <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_2_service_date> ;
+    op:service_id <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_2_service_id> ;
+    op:surface <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_2_surface> ;
+    op:tooth <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_2_tooth> .
+
+<http://ex.com/services_1.xlsx/i/record/services_1#i:services_1_record_3> a <http://ex.com/services_1.xlsx/cls/record#services_1> ;
+    rdfs:label "i:services_1_record_3" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" ;
+    op:patient_id <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_3_patient_id> ;
+    op:provider_id <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_3_provider_id> ;
+    op:service_code <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_3_service_code> ;
+    op:service_date <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_3_service_date> ;
+    op:service_id <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_3_service_id> ;
+    op:surface <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_3_surface> ;
+    op:tooth <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_3_tooth> .
+
+<http://ex.com/services_1.xlsx/i/record/services_1#i:services_1_record_4> a <http://ex.com/services_1.xlsx/cls/record#services_1> ;
+    rdfs:label "i:services_1_record_4" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" ;
+    op:patient_id <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_4_patient_id> ;
+    op:provider_id <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_4_provider_id> ;
+    op:service_code <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_4_service_code> ;
+    op:service_date <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_4_service_date> ;
+    op:service_id <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_4_service_id> ;
+    op:surface <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_4_surface> ;
+    op:tooth <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_4_tooth> .
+
+<http://ex.com/services_1.xlsx/i/record/services_1#i:services_1_record_5> a <http://ex.com/services_1.xlsx/cls/record#services_1> ;
+    rdfs:label "i:services_1_record_5" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" ;
+    op:patient_id <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_5_patient_id> ;
+    op:provider_id <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_5_provider_id> ;
+    op:service_code <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_5_service_code> ;
+    op:service_date <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_5_service_date> ;
+    op:service_id <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_5_service_id> ;
+    op:surface <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_5_surface> ;
+    op:tooth <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_5_tooth> .
+
+<http://ex.com/services_1.xlsx/i/record/services_1#i:services_1_record_6> a <http://ex.com/services_1.xlsx/cls/record#services_1> ;
+    rdfs:label "i:services_1_record_6" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" ;
+    op:patient_id <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_6_patient_id> ;
+    op:provider_id <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_6_provider_id> ;
+    op:service_code <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_6_service_code> ;
+    op:service_date <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_6_service_date> ;
+    op:service_id <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_6_service_id> ;
+    op:surface <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_6_surface> ;
+    op:tooth <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_6_tooth> .
+
+<http://ex.com/services_1.xlsx/i/record/services_1#i:services_1_record_7> a <http://ex.com/services_1.xlsx/cls/record#services_1> ;
+    rdfs:label "i:services_1_record_7" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" ;
+    op:patient_id <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_7_patient_id> ;
+    op:provider_id <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_7_provider_id> ;
+    op:service_code <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_7_service_code> ;
+    op:service_date <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_7_service_date> ;
+    op:service_id <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_7_service_id> ;
+    op:surface <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_7_surface> ;
+    op:tooth <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_7_tooth> .
+
+<http://ex.com/services_1.xlsx/i/record/services_1#i:services_1_record_8> a <http://ex.com/services_1.xlsx/cls/record#services_1> ;
+    rdfs:label "i:services_1_record_8" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" ;
+    op:patient_id <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_8_patient_id> ;
+    op:provider_id <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_8_provider_id> ;
+    op:service_code <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_8_service_code> ;
+    op:service_date <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_8_service_date> ;
+    op:service_id <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_8_service_id> ;
+    op:surface <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_8_surface> ;
+    op:tooth <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_8_tooth> .
+
+<http://ex.com/services_1.xlsx/i/record/services_1#i:services_1_record_9> a <http://ex.com/services_1.xlsx/cls/record#services_1> ;
+    rdfs:label "i:services_1_record_9" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" ;
+    op:patient_id <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_9_patient_id> ;
+    op:provider_id <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_9_provider_id> ;
+    op:service_code <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_9_service_code> ;
+    op:service_date <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_9_service_date> ;
+    op:service_id <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_9_service_id> ;
+    op:surface <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_9_surface> ;
+    op:tooth <http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_9_tooth> .
+
+<http://ex.com/services_1.xlsx/i/table#services_1> a <http://ex.com/services_1.xlsx/cls/table#services_1>,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    rdfs:label "i:services_1 table" .
+
+op:patient_id a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    rdfs:label "op:services_1.patient_id" ;
+    rdfs:subPropertyOf <http://ex.com/services_1.xlsx/op#services_1> .
+
+op:provider_id a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    rdfs:label "op:services_1.provider_id" ;
+    rdfs:subPropertyOf <http://ex.com/services_1.xlsx/op#services_1> .
+
+op:service_code a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    rdfs:label "op:services_1.service_code" ;
+    rdfs:subPropertyOf <http://ex.com/services_1.xlsx/op#services_1> .
+
+op:service_date a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    rdfs:label "op:services_1.service_date" ;
+    rdfs:subPropertyOf <http://ex.com/services_1.xlsx/op#services_1> .
+
+op:service_id a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    rdfs:label "op:services_1.service_id" ;
+    rdfs:subPropertyOf <http://ex.com/services_1.xlsx/op#services_1> .
+
+op:surface a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    rdfs:label "op:services_1.surface" ;
+    rdfs:subPropertyOf <http://ex.com/services_1.xlsx/op#services_1> .
+
+op:tooth a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    rdfs:label "op:services_1.tooth" ;
+    rdfs:subPropertyOf <http://ex.com/services_1.xlsx/op#services_1> .
+
+<http://ex.com/services_1.xlsx/cls/table#services_1> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "cls:services_1 table" ;
+    rdfs:subClassOf deo:DE_000000018 .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_0_patient_id> a <http://ex.com/services_1.xlsx/cls/services_1#patient_id> ;
+    rdfs:label "i:services_1_record_0_patient_id" ;
+    deo:DE_000000008 "10001" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_0_provider_id> a <http://ex.com/services_1.xlsx/cls/services_1#provider_id> ;
+    rdfs:label "i:services_1_record_0_provider_id" ;
+    deo:DE_000000008 "1" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_0_service_code> a <http://ex.com/services_1.xlsx/cls/services_1#service_code> ;
+    rdfs:label "i:services_1_record_0_service_code" ;
+    deo:DE_000000008 "D2330" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_0_service_date> a <http://ex.com/services_1.xlsx/cls/services_1#service_date> ;
+    rdfs:label "i:services_1_record_0_service_date" ;
+    deo:DE_000000008 "2013-01-01" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_0_service_id> a <http://ex.com/services_1.xlsx/cls/services_1#service_id> ;
+    rdfs:label "i:services_1_record_0_service_id" ;
+    deo:DE_000000008 "1" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_0_surface> a <http://ex.com/services_1.xlsx/cls/services_1#surface> ;
+    rdfs:label "i:services_1_record_0_surface" ;
+    deo:DE_000000008 "o" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_0_tooth> a <http://ex.com/services_1.xlsx/cls/services_1#tooth> ;
+    rdfs:label "i:services_1_record_0_tooth" ;
+    deo:DE_000000008 "1" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_1_patient_id> a <http://ex.com/services_1.xlsx/cls/services_1#patient_id> ;
+    rdfs:label "i:services_1_record_1_patient_id" ;
+    deo:DE_000000008 "10002" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_1_provider_id> a <http://ex.com/services_1.xlsx/cls/services_1#provider_id> ;
+    rdfs:label "i:services_1_record_1_provider_id" ;
+    deo:DE_000000008 "2" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_1_service_code> a <http://ex.com/services_1.xlsx/cls/services_1#service_code> ;
+    rdfs:label "i:services_1_record_1_service_code" ;
+    deo:DE_000000008 "D2331" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_1_service_date> a <http://ex.com/services_1.xlsx/cls/services_1#service_date> ;
+    rdfs:label "i:services_1_record_1_service_date" ;
+    deo:DE_000000008 "2013-02-01" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_1_service_id> a <http://ex.com/services_1.xlsx/cls/services_1#service_id> ;
+    rdfs:label "i:services_1_record_1_service_id" ;
+    deo:DE_000000008 "2" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_1_surface> a <http://ex.com/services_1.xlsx/cls/services_1#surface> ;
+    rdfs:label "i:services_1_record_1_surface" ;
+    deo:DE_000000008 "m",
+        "o" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_1_tooth> a <http://ex.com/services_1.xlsx/cls/services_1#tooth> ;
+    rdfs:label "i:services_1_record_1_tooth" ;
+    deo:DE_000000008 "2" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_2_patient_id> a <http://ex.com/services_1.xlsx/cls/services_1#patient_id> ;
+    rdfs:label "i:services_1_record_2_patient_id" ;
+    deo:DE_000000008 "10003" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_2_provider_id> a <http://ex.com/services_1.xlsx/cls/services_1#provider_id> ;
+    rdfs:label "i:services_1_record_2_provider_id" ;
+    deo:DE_000000008 "3" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_2_service_code> a <http://ex.com/services_1.xlsx/cls/services_1#service_code> ;
+    rdfs:label "i:services_1_record_2_service_code" ;
+    deo:DE_000000008 "D2332" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_2_service_date> a <http://ex.com/services_1.xlsx/cls/services_1#service_date> ;
+    rdfs:label "i:services_1_record_2_service_date" ;
+    deo:DE_000000008 "2013-03-01" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_2_service_id> a <http://ex.com/services_1.xlsx/cls/services_1#service_id> ;
+    rdfs:label "i:services_1_record_2_service_id" ;
+    deo:DE_000000008 "3" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_2_surface> a <http://ex.com/services_1.xlsx/cls/services_1#surface> ;
+    rdfs:label "i:services_1_record_2_surface" ;
+    deo:DE_000000008 "l",
+        "m",
+        "o" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_2_tooth> a <http://ex.com/services_1.xlsx/cls/services_1#tooth> ;
+    rdfs:label "i:services_1_record_2_tooth" ;
+    deo:DE_000000008 "3" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_3_patient_id> a <http://ex.com/services_1.xlsx/cls/services_1#patient_id> ;
+    rdfs:label "i:services_1_record_3_patient_id" ;
+    deo:DE_000000008 "10004" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_3_provider_id> a <http://ex.com/services_1.xlsx/cls/services_1#provider_id> ;
+    rdfs:label "i:services_1_record_3_provider_id" ;
+    deo:DE_000000008 "1" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_3_service_code> a <http://ex.com/services_1.xlsx/cls/services_1#service_code> ;
+    rdfs:label "i:services_1_record_3_service_code" ;
+    deo:DE_000000008 "D2335" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_3_service_date> a <http://ex.com/services_1.xlsx/cls/services_1#service_date> ;
+    rdfs:label "i:services_1_record_3_service_date" ;
+    deo:DE_000000008 "2013-04-01" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_3_service_id> a <http://ex.com/services_1.xlsx/cls/services_1#service_id> ;
+    rdfs:label "i:services_1_record_3_service_id" ;
+    deo:DE_000000008 "4" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_3_surface> a <http://ex.com/services_1.xlsx/cls/services_1#surface> ;
+    rdfs:label "i:services_1_record_3_surface" ;
+    deo:DE_000000008 "f",
+        "l",
+        "m",
+        "o" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_3_tooth> a <http://ex.com/services_1.xlsx/cls/services_1#tooth> ;
+    rdfs:label "i:services_1_record_3_tooth" ;
+    deo:DE_000000008 "1" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_4_patient_id> a <http://ex.com/services_1.xlsx/cls/services_1#patient_id> ;
+    rdfs:label "i:services_1_record_4_patient_id" ;
+    deo:DE_000000008 "10005" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_4_provider_id> a <http://ex.com/services_1.xlsx/cls/services_1#provider_id> ;
+    rdfs:label "i:services_1_record_4_provider_id" ;
+    deo:DE_000000008 "2" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_4_service_code> a <http://ex.com/services_1.xlsx/cls/services_1#service_code> ;
+    rdfs:label "i:services_1_record_4_service_code" ;
+    deo:DE_000000008 "D2140" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_4_service_date> a <http://ex.com/services_1.xlsx/cls/services_1#service_date> ;
+    rdfs:label "i:services_1_record_4_service_date" ;
+    deo:DE_000000008 "2013-05-01" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_4_service_id> a <http://ex.com/services_1.xlsx/cls/services_1#service_id> ;
+    rdfs:label "i:services_1_record_4_service_id" ;
+    deo:DE_000000008 "5" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_4_surface> a <http://ex.com/services_1.xlsx/cls/services_1#surface> ;
+    rdfs:label "i:services_1_record_4_surface" ;
+    deo:DE_000000008 "m" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_4_tooth> a <http://ex.com/services_1.xlsx/cls/services_1#tooth> ;
+    rdfs:label "i:services_1_record_4_tooth" ;
+    deo:DE_000000008 "2" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_5_patient_id> a <http://ex.com/services_1.xlsx/cls/services_1#patient_id> ;
+    rdfs:label "i:services_1_record_5_patient_id" ;
+    deo:DE_000000008 "10006" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_5_provider_id> a <http://ex.com/services_1.xlsx/cls/services_1#provider_id> ;
+    rdfs:label "i:services_1_record_5_provider_id" ;
+    deo:DE_000000008 "3" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_5_service_code> a <http://ex.com/services_1.xlsx/cls/services_1#service_code> ;
+    rdfs:label "i:services_1_record_5_service_code" ;
+    deo:DE_000000008 "D2150" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_5_service_date> a <http://ex.com/services_1.xlsx/cls/services_1#service_date> ;
+    rdfs:label "i:services_1_record_5_service_date" ;
+    deo:DE_000000008 "2013-06-01" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_5_service_id> a <http://ex.com/services_1.xlsx/cls/services_1#service_id> ;
+    rdfs:label "i:services_1_record_5_service_id" ;
+    deo:DE_000000008 "6" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_5_surface> a <http://ex.com/services_1.xlsx/cls/services_1#surface> ;
+    rdfs:label "i:services_1_record_5_surface" ;
+    deo:DE_000000008 "m",
+        "o" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_5_tooth> a <http://ex.com/services_1.xlsx/cls/services_1#tooth> ;
+    rdfs:label "i:services_1_record_5_tooth" ;
+    deo:DE_000000008 "3" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_6_patient_id> a <http://ex.com/services_1.xlsx/cls/services_1#patient_id> ;
+    rdfs:label "i:services_1_record_6_patient_id" ;
+    deo:DE_000000008 "10007" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_6_provider_id> a <http://ex.com/services_1.xlsx/cls/services_1#provider_id> ;
+    rdfs:label "i:services_1_record_6_provider_id" ;
+    deo:DE_000000008 "1" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_6_service_code> a <http://ex.com/services_1.xlsx/cls/services_1#service_code> ;
+    rdfs:label "i:services_1_record_6_service_code" ;
+    deo:DE_000000008 "D2160" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_6_service_date> a <http://ex.com/services_1.xlsx/cls/services_1#service_date> ;
+    rdfs:label "i:services_1_record_6_service_date" ;
+    deo:DE_000000008 "2013-07-01" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_6_service_id> a <http://ex.com/services_1.xlsx/cls/services_1#service_id> ;
+    rdfs:label "i:services_1_record_6_service_id" ;
+    deo:DE_000000008 "7" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_6_surface> a <http://ex.com/services_1.xlsx/cls/services_1#surface> ;
+    rdfs:label "i:services_1_record_6_surface" ;
+    deo:DE_000000008 "d",
+        "m",
+        "o" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_6_tooth> a <http://ex.com/services_1.xlsx/cls/services_1#tooth> ;
+    rdfs:label "i:services_1_record_6_tooth" ;
+    deo:DE_000000008 "1" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_7_patient_id> a <http://ex.com/services_1.xlsx/cls/services_1#patient_id> ;
+    rdfs:label "i:services_1_record_7_patient_id" ;
+    deo:DE_000000008 "10008" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_7_provider_id> a <http://ex.com/services_1.xlsx/cls/services_1#provider_id> ;
+    rdfs:label "i:services_1_record_7_provider_id" ;
+    deo:DE_000000008 "2" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_7_service_code> a <http://ex.com/services_1.xlsx/cls/services_1#service_code> ;
+    rdfs:label "i:services_1_record_7_service_code" ;
+    deo:DE_000000008 "D2161" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_7_service_date> a <http://ex.com/services_1.xlsx/cls/services_1#service_date> ;
+    rdfs:label "i:services_1_record_7_service_date" ;
+    deo:DE_000000008 "2013-08-01" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_7_service_id> a <http://ex.com/services_1.xlsx/cls/services_1#service_id> ;
+    rdfs:label "i:services_1_record_7_service_id" ;
+    deo:DE_000000008 "8" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_7_surface> a <http://ex.com/services_1.xlsx/cls/services_1#surface> ;
+    rdfs:label "i:services_1_record_7_surface" ;
+    deo:DE_000000008 "d",
+        "l",
+        "m",
+        "o" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_7_tooth> a <http://ex.com/services_1.xlsx/cls/services_1#tooth> ;
+    rdfs:label "i:services_1_record_7_tooth" ;
+    deo:DE_000000008 "2" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_8_patient_id> a <http://ex.com/services_1.xlsx/cls/services_1#patient_id> ;
+    rdfs:label "i:services_1_record_8_patient_id" ;
+    deo:DE_000000008 "10009" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_8_provider_id> a <http://ex.com/services_1.xlsx/cls/services_1#provider_id> ;
+    rdfs:label "i:services_1_record_8_provider_id" ;
+    deo:DE_000000008 "3" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_8_service_code> a <http://ex.com/services_1.xlsx/cls/services_1#service_code> ;
+    rdfs:label "i:services_1_record_8_service_code" ;
+    deo:DE_000000008 "D2330" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_8_service_date> a <http://ex.com/services_1.xlsx/cls/services_1#service_date> ;
+    rdfs:label "i:services_1_record_8_service_date" ;
+    deo:DE_000000008 "2013-09-01" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_8_service_id> a <http://ex.com/services_1.xlsx/cls/services_1#service_id> ;
+    rdfs:label "i:services_1_record_8_service_id" ;
+    deo:DE_000000008 "9" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_8_surface> a <http://ex.com/services_1.xlsx/cls/services_1#surface> ;
+    rdfs:label "i:services_1_record_8_surface" ;
+    deo:DE_000000008 "d" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_8_tooth> a <http://ex.com/services_1.xlsx/cls/services_1#tooth> ;
+    rdfs:label "i:services_1_record_8_tooth" ;
+    deo:DE_000000008 "3" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_9_patient_id> a <http://ex.com/services_1.xlsx/cls/services_1#patient_id> ;
+    rdfs:label "i:services_1_record_9_patient_id" ;
+    deo:DE_000000008 "10010" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_9_provider_id> a <http://ex.com/services_1.xlsx/cls/services_1#provider_id> ;
+    rdfs:label "i:services_1_record_9_provider_id" ;
+    deo:DE_000000008 "1" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_9_service_code> a <http://ex.com/services_1.xlsx/cls/services_1#service_code> ;
+    rdfs:label "i:services_1_record_9_service_code" ;
+    deo:DE_000000008 "D2140" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_9_service_date> a <http://ex.com/services_1.xlsx/cls/services_1#service_date> ;
+    rdfs:label "i:services_1_record_9_service_date" ;
+    deo:DE_000000008 "2013-10-01" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_9_service_id> a <http://ex.com/services_1.xlsx/cls/services_1#service_id> ;
+    rdfs:label "i:services_1_record_9_service_id" ;
+    deo:DE_000000008 "10" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_9_surface> a <http://ex.com/services_1.xlsx/cls/services_1#surface> ;
+    rdfs:label "i:services_1_record_9_surface" ;
+    deo:DE_000000008 "o" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/i/field/services_1#i:services_1_record_9_tooth> a <http://ex.com/services_1.xlsx/cls/services_1#tooth> ;
+    rdfs:label "i:services_1_record_9_tooth" ;
+    deo:DE_000000008 "4" ;
+    deo:DE_000000020 "http://ex.com/services_1.xlsx/i/table#services_1" .
+
+<http://ex.com/services_1.xlsx/cls/field#services_1> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "cls:services_1 field" ;
+    rdfs:subClassOf deo:DE_000000007 .
+
+<http://ex.com/services_1.xlsx/dp#services_1> a <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+    rdfs:label "dp:services_1 value" ;
+    rdfs:subPropertyOf deo:DE_000000008 .
+
+<http://ex.com/services_1.xlsx/op#services_1> a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    rdfs:label "op:services_1 property" ;
+    rdfs:subPropertyOf deo:DE_000000022 .
+
+<http://ex.com/services_1.xlsx/cls/record#services_1> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "cls:services_1 record" ;
+    rdfs:subClassOf deo:DE_000000003 .
+
+<http://ex.com/services_1.xlsx/cls/services_1#patient_id> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "cls:services_1.patient_id" ;
+    rdfs:subClassOf <http://ex.com/services_1.xlsx/cls/field#services_1> .
+
+<http://ex.com/services_1.xlsx/cls/services_1#provider_id> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "cls:services_1.provider_id" ;
+    rdfs:subClassOf <http://ex.com/services_1.xlsx/cls/field#services_1> .
+
+<http://ex.com/services_1.xlsx/cls/services_1#service_code> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "cls:services_1.service_code" ;
+    rdfs:subClassOf <http://ex.com/services_1.xlsx/cls/field#services_1> .
+
+<http://ex.com/services_1.xlsx/cls/services_1#service_date> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "cls:services_1.service_date" ;
+    rdfs:subClassOf <http://ex.com/services_1.xlsx/cls/field#services_1> .
+
+<http://ex.com/services_1.xlsx/cls/services_1#service_id> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "cls:services_1.service_id" ;
+    rdfs:subClassOf <http://ex.com/services_1.xlsx/cls/field#services_1> .
+
+<http://ex.com/services_1.xlsx/cls/services_1#surface> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "cls:services_1.surface" ;
+    rdfs:subClassOf <http://ex.com/services_1.xlsx/cls/field#services_1> .
+
+<http://ex.com/services_1.xlsx/cls/services_1#tooth> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "cls:services_1.tooth" ;
+    rdfs:subClassOf <http://ex.com/services_1.xlsx/cls/field#services_1> .
+
