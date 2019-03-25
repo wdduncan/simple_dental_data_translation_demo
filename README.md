@@ -1,2 +1,2 @@
-# simple_dental_data_translation_demo
+# simple dental data translation demo
 A basic demo of translating a simple dental dataset into RDF.
