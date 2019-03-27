@@ -1,0 +1,25 @@
+# this query finds records that represent female patients
+# note: the pt_id property does not specify a value
+#       but the pt_sex property does specify a value
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX value: <http://data_entity_ontology.owl#DE_000000008>
+PREFIX defines: <http://data_entity_ontology.owl#DE_000000027>
+PREFIX represents: <http://data_entity_ontology.owl#DE_000000016>
+PREFIX data_record: <http://data_entity_ontology.owl#DE_000000003>
+
+SELECT ?record ?v1 ?v2 ?spec WHERE {
+    ?r a data_record:;
+       ?p1 ?v1;
+       ?p2 ?v2;
+       rdfs:label ?record .
+    
+    ?i  a <http://dental_data_representation.owl#cls:patient_value_specification>;
+        defines: ?p1, ?p2;
+        ?p2 ?v2;   # note: only ?p2 has a specified value
+        rdfs:label ?spec;
+        represents: <http://simple-dental-ontology.owl/female_patient> .
+    filter (?p1 != ?p2) # needed inorder to avoid cross product
+ }
