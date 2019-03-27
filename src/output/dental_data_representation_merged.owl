@@ -11,10 +11,12 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:data_entity_ontology1="http://data_entity_ontology.owl/"
+     xmlns:dp="http://ex.com/patients_3_test/dp#"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
      xmlns:data_entity_ontology="http://data_entity_ontology.owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:services_11="http://ex.com/services_1.xlsx/dp/services_1#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://dental_data_representation_merged.owl">
@@ -731,6 +733,16 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     
 
 
+    <!-- http://dental_data_representation_merged.owl#op:defines -->
+
+    <owl:ObjectProperty rdf:about="http://dental_data_representation_merged.owl#op:defines">
+        <rdfs:subPropertyOf rdf:resource="http://data_entity_ontology.owl/object_property"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-27T18:54:08Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://ex.com/patients_1.xlsx/op#patients_1 -->
 
     <owl:ObjectProperty rdf:about="http://ex.com/patients_1.xlsx/op#patients_1">
@@ -1231,6 +1243,46 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     
 
 
+    <!-- http://ex.com/patients_3_test/dp#patients_3 -->
+
+    <owl:DatatypeProperty rdf:about="http://ex.com/patients_3_test/dp#patients_3">
+        <rdfs:subPropertyOf rdf:resource="http://data_entity_ontology.owl#DE_000000008"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-27T14:32:56Z</dc:date>
+        <rdfs:label>dp:patients_3 value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ex.com/patients_3_test/dp#pt_id -->
+
+    <owl:DatatypeProperty rdf:about="http://ex.com/patients_3_test/dp#pt_id">
+        <rdfs:subPropertyOf rdf:resource="http://ex.com/patients_3_test/dp#patients_3"/>
+        <rdfs:label>dp:patients_3.pt_id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ex.com/patients_3_test/dp#pt_sex -->
+
+    <owl:DatatypeProperty rdf:about="http://ex.com/patients_3_test/dp#pt_sex">
+        <rdfs:subPropertyOf rdf:resource="http://ex.com/patients_3_test/dp#patients_3"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-27T14:37:14Z</dc:date>
+        <rdfs:label>dp:patients_3.pt_sex</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ex.com/patients_3_test/dp#pt_status -->
+
+    <owl:DatatypeProperty rdf:about="http://ex.com/patients_3_test/dp#pt_status">
+        <rdfs:subPropertyOf rdf:resource="http://ex.com/patients_3_test/dp#patients_3"/>
+        <rdfs:label>dp:patients_3.pt_status</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://ex.com/services_1.xlsx/dp#services_1 -->
 
     <owl:DatatypeProperty rdf:about="http://ex.com/services_1.xlsx/dp#services_1">
@@ -1600,6 +1652,15 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     
 
 
+    <!-- http://dental_data_representation.owl#cls:active_patient_value_specification -->
+
+    <owl:Class rdf:about="http://dental_data_representation.owl#cls:active_patient_value_specification">
+        <rdfs:subClassOf rdf:resource="http://dental_data_representation.owl#semantic_value_specification"/>
+        <rdfs:label>cls:active patient value specification</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://dental_data_representation.owl#cls:gender_field_specification -->
 
     <owl:Class rdf:about="http://dental_data_representation.owl#cls:gender_field_specification">
@@ -1618,6 +1679,48 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-21T02:12:48Z</dc:date>
         <rdfs:label>cls:gender value specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dental_data_representation.owl#cls:patient_value_specification -->
+
+    <owl:Class rdf:about="http://dental_data_representation.owl#cls:patient_value_specification">
+        <rdfs:subClassOf rdf:resource="http://dental_data_representation.owl#semantic_value_specification"/>
+        <rdfs:label>cls:patient value specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dental_data_representation_merged.owl#cls:active_female_patient -->
+
+    <owl:Class rdf:about="http://dental_data_representation_merged.owl#cls:active_female_patient">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/female_patient"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-27T17:28:05Z</dc:date>
+        <rdfs:label>cls:active female patient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dental_data_representation_merged.owl#cls:active_male_patient -->
+
+    <owl:Class rdf:about="http://dental_data_representation_merged.owl#cls:active_male_patient">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/male_patient"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-27T17:28:27Z</dc:date>
+        <rdfs:label>cls:active male patient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dental_data_representation_merged.owl#cls:active_patient -->
+
+    <owl:Class rdf:about="http://dental_data_representation_merged.owl#cls:active_patient">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/patient"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-27T17:27:02Z</dc:date>
+        <rdfs:label>cls:active patient</rdfs:label>
     </owl:Class>
     
 
@@ -1752,6 +1855,28 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Class rdf:about="http://ex.com/patients_2.xlsx/cls/table#patients_2">
         <rdfs:subClassOf rdf:resource="http://data_entity_ontology.owl#DE_000000018"/>
         <rdfs:label>cls:patients_2 table</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ex.com/patients_3_test/cls/record#patients_3 -->
+
+    <owl:Class rdf:about="http://ex.com/patients_3_test/cls/record#patients_3">
+        <rdfs:subClassOf rdf:resource="http://data_entity_ontology.owl#DE_000000003"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-27T14:39:33Z</dc:date>
+        <rdfs:label>cls:patients_3 record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ex.com/patients_3_test/cls/table#patients_3 -->
+
+    <owl:Class rdf:about="http://ex.com/patients_3_test/cls/table#patients_3">
+        <rdfs:subClassOf rdf:resource="http://data_entity_ontology.owl#DE_000000018"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-27T14:47:29Z</dc:date>
+        <rdfs:label>cls:patients_3 table</rdfs:label>
     </owl:Class>
     
 
@@ -2894,6 +3019,41 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     
 
 
+    <!-- http://dental_data_representation.owl#i:active_female_patient_value_specification -->
+
+    <owl:NamedIndividual rdf:about="http://dental_data_representation.owl#i:active_female_patient_value_specification">
+        <rdf:type rdf:resource="http://dental_data_representation.owl#cls:active_patient_value_specification"/>
+        <dp:pt_sex>F</dp:pt_sex>
+        <dp:pt_status>A</dp:pt_status>
+        <data_entity_ontology:DE_000000016 rdf:resource="http://dental_data_representation_merged.owl#cls:active_female_patient"/>
+        <rdfs:label>i:active female patient value specification</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dental_data_representation.owl#i:active_male_patient_value_specification -->
+
+    <owl:NamedIndividual rdf:about="http://dental_data_representation.owl#i:active_male_patient_value_specification">
+        <rdf:type rdf:resource="http://dental_data_representation.owl#cls:active_patient_value_specification"/>
+        <dp:pt_sex>M</dp:pt_sex>
+        <dp:pt_status>A</dp:pt_status>
+        <data_entity_ontology:DE_000000016 rdf:resource="http://dental_data_representation_merged.owl#cls:active_male_patient"/>
+        <rdfs:label>i:active male patient value specification</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dental_data_representation.owl#i:active_patient_value_specification -->
+
+    <owl:NamedIndividual rdf:about="http://dental_data_representation.owl#i:active_patient_value_specification">
+        <rdf:type rdf:resource="http://dental_data_representation.owl#cls:active_patient_value_specification"/>
+        <dp:pt_status>A</dp:pt_status>
+        <data_entity_ontology:DE_000000016 rdf:resource="http://dental_data_representation_merged.owl#cls:active_patient"/>
+        <rdfs:label>i:active patient value specification</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://dental_data_representation.owl#i:female_gender_value_specification -->
 
     <owl:NamedIndividual rdf:about="http://dental_data_representation.owl#i:female_gender_value_specification">
@@ -2903,6 +3063,29 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <data_entity_ontology:DE_000000016 rdf:resource="http://simple-dental-ontology.owl/female_gender"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-21T02:20:30Z</dc:date>
+        <rdfs:label>i:female gender value specification</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dental_data_representation.owl#i:female_patient_specification -->
+
+    <owl:NamedIndividual rdf:about="http://dental_data_representation.owl#i:female_patient_specification">
+        <rdf:type rdf:resource="http://dental_data_representation.owl#cls:gender_value_specification"/>
+        <rdfs:label>i:female patient specification</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dental_data_representation.owl#i:female_patient_value_specification -->
+
+    <owl:NamedIndividual rdf:about="http://dental_data_representation.owl#i:female_patient_value_specification">
+        <rdf:type rdf:resource="http://dental_data_representation.owl#cls:patient_value_specification"/>
+        <dp:pt_sex>F</dp:pt_sex>
+        <data_entity_ontology:DE_000000016 rdf:resource="http://simple-dental-ontology.owl/female_patient"/>
+        <data_entity_ontology:DE_000000027 rdf:resource="http://ex.com/patients_3_test/dp#pt_id"/>
+        <data_entity_ontology:DE_000000027 rdf:resource="http://ex.com/patients_3_test/dp#pt_sex"/>
+        <rdfs:label>i:female patient value specification</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2932,6 +3115,61 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-21T02:16:34Z</dc:date>
         <rdfs:label>i:male gender value specification</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dental_data_representation.owl#i:male_patient_specification -->
+
+    <owl:NamedIndividual rdf:about="http://dental_data_representation.owl#i:male_patient_specification">
+        <rdf:type rdf:resource="http://dental_data_representation.owl#cls:gender_value_specification"/>
+        <rdfs:label>i:male patient specification</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dental_data_representation.owl#i:male_patient_value_specification -->
+
+    <owl:NamedIndividual rdf:about="http://dental_data_representation.owl#i:male_patient_value_specification">
+        <rdf:type rdf:resource="http://dental_data_representation.owl#cls:patient_value_specification"/>
+        <dp:pt_sex>M</dp:pt_sex>
+        <data_entity_ontology:DE_000000016 rdf:resource="http://simple-dental-ontology.owl/male_patient"/>
+        <data_entity_ontology:DE_000000027 rdf:resource="http://ex.com/patients_3_test/dp#pt_id"/>
+        <data_entity_ontology:DE_000000027 rdf:resource="http://ex.com/patients_3_test/dp#pt_sex"/>
+        <rdfs:label>i:male patient value specification</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dental_data_representation.owl#i:patient_value_specification -->
+
+    <owl:NamedIndividual rdf:about="http://dental_data_representation.owl#i:patient_value_specification">
+        <rdf:type rdf:resource="http://dental_data_representation.owl#cls:patient_value_specification"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://dental_data_representation_merged.owl#op:defines"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://ex.com/patients_3_test/dp#pt_id"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <data_entity_ontology:DE_000000016 rdf:resource="http://simple-dental-ontology.owl/patient"/>
+        <data_entity_ontology:DE_000000016>i:patient value specification</data_entity_ontology:DE_000000016>
+        <data_entity_ontology:DE_000000027 rdf:resource="http://ex.com/patients_3_test/dp#pt_id"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dental_data_representation.owl#i:tooth1_amalgam_resoration_specification -->
+
+    <owl:NamedIndividual rdf:about="http://dental_data_representation.owl#i:tooth1_amalgam_resoration_specification">
+        <rdf:type rdf:resource="http://dental_data_representation.owl#cls:gender_value_specification"/>
+        <services_11:service_code>D2330</services_11:service_code>
+        <services_11:tooth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</services_11:tooth>
+        <rdfs:label>i:tooth1 amalgam resoration specification</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3870,6 +4108,39 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:NamedIndividual rdf:about="http://ex.com/patients_2.xlsx/i/table#patients_2">
         <rdf:type rdf:resource="http://ex.com/patients_2.xlsx/cls/table#patients_2"/>
         <rdfs:label>i:patients_2 table</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ex.com/patients_3_test/i/record/patients_1#i:patients_3_record_0 -->
+
+    <owl:NamedIndividual rdf:about="http://ex.com/patients_3_test/i/record/patients_1#i:patients_3_record_0">
+        <rdf:type rdf:resource="http://ex.com/patients_3_test/cls/record#patients_3"/>
+        <dp:pt_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">112233</dp:pt_id>
+        <dp:pt_sex>F</dp:pt_sex>
+        <dp:pt_status>A</dp:pt_status>
+        <rdfs:label>i:patients_3_record_0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ex.com/patients_3_test/i/record/patients_1#i:patients_3_record_1 -->
+
+    <owl:NamedIndividual rdf:about="http://ex.com/patients_3_test/i/record/patients_1#i:patients_3_record_1">
+        <rdf:type rdf:resource="http://ex.com/patients_3_test/cls/record#patients_3"/>
+        <dp:pt_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">223344</dp:pt_id>
+        <dp:pt_sex>M</dp:pt_sex>
+        <dp:pt_status>A</dp:pt_status>
+        <rdfs:label>i:patients_3_record_1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ex.com/patients_3_test/i/table#patients_3 -->
+
+    <owl:NamedIndividual rdf:about="http://ex.com/patients_3_test/i/table#patients_3">
+        <rdf:type rdf:resource="http://ex.com/patients_3_test/cls/table#patients_3"/>
+        <rdfs:label>i:patients_3 table</rdfs:label>
     </owl:NamedIndividual>
     
 
