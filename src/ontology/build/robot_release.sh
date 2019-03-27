@@ -12,9 +12,9 @@ cp ../imports/*import.owl .
 
 # merge owl files
 java -jar ./robot.jar merge \
+  --collapse-import-closure true \
   --inputs "*.owl" \
   --include-annotations true \
-  --collapse-import-closure true \
   --output data_entity_merged.owl
    
 # # add date to IRI version; e.g.: http://purl.obolibrary.org/obo/2018-06-05/data-source-ontology.owl

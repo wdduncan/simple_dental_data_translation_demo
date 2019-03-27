@@ -21,8 +21,8 @@ REM merge owl files
 REM add date to IRI version; e.g.: http://purl.obolibrary.org/obo/2018-06-05/data-source-ontology.owl
 "%JAVA_HOME%\bin\java.exe" -jar .\robot.jar annotate^
   --input data_entity_merged.owl^
-  --ontology-iri "http://purl.roswellpark.org/ontology/data_entity.owl"^
-  --version-iri "http://purl.roswellpark.org/ontology/%date:~-4,4%%date:~-7,2%%date:~-10,2%/data_entity.owl"^
+  --ontology-iri "http://data_entity_ontology/data_entity.owl"^
+  --version-iri "http://data_entity_ontology/%date:~-4,4%%date:~-7,2%%date:~-10,2%/data_entity.owl"^
   --output data_entity_annotated.owl
 
 REM run reasoner on the ontology and add inferred axioms to final output

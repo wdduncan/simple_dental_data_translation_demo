@@ -13,9 +13,16 @@ def explode_surfaces(df_services):
     return df
 
 
-def jsonify_row(row, field_type_map=None):
-    temp = row.astype(str) # convert row to string dict
-    return json.dumps(temp.to_dict()) # return json of the row
+def jsonify_row(row, row_id=None, row_type=None):
+    temp = row.astype(str).to_dict() # convert row to string dict
+    fields = \
+        {key:{"value":value} for key, value in temp.items()}
+
+    json_row = {"row": {"field": fields}}
+    if row_id: json_row.update({"id": f"{row_id}"}) # update row id
+    if row_type: json_row.update({"type": f"{row_type}"}) # update row type
+
+    return json.dumps(json_row) # return json of the row
 
 
 def jsonldify_row(row, data_type_dict, value_property="value", member_property="member_of",
@@ -78,8 +85,9 @@ def jsonldify_row(row, data_type_dict, value_property="value", member_property="
     return json.dumps(data)
 
 
-def append_json_column(df, json_column_name="json", ):
-    df[json_column_name] = df.apply(lambda row: jsonify_row(row), axis=1)
+def append_json_column(df, json_column_name="json"):
+    df[json_column_name] =  df.apply(lambda row: jsonify_row(row), axis=1)
+    # df[json_column_name] =  df.apply(lambda row: jsonify_row(row, str(row.name)), axis=1)
     return df
 
 
@@ -189,14 +197,19 @@ def make_data_graph(df, context, jsonld_column_name="jsonld"):
 
 def translate_data(df, data_type_dict, context, print_graph=False):
 
-    df = append_jsonld_column(df, data_type_dict)
+    df = append_json_column(df)
+    print(str(df.json))
+    # print(str(df))
+
+    # df = append_jsonld_column(df, data_type_dict)
     # print(str(df.jsonld))
 
-    framework_graph = make_data_framework(df, data_type_dict)
-    data_graph = make_data_graph(df, context)
-    graph = framework_graph + data_graph
-    if print_graph: print(graph.serialize(format='turtle').decode("utf-8"))
-    return graph
+    # framework_graph = make_data_framework(df, data_type_dict)
+    # data_graph = make_data_graph(df, context)
+    # graph = framework_graph + data_graph
+    # if print_graph: print(graph.serialize(format='turtle').decode("utf-8"))
+    # return graph
+    return df
 
 if __name__ == "__main__":
     deo_graph = Graph().parse("ontology/data_entity.owl")
@@ -212,50 +225,52 @@ if __name__ == "__main__":
     with open("data/patients_1_context.txt", "r") as context_file:
         patients_1_context = context_file.read()
 
-    patients_1_graph = translate_data(df_patients1, patients_1_type_dict, patients_1_context)
-    graph = deo_graph + patients_1_graph
-    graph.serialize(destination="output/patients_1.ttl", format="turtle")
+    translate_data(df_patients1, patients_1_type_dict, patients_1_context)
 
-    df_patients2 = pds.read_excel("data/patients_2.xlsx")
-    with open("data/patients_2_dict.txt", "r") as dict_file:
-        patients_2_type_dict = eval(dict_file.read())
-
-    with open("data/patients_2_context.txt", "r") as context_file:
-        patients_2_context = context_file.read()
-
-    patients_2_graph = translate_data(df_patients2, patients_2_type_dict, patients_2_context)
-    graph = deo_graph + patients_2_graph
-    graph.serialize(destination="output/patients_2.ttl", format="turtle")
-
-    patients_graph = deo_graph + patients_1_graph + patients_2_graph
-    patients_graph.serialize(destination="output/patients.ttl", format="turtle")
-
-    df_services1 = explode_surfaces(pds.read_excel("data/services_1.xlsx"))
-    with open("data/services_1_dict.txt", "r") as dict_file:
-        services_1_type_dict = eval(dict_file.read())
-
-    with open("data/services_1_context.txt", "r") as context_file:
-        services_1_context = context_file.read()
-
-    services_1_graph = translate_data(df_services1, services_1_type_dict, services_1_context)
-    graph = deo_graph + services_1_graph
-    graph.serialize(destination="output/services_1.ttl", format="turtle")
-
-    df_services2 = explode_surfaces(pds.read_excel("data/services_2.xlsx"))
-    with open("data/services_2_dict.txt", "r") as dict_file:
-        services_2_type_dict = eval(dict_file.read())
-
-    with open("data/services_2_context.txt", "r") as context_file:
-        services_2_context = context_file.read()
-
-    services_2_graph = translate_data(df_services2, services_2_type_dict, services_2_context)
-    graph = deo_graph + services_2_graph
-    graph.serialize(destination="output/services_2.ttl", format="turtle")
-
-    services_graph = deo_graph + services_1_graph + services_2_graph
-    services_graph.serialize(destination="output/services.ttl", format="turtle")
-
-    data_data_graph = deo_graph + patients_graph + services_graph + dental_graph
-    data_data_graph.serialize(destination="output/dental_data.ttl", format="turtle")
-
-    # print(deo_graph.serialize().decode("utf-8"))
+    # patients_1_graph = translate_data(df_patients1, patients_1_type_dict, patients_1_context)
+    # graph = deo_graph + patients_1_graph
+    # graph.serialize(destination="output/patients_1.ttl", format="turtle")
+    #
+    # df_patients2 = pds.read_excel("data/patients_2.xlsx")
+    # with open("data/patients_2_dict.txt", "r") as dict_file:
+    #     patients_2_type_dict = eval(dict_file.read())
+    #
+    # with open("data/patients_2_context.txt", "r") as context_file:
+    #     patients_2_context = context_file.read()
+    #
+    # patients_2_graph = translate_data(df_patients2, patients_2_type_dict, patients_2_context)
+    # graph = deo_graph + patients_2_graph
+    # graph.serialize(destination="output/patients_2.ttl", format="turtle")
+    #
+    # patients_graph = deo_graph + patients_1_graph + patients_2_graph
+    # patients_graph.serialize(destination="output/patients.ttl", format="turtle")
+    #
+    # df_services1 = explode_surfaces(pds.read_excel("data/services_1.xlsx"))
+    # with open("data/services_1_dict.txt", "r") as dict_file:
+    #     services_1_type_dict = eval(dict_file.read())
+    #
+    # with open("data/services_1_context.txt", "r") as context_file:
+    #     services_1_context = context_file.read()
+    #
+    # services_1_graph = translate_data(df_services1, services_1_type_dict, services_1_context)
+    # graph = deo_graph + services_1_graph
+    # graph.serialize(destination="output/services_1.ttl", format="turtle")
+    #
+    # df_services2 = explode_surfaces(pds.read_excel("data/services_2.xlsx"))
+    # with open("data/services_2_dict.txt", "r") as dict_file:
+    #     services_2_type_dict = eval(dict_file.read())
+    #
+    # with open("data/services_2_context.txt", "r") as context_file:
+    #     services_2_context = context_file.read()
+    #
+    # services_2_graph = translate_data(df_services2, services_2_type_dict, services_2_context)
+    # graph = deo_graph + services_2_graph
+    # graph.serialize(destination="output/services_2.ttl", format="turtle")
+    #
+    # services_graph = deo_graph + services_1_graph + services_2_graph
+    # services_graph.serialize(destination="output/services.ttl", format="turtle")
+    #
+    # data_data_graph = deo_graph + patients_graph + services_graph + dental_graph
+    # data_data_graph.serialize(destination="output/dental_data.ttl", format="turtle")
+    #
+    # # print(deo_graph.serialize().decode("utf-8"))

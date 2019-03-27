@@ -14,7 +14,7 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
     <owl:Ontology rdf:about="http://data_entity_ontology/data_entity.owl">
-        <owl:versionIRI rdf:resource="http://data_entity_ontology/2019-03-20/data_entity.owl"/>
+        <owl:versionIRI rdf:resource="http://data_entity_ontology/2019-03-27/data_entity.owl"/>
         <dc:creator>Phil Whalen</dc:creator>
         <dc:creator>Jon Kiddy</dc:creator>
         <dc:creator>Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
@@ -73,6 +73,36 @@
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-15T02:29:25Z</dc:date>
         <rdfs:label xml:lang="en">ap:defined by</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000035 -->
+
+    <owl:AnnotationProperty rdf:about="http://data_entity_ontology.owl#DE_000000035">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-27T20:55:44Z</dc:date>
+        <rdfs:label xml:lang="en">ap:about</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000036 -->
+
+    <owl:AnnotationProperty rdf:about="http://data_entity_ontology.owl#DE_000000036">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-27T20:56:11Z</dc:date>
+        <rdfs:label xml:lang="en">ap:specifies</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000037 -->
+
+    <owl:AnnotationProperty rdf:about="http://data_entity_ontology.owl#DE_000000037">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-27T20:56:21Z</dc:date>
+        <rdfs:label xml:lang="en">ap:specified by</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -640,7 +670,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://data_entity_ontology.owl#DE_000000013 -->
 
     <owl:ObjectProperty rdf:about="http://data_entity_ontology.owl#DE_000000013">
-        <rdfs:subPropertyOf rdf:resource="http://data_entity_ontology.owl/object_property"/>
+        <rdfs:subPropertyOf rdf:resource="http://data_entity_ontology.owl#DE_000000014"/>
         <obo:IAO_0000600>An object property that holds between an data entity and another entity that is represented by the data entity.</obo:IAO_0000600>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-19T22:56:37Z</dc:date>
@@ -714,6 +744,96 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-20T04:08:16Z</dc:date>
         <rdfs:label xml:lang="en">op:field of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000029 -->
+
+    <owl:ObjectProperty rdf:about="http://data_entity_ontology.owl#DE_000000029">
+        <rdfs:subPropertyOf rdf:resource="http://data_entity_ontology.owl#DE_000000019"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-27T20:51:56Z</dc:date>
+        <rdfs:label xml:lang="en">op:has record</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000030 -->
+
+    <owl:ObjectProperty rdf:about="http://data_entity_ontology.owl#DE_000000030">
+        <rdfs:subPropertyOf rdf:resource="http://data_entity_ontology.owl#DE_000000019"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-27T20:52:13Z</dc:date>
+        <rdfs:label xml:lang="en">op:has row</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000031 -->
+
+    <owl:ObjectProperty rdf:about="http://data_entity_ontology.owl#DE_000000031">
+        <rdfs:subPropertyOf rdf:resource="http://data_entity_ontology.owl#DE_000000020"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-27T20:52:24Z</dc:date>
+        <rdfs:label xml:lang="en">record of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000032 -->
+
+    <owl:ObjectProperty rdf:about="http://data_entity_ontology.owl#DE_000000032">
+        <rdfs:subPropertyOf rdf:resource="http://data_entity_ontology.owl#DE_000000020"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-27T20:52:31Z</dc:date>
+        <rdfs:label xml:lang="en">row of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000033 -->
+
+    <owl:ObjectProperty rdf:about="http://data_entity_ontology.owl#DE_000000033">
+        <rdfs:subPropertyOf rdf:resource="http://data_entity_ontology.owl#DE_000000038"/>
+        <owl:inverseOf rdf:resource="http://data_entity_ontology.owl#DE_000000034"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-27T20:52:50Z</dc:date>
+        <rdfs:label xml:lang="en">op:defines</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000034 -->
+
+    <owl:ObjectProperty rdf:about="http://data_entity_ontology.owl#DE_000000034">
+        <rdfs:subPropertyOf rdf:resource="http://data_entity_ontology.owl#DE_000000039"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-27T20:53:01Z</dc:date>
+        <rdfs:label xml:lang="en">op:defined by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000038 -->
+
+    <owl:ObjectProperty rdf:about="http://data_entity_ontology.owl#DE_000000038">
+        <rdfs:subPropertyOf rdf:resource="http://data_entity_ontology.owl#DE_000000014"/>
+        <owl:inverseOf rdf:resource="http://data_entity_ontology.owl#DE_000000039"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-27T20:56:46Z</dc:date>
+        <rdfs:label xml:lang="en">op:specifies</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data_entity_ontology.owl#DE_000000039 -->
+
+    <owl:ObjectProperty rdf:about="http://data_entity_ontology.owl#DE_000000039">
+        <rdfs:subPropertyOf rdf:resource="http://data_entity_ontology.owl#DE_000000014"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-27T20:57:02Z</dc:date>
+        <rdfs:label xml:lang="en">op:specified by</rdfs:label>
     </owl:ObjectProperty>
     
 
