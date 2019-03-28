@@ -1,123 +1,59 @@
 {
-	"base_iri": "http://ex.com/patients_1.xlsx/",
-	"table":
+	"base":
 	{
-		"class":
+		"iri": "http://ex.com/patients_1.xlsx/",
+		"data_table": {},
+		"data_row": {},
+		"data_property": {}
+	},
+	"class":
+	{
+		"table":
 		{
-			"subclass_of": "http://data_entity_ontology.owl#DE_000000018",
-			"rdfs:label": "cls:patients_1 table",
-			"iri": "http://ex.com/patients_1.xlsx/cls/table#patients_1"
+		 "subclass_of": "http://data_entity_ontology.owl#DE_000000018",
+		 "rdfs:label": "cls:patients_1 table",
+		 "iri": "http://ex.com/patients_1.xlsx/cls/table#patients_1"
 		},
-		"individual":
+		"row":
+		{
+			"subclass_of": "http://data_entity_ontology.owl#DE_000000004",
+			"rdfs:label": "cls:patients_1 row",
+			"iri": "http://ex.com/patients_1.xlsx/cls/row#patients_1"
+		}
+	},	 
+	"individual":
+	{
+		"table":
 		{
 			"type": "http://ex.com/patients_1.xlsx/cls/table#patients_1",
 			"name": "patients_1",
 			"rdfs:label": "i:patients_1 table",
 			"iri": "http://ex.com/patients_1.xlsx/i/table#patients_1"
 		},
-		"record":
+		row:
 		{
-			"class":
-			{
-				"subclass_of": "http://data_entity_ontology.owl#DE_000000003",
-				"rdfs:label": "cls:patients_1 record",
-				"iri": "http://ex.com/patients_1.xlsx/cls/record#patients_1"
-			},
-			"individual":
-			{
-				"base_iri": "http://ex.com/patients_1.xlsx/i/record/patients_1#"
-			}
-		},
-		"field":
-		{
-			"class":
-			{
-				"subclass_of": "http://data_entity_ontology.owl#DE_000000007",
-				"rdfs:label": "cls:patients_1 field",
-				"iri": "http://ex.com/patients_1.xlsx/cls/field#patients_1"
-			},
-			"object_property":
-			{
-				"subproperty_of": "http://data_entity_ontology.owl#DE_000000022",
-				"rdfs:label": "op:patients_1 property",
-				"iri": "http://ex.com/patients_1.xlsx/op#patients_1"
-			},
-			"data_property":
-			{
-				"subproperty_of": "http://data_entity_ontology.owl#DE_000000008",
-				"rdfs:label": "dp:patients_1 value",
-				"iri": "http://ex.com/patients_1.xlsx/dp#patients_1"
-			},
-			"individual":
-			{
-				"base_iri": "http://ex.com/patients_1.xlsx/i/field/patients_1#"
-			}
+			"base_iri": "http://ex.com/patients_1.xlsx/i/row/patients_1#"
 		}
 	},
-	"field":
+	"data_property":
 	{
-		"class":
-		{
-			"patient_id":
-			 {
-			 	"subclass_of": "http://ex.com/patients_1.xlsx/cls/field#patients_1",
-			 	"iri": "http://ex.com/patients_1.xlsx/cls/patients_1#patient_id",
-			 	"rdfs:label": "cls:patients_1.patient_id"
-			 },
-			"gender":
-			 {
-			 	"subclass_of": "http://ex.com/patients_1.xlsx/cls/field#patients_1",
-			 	"iri": "http://ex.com/patients_1.xlsx/cls/patients_1#gender",
-			 	"rdfs:label": "cls:patients_1.gender"
-			 },
-			"birth_date":
-			 {
-			 	"subclass_of": "http://ex.com/patients_1.xlsx/cls/field#patients_1",
-			 	"iri": "http://ex.com/patients_1.xlsx/cls/patients_1#birth_date",
-			 	"rdfs:label": "cls:patients_1.birth_date"
-			}
-		},
-		"object_property":
-		{
-			"patient_id":
-			 {
-			 	"subproperty_of": "http://ex.com/patients_1.xlsx/op#patients_1",
-			 	"iri": "http://ex.com/patients_1.xlsx/op/patients_1#patient_id",
-			 	"rdfs:label": "op:patients_1.patient_id"
-			 },
-			"gender":
-			 {
-			 	"subproperty_of": "http://ex.com/patients_1.xlsx/op#patients_1",
-			 	"iri": "http://ex.com/patients_1.xlsx/op/patients_1#gender",
-			 	"rdfs:label": "op:patients_1.gender"
-			 },
-			 "birth_date":
-			 {
-			 	"subproperty_of": "http://ex.com/patients_1.xlsx/op#patients_1",
-			 	"iri": "http://ex.com/patients_1.xlsx/op/patients_1#birth_date",
-			 	"rdfs:label": "op:patients_1.birth_date"
-			 }
-		},
-		"data_property":
-		{
-			"patient_id":
-			 {
-			 	"subproperty_of": "http://ex.com/patients_1.xlsx/dp#patients_1",
-			 	"iri": "http://ex.com/patients_1.xlsx/dp/patients_1#patient_id",
-			 	"rdfs:label": "dp:patients_1.patient_id"
-			 },
-			"gender":
-			 {
-			 	"subproperty_of": "http://ex.com/patients_1.xlsx/dp#patients_1",
-			 	"iri": "http://ex.com/patients_1.xlsx/dp/patients_1#gender",
-			 	"rdfs:label": "dp:patients_1.gender"
-			 },
-			 "birth_date":
-			 {
-			 	"subproperty_of": "http://ex.com/patients_1.xlsx/dp#patients_1",
-			 	"iri": "http://ex.com/patients_1.xlsx/dp/patients_1#birth_date",
-			 	"rdfs:label": "dp:patients_1.birth_date"
-			 }
-		}
-  }
+		"patient_id":
+	 	{
+	 		"subproperty_of": "http://ex.com/patients_1.xlsx/dp#patients_1",
+	 		"iri": "http://ex.com/patients_1.xlsx/dp/patients_1#patient_id",
+	 		"rdfs:label": "dp:patients_1.patient_id"
+	 	},
+	 	"gender":
+	 	{
+	 		"subproperty_of": "http://ex.com/patients_1.xlsx/dp#patients_1",
+	 		"iri": "http://ex.com/patients_1.xlsx/dp/patients_1#gender",
+	 		"rdfs:label": "dp:patients_1.gender"
+	 	},
+	 	"birth_date":
+	 	{
+	 		"subproperty_of": "http://ex.com/patients_1.xlsx/dp#patients_1",
+	 		"iri": "http://ex.com/patients_1.xlsx/dp/patients_1#birth_date",
+	 		"rdfs:label": "dp:patients_1.birth_date"
+	 	}
+	}
 }

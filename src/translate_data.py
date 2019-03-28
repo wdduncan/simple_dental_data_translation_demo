@@ -219,10 +219,10 @@ if __name__ == "__main__":
     pds.set_option('display.max_colwidth', 200)
 
     df_patients1 = pds.read_excel("data/patients_1.xlsx")
-    with open("data/patients_1_dict.txt", "r") as dict_file:
+    with open("data/patients_1_dict.v1.txt", "r") as dict_file:
         patients_1_type_dict = eval(dict_file.read())
 
-    with open("data/patients_1_context.txt", "r") as context_file:
+    with open("data/patients_1_context.v1.txt", "r") as context_file:
         patients_1_context = context_file.read()
 
     translate_data(df_patients1, patients_1_type_dict, patients_1_context)
