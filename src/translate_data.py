@@ -13,16 +13,16 @@ def explode_surfaces(df_services):
     return df
 
 
-def jsonify_row(row, row_id=None, row_type=None):
-    temp = row.astype(str).to_dict() # convert row to string dict
-    fields = \
+def jsonify_haxis(series, id=None, id_key="id", type=None, type_key="type", haxis="row", vaxis="data"):
+    temp = series.astype(str).to_dict() # convert row to string dict
+    data = \
         {key:{"value":value} for key, value in temp.items()}
 
-    json_row = {"row": {"field": fields}}
-    if row_id: json_row.update({"id": f"{row_id}"}) # update row id
-    if row_type: json_row.update({"type": f"{row_type}"}) # update row type
+    json_data = {f"{haxis}": {f"{vaxis}": data}}
+    if id and len(id_key) > 0: json_data.update({f"{id_key}": f"{id}"}) # update haxis id
+    if type and len(type_key) > 0: json_data.update({f"{type_key}": f"{type}"}) # update haxis type
 
-    return json.dumps(json_row) # return json of the row
+    return json.dumps(json_data) # return data as json
 
 
 def jsonldify_row(row, data_type_dict, value_property="value", member_property="member_of",
@@ -86,7 +86,7 @@ def jsonldify_row(row, data_type_dict, value_property="value", member_property="
 
 
 def append_json_column(df, json_column_name="json"):
-    df[json_column_name] =  df.apply(lambda row: jsonify_row(row), axis=1)
+    df[json_column_name] =  df.apply(lambda row: jsonify_haxis(row), axis=1)
     # df[json_column_name] =  df.apply(lambda row: jsonify_row(row, str(row.name)), axis=1)
     return df
 
@@ -107,46 +107,53 @@ def append_jsonld_column(df, data_type_dict, value_property="value", jsonld_colu
 
 
 def make_data_framework(df, data_type_dict):
+    def add_entity(graph, entity, owl_type):
+        graph.add( (URIRef(entity["iri"]), RDF.type, owl_type) )
+
+        if owl_type == OWL.Class:
+            graph.add( (URIRef(entity["iri"]), RDFS.subClassOf, URIRef(entity["type"])) )
+        elif owl_type == OWL.ObjectProperty or owl_type == OWL.DatatypeProperty:
+            graph.add((URIRef(entity["iri"]), RDFS.subPropertyOf, URIRef(entity["type"])) )
+        else:
+            graph.add( (URIRef(entity["iri"]), RDF.type, URIRef(entity["type"])) )
+
+        rdfs_label = entity["rdfs:label"] if "rdfs:label" in entity.keys() else None
+        if rdfs_label:
+            graph.add(URIRef(entity["iri"]), RDFS.label, Literal(rdfs_label) )
+
+    def add_entities(graph, entities, owl_type):
+        for entity in entities.keys():
+            add_entity(graph, entity, owl_type)
+
     graph = ConjunctiveGraph()
 
-    # get subdictionaries from dict
-    table_idv = data_type_dict["table"]["individual"]
-    table_class = data_type_dict["table"]["class"]
-    table_record_class = data_type_dict["table"]["record"]["class"]
-    table_field_class = data_type_dict["table"]["field"]["class"]
-    table_field_op = data_type_dict["table"]["field"]["object_property"]
-    table_field_dp = data_type_dict["table"]["field"]["data_property"]
-
     ## add table class to ontology
-    graph.add( (URIRef(table_class["iri"]), RDF.type, OWL.Class) )
-    graph.add( (URIRef(table_class["iri"]), RDFS.subClassOf, URIRef(table_class["subclass_of"])) )
-    graph.add( (URIRef(table_class["iri"]), RDFS.label, Literal(table_class["rdfs:label"])) )
+    add_entity(graph, data_type_dict["cls"]["table"], OWL.Class)
 
     ## add table individual to ontology
-    graph.add( (URIRef(table_idv["iri"]), RDF.type, OWL.NamedIndividual) )
-    graph.add( (URIRef(table_idv["iri"]), RDF.type, URIRef(table_idv["type"])) )
-    graph.add( (URIRef(table_idv["iri"]), RDFS.label, Literal(table_idv["rdfs:label"])) )
+    add_entity(graph, data_type_dict["i"]["table"], OWL.NamedIndividual)
 
-    ## add table record class to ontology
-    graph.add( (URIRef(table_record_class["iri"]), RDF.type, OWL.Class))
-    graph.add( (URIRef(table_record_class["iri"]), RDFS.subClassOf, URIRef(table_record_class["subclass_of"])) )
-    graph.add( (URIRef(table_record_class["iri"]), RDFS.label, Literal(table_record_class["rdfs:label"])) )
+    ## add table row class to ontology
+    if "row" in data_type_dict["cls"].keys():
+        add_entity(graph, data_type_dict["cls"]["row"], OWL.Class)
 
     ## add top level field class, object property, and data property
     ## field class
-    graph.add( (URIRef(table_field_class["iri"]), RDF.type, OWL.Class) )
-    graph.add( (URIRef(table_field_class["iri"]), RDFS.subClassOf, URIRef(table_field_class["subclass_of"])) )
-    graph.add( (URIRef(table_field_class["iri"]), RDFS.label, Literal(table_field_class["rdfs:label"])) )
+    if "field" in data_type_dict["cls"].keys():
+        cls = data_type_dict["cls"]["field"]
+        add_entity(graph, cls, OWL.Class)
 
-    ## field obect property
-    graph.add( (URIRef(table_field_op["iri"]), RDF.type, OWL.ObjectProperty) )
-    graph.add( (URIRef(table_field_op["iri"]), RDFS.subPropertyOf, URIRef(table_field_op["subproperty_of"])) )
-    graph.add( (URIRef(table_field_op["iri"]), RDFS.label, Literal(table_field_op["rdfs:label"])) )
+    ## add cols/fields as obect properties
+    if "op" in data_type_dict.keys():
+        op = data_type_dict["op"]
+        add_entity(graph, op, OWL.ObjectProperty)
+        add_entities(graph, op["subtype"], OWL.ObjectProperty)
 
-    ## field data property
-    graph.add( (URIRef(table_field_dp["iri"]), RDF.type, OWL.DatatypeProperty) )
-    graph.add( (URIRef(table_field_dp["iri"]), RDFS.subPropertyOf, URIRef(table_field_dp["subproperty_of"])) )
-    graph.add( (URIRef(table_field_dp["iri"]), RDFS.label, Literal(table_field_dp["rdfs:label"])) )
+    ## add cols/fields as data properties
+    if "dp" in data_type_dict.keys():
+        dp = data_type_dict["dp"]
+        add_entity(graph, dp, OWL.ObjectProperty)
+        add_entities(graph, dp["subtype"], OWL.DatatypeProperty)
 
     ## add columns as field classes to ontology
     field_class = data_type_dict["field"]["class"]
@@ -156,24 +163,6 @@ def make_data_framework(df, data_type_dict):
             graph.add( (field_iri, RDF.type, OWL.Class) )
             graph.add( (field_iri, RDFS.subClassOf, URIRef(field_class[col]["subclass_of"])) )
             graph.add( (field_iri, RDFS.label, Literal(field_class[col]["rdfs:label"])) )
-
-    ## add columns as field object properties to ontology
-    field_op = data_type_dict["field"]["object_property"]
-    for col in df.columns:
-        if col in field_op.keys():
-            field_iri = URIRef(field_op[col]["iri"])
-            graph.add( (field_iri, RDF.type, OWL.ObjectProperty) )
-            graph.add( (field_iri, RDFS.subPropertyOf, URIRef(field_op[col]["subproperty_of"])) )
-            graph.add( (field_iri, RDFS.label, Literal(field_op[col]["rdfs:label"])) )
-
-    ## add columns as field object properties to ontology
-    field_dp = data_type_dict["field"]["data_property"]
-    for col in df.columns:
-        if col in field_dp.keys():
-            field_iri = URIRef(field_dp[col]["iri"])
-            graph.add( (field_iri, RDF.type, OWL.DatatypeProperty) )
-            graph.add( (field_iri, RDFS.subPropertyOf, URIRef(field_dp[col]["subproperty_of"])) )
-            graph.add( (field_iri, RDFS.label, Literal(field_dp[col]["rdfs:label"])) )
 
     # print(graph.serialize(format='turtle').decode("utf-8"))
     return graph
