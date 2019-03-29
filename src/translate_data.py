@@ -108,7 +108,7 @@ def append_jsonld_column(df, data_type_dict, value_property="value", jsonld_colu
 
 def make_data_framework(df, data_type_dict):
     def add_entity(graph, entity, owl_type):
-        graph.add( (URIRef(entity["iri"]), RDF.type, owl_type) )
+        graph.add( (URIRef(entity["iri"]), RDF.type, URIRef(owl_type)) )
 
         if owl_type == OWL.Class:
             graph.add( (URIRef(entity["iri"]), RDFS.subClassOf, URIRef(entity["type"])) )
@@ -119,11 +119,11 @@ def make_data_framework(df, data_type_dict):
 
         rdfs_label = entity["rdfs:label"] if "rdfs:label" in entity.keys() else None
         if rdfs_label:
-            graph.add(URIRef(entity["iri"]), RDFS.label, Literal(rdfs_label) )
+            graph.add( (URIRef(entity["iri"]), RDFS.label, Literal(rdfs_label)) )
 
     def add_entities(graph, entities, owl_type):
-        for entity in entities.keys():
-            add_entity(graph, entity, owl_type)
+        for key in entities.keys():
+            add_entity(graph, entities[key], owl_type)
 
     graph = ConjunctiveGraph()
 
@@ -152,17 +152,8 @@ def make_data_framework(df, data_type_dict):
     ## add cols/fields as data properties
     if "dp" in data_type_dict.keys():
         dp = data_type_dict["dp"]
-        add_entity(graph, dp, OWL.ObjectProperty)
+        add_entity(graph, dp,  OWL.DatatypeProperty)
         add_entities(graph, dp["subtype"], OWL.DatatypeProperty)
-
-    ## add columns as field classes to ontology
-    field_class = data_type_dict["field"]["class"]
-    for col in df.columns:
-        if col in field_class.keys():
-            field_iri = URIRef(field_class[col]["iri"])
-            graph.add( (field_iri, RDF.type, OWL.Class) )
-            graph.add( (field_iri, RDFS.subClassOf, URIRef(field_class[col]["subclass_of"])) )
-            graph.add( (field_iri, RDFS.label, Literal(field_class[col]["rdfs:label"])) )
 
     # print(graph.serialize(format='turtle').decode("utf-8"))
     return graph
@@ -187,13 +178,14 @@ def make_data_graph(df, context, jsonld_column_name="jsonld"):
 def translate_data(df, data_type_dict, context, print_graph=False):
 
     df = append_json_column(df)
-    print(str(df.json))
+    # print(str(df.json))
     # print(str(df))
 
     # df = append_jsonld_column(df, data_type_dict)
     # print(str(df.jsonld))
 
-    # framework_graph = make_data_framework(df, data_type_dict)
+    framework_graph = make_data_framework(df, data_type_dict)
+    print(framework_graph.serialize(format='turtle').decode("utf-8"))
     # data_graph = make_data_graph(df, context)
     # graph = framework_graph + data_graph
     # if print_graph: print(graph.serialize(format='turtle').decode("utf-8"))
@@ -208,10 +200,10 @@ if __name__ == "__main__":
     pds.set_option('display.max_colwidth', 200)
 
     df_patients1 = pds.read_excel("data/patients_1.xlsx")
-    with open("data/patients_1_dict.v1.txt", "r") as dict_file:
+    with open("data/patients_1_dict.v2.txt", "r") as dict_file:
         patients_1_type_dict = eval(dict_file.read())
 
-    with open("data/patients_1_context.v1.txt", "r") as context_file:
+    with open("data/patients_1_context.v2.txt", "r") as context_file:
         patients_1_context = context_file.read()
 
     translate_data(df_patients1, patients_1_type_dict, patients_1_context)
