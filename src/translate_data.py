@@ -112,9 +112,15 @@ def append_json_column(df, json_column_name="json"):
 
 
 def append_jsonld_column(df, data_type_dict, jsonld_column_name="jsonld", json_column_name="json"):
-    df[jsonld_column_name] = \
-        df[json_column_name].map(lambda row: jsonldify_values(row, data_type_dict,
-                                                              _id=f"http://ex.com/{df[json_column_name].name}"))
+    # df[jsonld_column_name] = \
+    #     df[json_column_name].map(lambda row: jsonldify_values(row, data_type_dict,
+    #                                                            _id=f"http://ex.com/{df[json_column_name].name}"))
+    for idx, value in df[[json_column_name]].itertuples():
+        json_data = df.loc[idx, json_column_name]
+        row_id = data_type_dict["i"]["row"]["ns"] + "row_" + str(idx)
+        df.loc[idx, jsonld_column_name] = jsonldify_values(json_data, data_type_dict, _id=row_id)
+
+    # print(df[[jsonld_column_name]])
     return df
 
 
