@@ -13,17 +13,37 @@ def explode_surfaces(df_services):
     return df
 
 
-def jsonify_haxis(series, id=None, id_key="id", type=None, type_key="type", haxis="row", vaxis="data"):
+def jsonify_haxis(series):
+    temp = series.astype(str).to_dict() # convert row to string dict
+    data = \
+        {key:{"_value":value} for key, value in temp.items()}
+
+    # json_data = {f"{haxis}": data}
+    # if id and len(id_key) > 0: json_data.update({f"{id_key}": f"{id}"}) # update haxis id
+    # if type and len(type_key) > 0: json_data.update({f"{type_key}": f"{type}"}) # update haxis type
+
+    return json.dumps(data) # return data as json
+
+
+def jsonify_series(series):
     temp = series.astype(str).to_dict() # convert row to string dict
     data = \
         {key:{"value":value} for key, value in temp.items()}
+    return json.dumps(data) # return data as json
 
-    json_data = {f"{haxis}": {f"{vaxis}": data}}
-    if id and len(id_key) > 0: json_data.update({f"{id_key}": f"{id}"}) # update haxis id
-    if type and len(type_key) > 0: json_data.update({f"{type_key}": f"{type}"}) # update haxis type
 
-    return json.dumps(json_data) # return data as json
+def jsonldify_values(json_data, data_type_dict, _id=None, _id_key="_id",
+                      _type="data_row", _type_key="_type", table_predicate="has_row"):
+    jdata = json.loads(json_data) # load data into dict
+    jdata.update({f"{_type_key}": f"{_type}"})
+    if _id: jdata.update({f"{_id_key}": _id}) # add id info if given
 
+    data = \
+    {
+        f"{_id_key}": data_type_dict["i"]["table"]["iri"], # add table instance iri
+        f"{table_predicate}": jdata
+    }
+    return json.dumps(data) # return data as json
 
 def jsonldify_row(row, data_type_dict, value_property="value", member_property="member_of",
                   record_base_iri="", field_base_iri=""):
@@ -91,23 +111,15 @@ def append_json_column(df, json_column_name="json"):
     return df
 
 
-def append_jsonld_column(df, data_type_dict, value_property="value", jsonld_column_name="jsonld"):
-    rb_iri = data_type_dict["table"]["record"]["individual"]["base_iri"]
-    fb_iri = data_type_dict["table"]["field"]["individual"]["base_iri"]
+def append_jsonld_column(df, data_type_dict, jsonld_column_name="jsonld", json_column_name="json"):
     df[jsonld_column_name] = \
-        df.apply(lambda row:
-                 jsonldify_row(
-                    row,
-                    data_type_dict,
-                    value_property,
-                    record_base_iri=rb_iri,
-                    field_base_iri=fb_iri),
-                 axis=1)
+        df[json_column_name].map(lambda row: jsonldify_values(row, data_type_dict,
+                                                              _id=f"http://ex.com/{df[json_column_name].name}"))
     return df
 
 
 def make_data_framework(df, data_type_dict):
-    def add_entity(graph, entity, owl_type):
+    def add_entity(entity, owl_type):
         graph.add( (URIRef(entity["iri"]), RDF.type, URIRef(owl_type)) )
 
         if owl_type == OWL.Class:
@@ -121,39 +133,40 @@ def make_data_framework(df, data_type_dict):
         if rdfs_label:
             graph.add( (URIRef(entity["iri"]), RDFS.label, Literal(rdfs_label)) )
 
-    def add_entities(graph, entities, owl_type):
+    def add_entities(entities, owl_type):
         for key in entities.keys():
-            add_entity(graph, entities[key], owl_type)
+            add_entity(entities[key], owl_type)
 
     graph = ConjunctiveGraph()
 
     ## add table class to ontology
-    add_entity(graph, data_type_dict["cls"]["table"], OWL.Class)
+    add_entity(data_type_dict["cls"]["table"], OWL.Class)
 
     ## add table individual to ontology
-    add_entity(graph, data_type_dict["i"]["table"], OWL.NamedIndividual)
+    add_entity(data_type_dict["i"]["table"], OWL.NamedIndividual)
 
     ## add table row class to ontology
     if "row" in data_type_dict["cls"].keys():
-        add_entity(graph, data_type_dict["cls"]["row"], OWL.Class)
+        add_entity(data_type_dict["cls"]["row"], OWL.Class)
 
     ## add top level field class, object property, and data property
     ## field class
     if "field" in data_type_dict["cls"].keys():
         cls = data_type_dict["cls"]["field"]
-        add_entity(graph, cls, OWL.Class)
+        add_entity(cls, OWL.Class)
+        add_entities(cls["subtype"], OWL.Class)
 
     ## add cols/fields as obect properties
     if "op" in data_type_dict.keys():
         op = data_type_dict["op"]
-        add_entity(graph, op, OWL.ObjectProperty)
-        add_entities(graph, op["subtype"], OWL.ObjectProperty)
+        add_entity(op, OWL.ObjectProperty)
+        add_entities(op["subtype"], OWL.ObjectProperty)
 
     ## add cols/fields as data properties
     if "dp" in data_type_dict.keys():
         dp = data_type_dict["dp"]
-        add_entity(graph, dp,  OWL.DatatypeProperty)
-        add_entities(graph, dp["subtype"], OWL.DatatypeProperty)
+        add_entity(dp,  OWL.DatatypeProperty)
+        add_entities(dp["subtype"], OWL.DatatypeProperty)
 
     # print(graph.serialize(format='turtle').decode("utf-8"))
     return graph
@@ -170,7 +183,6 @@ def make_data_graph(df, context, jsonld_column_name="jsonld"):
         }}
         """
         # print(doc)
-        # print(data['patient_id'])
         graph.parse(data=doc, format='json-ld')
     return graph
 
@@ -178,19 +190,16 @@ def make_data_graph(df, context, jsonld_column_name="jsonld"):
 def translate_data(df, data_type_dict, context, print_graph=False):
 
     df = append_json_column(df)
-    # print(str(df.json))
-    # print(str(df))
 
     # df = append_jsonld_column(df, data_type_dict)
+    df = append_jsonld_column(df, data_type_dict)
     # print(str(df.jsonld))
 
     framework_graph = make_data_framework(df, data_type_dict)
-    print(framework_graph.serialize(format='turtle').decode("utf-8"))
-    # data_graph = make_data_graph(df, context)
-    # graph = framework_graph + data_graph
-    # if print_graph: print(graph.serialize(format='turtle').decode("utf-8"))
-    # return graph
-    return df
+    data_graph = make_data_graph(df, context)
+    graph = framework_graph + data_graph
+    if print_graph: print(graph.serialize(format='turtle').decode("utf-8"))
+    return graph
 
 if __name__ == "__main__":
     deo_graph = Graph().parse("ontology/data_entity.owl")
@@ -206,11 +215,10 @@ if __name__ == "__main__":
     with open("data/patients_1_context.v2.txt", "r") as context_file:
         patients_1_context = context_file.read()
 
-    translate_data(df_patients1, patients_1_type_dict, patients_1_context)
-
-    # patients_1_graph = translate_data(df_patients1, patients_1_type_dict, patients_1_context)
-    # graph = deo_graph + patients_1_graph
-    # graph.serialize(destination="output/patients_1.ttl", format="turtle")
+    patients_1_graph = translate_data(df_patients1, patients_1_type_dict, patients_1_context)
+    graph = deo_graph + patients_1_graph
+    graph.serialize(destination="output/patients_1.ttl", format="turtle")
+    print(graph.serialize(format='turtle').decode("utf-8"))
     #
     # df_patients2 = pds.read_excel("data/patients_2.xlsx")
     # with open("data/patients_2_dict.txt", "r") as dict_file:
