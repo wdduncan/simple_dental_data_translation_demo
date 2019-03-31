@@ -47,6 +47,7 @@
 	{
 		"table":
 		{
+			"table_name": "patients_1",
 			"type": "http://ex.com/patients_1.xlsx/cls/table#patients_1",
 			"rdfs:label": "i:patients_1 table",
 			"iri": "http://ex.com/patients_1.xlsx/i/table#patients_1"
@@ -54,6 +55,31 @@
 		"row":
 		{
 			"ns": "http://ex.com/patients_1.xlsx/i/row/patients_1#"
+		},
+		"field":
+		{
+			"ns": "http://ex.com/patients_1.xlsx/i/field/patients_1#",
+			"subtype":
+			{
+				"patient_id":
+				{
+					"type": "http://ex.com/patients_1.xlsx/cls/field/patients_1#patient_id",
+					"rdfs:label": "cls:patients_1.patient_id field",
+					"field_name": "patient_id"
+				},
+				"gender":
+				{
+					"type": "http://ex.com/patients_1.xlsx/cls/field/patients_1#gender",
+					"rdfs:label": "cls:patients_1.gender field",
+					"field_name": "gender"
+				},
+				"birth_date":
+				{
+					"type": "http://ex.com/patients_1.xlsx/cls/field/patients_1#birth_date",
+					"rdfs:label": "cls:patients_1.birth_date field",
+					"field_name": "birth_date"
+				}
+			}
 		}
 	},
 	"dp":

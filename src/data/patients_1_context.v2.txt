@@ -1,7 +1,7 @@
 "@context":
 {
   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-	"label": "rdfs:label", 
+	"_label": "rdfs:label", 
 	"deo": "http://data_entity_ontology.owl#",
 	"data_record": "deo:DE_000000003",
 	"data_field": "deo:DE_000000007",

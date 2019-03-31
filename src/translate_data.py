@@ -33,17 +33,51 @@ def jsonify_series(series):
 
 
 def jsonldify_values(json_data, data_type_dict, _id=None, _id_key="_id",
-                      _type="data_row", _type_key="_type", table_predicate="has_row"):
-    jdata = json.loads(json_data) # load data into dict
-    jdata.update({f"{_type_key}": f"{_type}"})
-    if _id: jdata.update({f"{_id_key}": _id}) # add id info if given
+                      _type="data_row", _type_key="_type", data_key="has_row"):
+    ## load data into dict; add type and id info
+    ## note: json_update returns a json object, so it has be converted to a dict
+    jdata = json_as_dict(json_update(json_data, _type_key, _type))
+    if _id: jdata[f"{_id_key}"]: f"{id}" # add id info if given
 
+    ## create table iri that data is a member of and relate (using data_key)
+    ## the data to the table
     data = \
     {
         f"{_id_key}": data_type_dict["i"]["table"]["iri"], # add table instance iri
-        f"{table_predicate}": jdata
+        f"{data_key}": jdata
     }
     return json.dumps(data) # return data as json
+
+
+def json_as_dict(json_data, data_key=None):
+    if data_key:
+        return json.loads(json_data)[data_key]
+    else:
+        return json.loads(json_data)
+
+
+def json_update(json_data, update_key, update_value, data_key=None):
+    jdata = json_as_dict(json_data)  # load json data into dict
+    if data_key:
+        jdata[data_key].update({f"{update_key}": f"{update_value}"})
+    else:
+        jdata.update({f"{update_key}": f"{update_value}"})  # add key:value info
+    return json.dumps(jdata)
+
+
+def jsonldify_haxis_id(json_data, _id, _id_key="_id", data_key="has_row"):
+    jdata = json_update(json_data, _id_key, _id, data_key)
+    return json.dumps(jdata)  # return data as json
+
+
+def jsonldify_haxis_label(json_data, _label, _label_key="_label", data_key="has_row"):
+    jdata = json_update(json_data, _label_key, _label, data_key)
+    return json.dumps(jdata)  # return data as json
+
+
+def jsonldify_field_id(json_data, _id, _id_key="_id"):
+    pass
+
 
 def jsonldify_row(row, data_type_dict, value_property="value", member_property="member_of",
                   record_base_iri="", field_base_iri=""):
@@ -111,16 +145,21 @@ def append_json_column(df, json_column_name="json"):
     return df
 
 
-def append_jsonld_column(df, data_type_dict, jsonld_column_name="jsonld", json_column_name="json"):
-    # df[jsonld_column_name] = \
-    #     df[json_column_name].map(lambda row: jsonldify_values(row, data_type_dict,
-    #                                                            _id=f"http://ex.com/{df[json_column_name].name}"))
-    for idx, value in df[[json_column_name]].itertuples():
-        json_data = df.loc[idx, json_column_name]
-        row_id = data_type_dict["i"]["row"]["ns"] + "row_" + str(idx)
-        df.loc[idx, jsonld_column_name] = jsonldify_values(json_data, data_type_dict, _id=row_id)
+def append_jsonld_column(df, data_type_dict, jsonld_column_name="jsonld", json_column_name="json", haxis="row"):
+    # create json data with table iri and relate to data using "has_row" key
+    df[jsonld_column_name] = \
+        df[json_column_name].map(lambda row: jsonldify_values(row, data_type_dict))
 
-    # print(df[[jsonld_column_name]])
+    # add id & label info to each "has_row" data block
+    for idx, json_data in df[[jsonld_column_name]].itertuples():
+        row_id = data_type_dict["i"]["row"]["ns"] + "row_" + str(idx) # build id
+        json_data = json_update(json_data, update_key="_id", update_value=row_id, data_key="has_row")
+
+        row_label = data_type_dict["i"]["table"]["table_name"] + ".row_" + str(idx) # build label
+        json_data = json_update(json_data, update_key="_label", update_value=row_label, data_key="has_row")
+
+        df.at[idx, jsonld_column_name] = json_data # update data frame
+
     return df
 
 
@@ -189,7 +228,7 @@ def make_data_graph(df, context, jsonld_column_name="jsonld"):
         }}
         """
         # print(doc)
-        graph.parse(data=doc, format='json-ld')
+        graph.parse(data=doc, format="json-ld")
     return graph
 
 
@@ -224,7 +263,8 @@ if __name__ == "__main__":
     patients_1_graph = translate_data(df_patients1, patients_1_type_dict, patients_1_context)
     graph = deo_graph + patients_1_graph
     graph.serialize(destination="output/patients_1.ttl", format="turtle")
-    print(graph.serialize(format='turtle').decode("utf-8"))
+    # print(graph.serialize(format='turtle').decode("utf-8"))
+    print(patients_1_graph.serialize(format='turtle').decode("utf-8"))
     #
     # df_patients2 = pds.read_excel("data/patients_2.xlsx")
     # with open("data/patients_2_dict.txt", "r") as dict_file:
