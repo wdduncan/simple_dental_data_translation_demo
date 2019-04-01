@@ -15,131 +15,131 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data_entity_ontology:DE_000000001 a owl:DatatypeProperty ;
+deo:DE_000000001 a owl:DatatypeProperty ;
     rdfs:label "dp:represents"@en ;
     obo:IAO_0000600 "A data property in which the literal value represents (or denotes) another entity." ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2018-07-21T05:15:08+00:00"^^xsd:dateTime ;
-    rdfs:subPropertyOf data_entity_ontology:DE_000000010 .
+    rdfs:subPropertyOf deo:DE_000000010 .
 
-data_entity_ontology:DE_000000005 a owl:ObjectProperty ;
+deo:DE_000000005 a owl:ObjectProperty ;
     rdfs:label "obsolete object property"@en ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2018-07-19T22:18:16+00:00"^^xsd:dateTime .
 
-data_entity_ontology:DE_000000009 a owl:DatatypeProperty ;
+deo:DE_000000009 a owl:DatatypeProperty ;
     rdfs:label "dp:literal value"@en ;
     obo:IAO_0000115 "A data property that relates an entity to a literal." ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2018-07-19T22:31:12+00:00"^^xsd:dateTime ;
     rdfs:subPropertyOf data_entity_ontology1:obsolete_data_property .
 
-data_entity_ontology:DE_000000011 a owl:DatatypeProperty ;
+deo:DE_000000011 a owl:DatatypeProperty ;
     rdfs:label "dp:sematic type"@en ;
     obo:IAO_0000600 "A metadata property in which the literal value denotes an entity that provides meaning about the entity related to the metadata property." ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2018-07-19T22:42:08+00:00"^^xsd:dateTime ;
-    rdfs:subPropertyOf data_entity_ontology:DE_000000010 .
+    rdfs:subPropertyOf deo:DE_000000010 .
 
-data_entity_ontology:DE_000000012 a owl:DatatypeProperty ;
+deo:DE_000000012 a owl:DatatypeProperty ;
     rdfs:label "dp:specified value"@en ;
     obo:IAO_0000600 "A metadata property that specifies the literal value that represents the semantic type, or, in other words, the literal value that denotes some entity." ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2018-07-19T22:53:13+00:00"^^xsd:dateTime ;
-    rdfs:subPropertyOf data_entity_ontology:DE_000000010 .
+    rdfs:subPropertyOf deo:DE_000000010 .
 
-data_entity_ontology:DE_000000013 a owl:ObjectProperty ;
+deo:DE_000000013 a owl:ObjectProperty ;
     rdfs:label "op:represents"@en ;
     obo:IAO_0000600 "An object property that holds between an data entity and another entity that is represented by the data entity." ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2018-07-19T22:56:37+00:00"^^xsd:dateTime ;
-    rdfs:subPropertyOf data_entity_ontology:DE_000000014 .
+    rdfs:subPropertyOf deo:DE_000000014 .
 
-data_entity_ontology:DE_000000015 a owl:AnnotationProperty ;
+deo:DE_000000015 a owl:AnnotationProperty ;
     rdfs:label "ap:defines attribute"@en ;
     obo:IAO_0000115 "An annotation property that specifies the data attribute that is being defined." ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2018-07-19T23:00:30+00:00"^^xsd:dateTime .
 
-data_entity_ontology:DE_000000016 a owl:AnnotationProperty ;
+deo:DE_000000016 a owl:AnnotationProperty ;
     rdfs:label "ap:represents"@en ;
     obo:IAO_0000600 "An annotation property in which the value represents (or denotes) another entity." ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2018-07-19T23:04:52+00:00"^^xsd:dateTime .
 
-data_entity_ontology:DE_000000024 a owl:DatatypeProperty ;
+deo:DE_000000024 a owl:DatatypeProperty ;
     rdfs:label "dp:semantic datatype"@en ;
     obo:IAO_0000600 "A data property in which the literal value specifies the entity type -- such as owl:Class, owl:ObjectProperty, etc. -- of the semantic type." ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2018-07-21T05:16:22+00:00"^^xsd:dateTime ;
-    rdfs:subPropertyOf data_entity_ontology:DE_000000010 .
+    rdfs:subPropertyOf deo:DE_000000010 .
 
-data_entity_ontology:DE_000000025 a owl:DatatypeProperty ;
+deo:DE_000000025 a owl:DatatypeProperty ;
     rdfs:label "dp:record value"@en ;
     obo:IAO_0000115 "A data entity value that holds between a data record and a literal." ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2018-07-21T05:34:51+00:00"^^xsd:dateTime ;
     rdfs:subPropertyOf data_entity_ontology1:obsolete_data_property .
 
-data_entity_ontology:DE_000000026 a owl:DatatypeProperty ;
+deo:DE_000000026 a owl:DatatypeProperty ;
     rdfs:label "dp:field value"@en ;
     obo:IAO_0000115 "A data entity value that holds between a data field and a literal." ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2018-07-21T05:35:55+00:00"^^xsd:dateTime ;
     rdfs:subPropertyOf data_entity_ontology1:obsolete_data_property .
 
-data_entity_ontology:DE_000000027 a owl:AnnotationProperty ;
+deo:DE_000000027 a owl:AnnotationProperty ;
     rdfs:label "ap:defines"@en ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2019-03-15T02:29:17+00:00"^^xsd:dateTime .
 
-data_entity_ontology:DE_000000028 a owl:AnnotationProperty ;
+deo:DE_000000028 a owl:AnnotationProperty ;
     rdfs:label "ap:defined by"@en ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2019-03-15T02:29:25+00:00"^^xsd:dateTime .
 
-data_entity_ontology:DE_000000029 a owl:ObjectProperty ;
+deo:DE_000000029 a owl:ObjectProperty ;
     rdfs:label "op:has record"@en ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2019-03-27T20:51:56+00:00"^^xsd:dateTime ;
-    rdfs:subPropertyOf data_entity_ontology:DE_000000019 .
+    rdfs:subPropertyOf deo:DE_000000019 .
 
-data_entity_ontology:DE_000000030 a owl:ObjectProperty ;
+deo:DE_000000030 a owl:ObjectProperty ;
     rdfs:label "op:has row"@en ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2019-03-27T20:52:13+00:00"^^xsd:dateTime ;
-    rdfs:subPropertyOf data_entity_ontology:DE_000000019 .
+    rdfs:subPropertyOf deo:DE_000000019 .
 
-data_entity_ontology:DE_000000031 a owl:ObjectProperty ;
+deo:DE_000000031 a owl:ObjectProperty ;
     rdfs:label "record of"@en ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2019-03-27T20:52:24+00:00"^^xsd:dateTime ;
-    rdfs:subPropertyOf data_entity_ontology:DE_000000020 .
+    rdfs:subPropertyOf deo:DE_000000020 .
 
-data_entity_ontology:DE_000000032 a owl:ObjectProperty ;
+deo:DE_000000032 a owl:ObjectProperty ;
     rdfs:label "row of"@en ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2019-03-27T20:52:31+00:00"^^xsd:dateTime ;
-    rdfs:subPropertyOf data_entity_ontology:DE_000000020 .
+    rdfs:subPropertyOf deo:DE_000000020 .
 
-data_entity_ontology:DE_000000033 a owl:ObjectProperty ;
+deo:DE_000000033 a owl:ObjectProperty ;
     rdfs:label "op:defines"@en ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2019-03-27T20:52:50+00:00"^^xsd:dateTime ;
-    rdfs:subPropertyOf data_entity_ontology:DE_000000038 ;
-    owl:inverseOf data_entity_ontology:DE_000000034 .
+    rdfs:subPropertyOf deo:DE_000000038 ;
+    owl:inverseOf deo:DE_000000034 .
 
-data_entity_ontology:DE_000000035 a owl:AnnotationProperty ;
+deo:DE_000000035 a owl:AnnotationProperty ;
     rdfs:label "ap:about"@en ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2019-03-27T20:55:44+00:00"^^xsd:dateTime .
 
-data_entity_ontology:DE_000000036 a owl:AnnotationProperty ;
+deo:DE_000000036 a owl:AnnotationProperty ;
     rdfs:label "ap:specifies"@en ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2019-03-27T20:56:11+00:00"^^xsd:dateTime .
 
-data_entity_ontology:DE_000000037 a owl:AnnotationProperty ;
+deo:DE_000000037 a owl:AnnotationProperty ;
     rdfs:label "ap:specified by"@en ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2019-03-27T20:56:21+00:00"^^xsd:dateTime .
@@ -176,7 +176,7 @@ dp:tooth_surface a owl:DatatypeProperty ;
 <http://ex.com/patients_1.xlsx/i/table#patients_1> a <http://ex.com/patients_1.xlsx/cls/table#patients_1>,
         owl:NamedIndividual ;
     rdfs:label "i:patients_1 table" ;
-    data_entity_ontology:DE_000000030 <http://ex.com/patients_1.xlsx/i/row/patients_1#row_0>,
+    deo:DE_000000030 <http://ex.com/patients_1.xlsx/i/row/patients_1#row_0>,
         <http://ex.com/patients_1.xlsx/i/row/patients_1#row_1>,
         <http://ex.com/patients_1.xlsx/i/row/patients_1#row_2>,
         <http://ex.com/patients_1.xlsx/i/row/patients_1#row_3>,
@@ -542,59 +542,59 @@ swrla:isRuleEnabled a owl:AnnotationProperty .
 
 oboInOwl:is_inferred a owl:AnnotationProperty .
 
-data_entity_ontology:DE_000000003 a owl:Class ;
+deo:DE_000000003 a owl:Class ;
     rdfs:label "cls:data record"@en ;
     obo:IAO_0000115 "A data collection that consists of and ordered list of related data fields." ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2018-07-19T21:57:44+00:00"^^xsd:dateTime ;
     rdfs:comment "The data values of the fields do not have to be of the same datatype. Often a data record represented as single row in a table, but not always." ;
-    rdfs:subClassOf data_entity_ontology:DE_000000002 .
+    rdfs:subClassOf deo:DE_000000002 .
 
-data_entity_ontology:DE_000000006 a owl:Class ;
+deo:DE_000000006 a owl:Class ;
     rdfs:label "cls:data table column"@en ;
     obo:IAO_0000115 "A data collection that consists of a vertically structured ordered list of data fields with each data field belonging to the same data column." ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2018-07-20T02:19:26+00:00"^^xsd:dateTime ;
-    rdfs:subClassOf data_entity_ontology:DE_000000002 .
+    rdfs:subClassOf deo:DE_000000002 .
 
-data_entity_ontology:DE_000000008 a owl:DatatypeProperty ;
+deo:DE_000000008 a owl:DatatypeProperty ;
     rdfs:label "dp:value"@en ;
     obo:IAO_0000115 "A data property that relates a data entity to a literal." ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2018-07-19T22:24:52+00:00"^^xsd:dateTime ;
     rdfs:subPropertyOf data_entity_ontology1:data_property .
 
-data_entity_ontology:DE_000000021 a owl:ObjectProperty ;
+deo:DE_000000021 a owl:ObjectProperty ;
     rdfs:label "op:inverse is about"@en ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2018-07-20T04:07:32+00:00"^^xsd:dateTime ;
     rdfs:subPropertyOf data_entity_ontology1:object_property .
 
-data_entity_ontology:DE_000000022 a owl:ObjectProperty ;
+deo:DE_000000022 a owl:ObjectProperty ;
     rdfs:label "op:has field"@en ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2018-07-20T04:08:03+00:00"^^xsd:dateTime ;
-    rdfs:subPropertyOf data_entity_ontology:DE_000000019 ;
-    owl:inverseOf data_entity_ontology:DE_000000023 .
+    rdfs:subPropertyOf deo:DE_000000019 ;
+    owl:inverseOf deo:DE_000000023 .
 
-data_entity_ontology:DE_000000023 a owl:ObjectProperty ;
+deo:DE_000000023 a owl:ObjectProperty ;
     rdfs:label "op:field of"@en ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2018-07-20T04:08:16+00:00"^^xsd:dateTime ;
-    rdfs:subPropertyOf data_entity_ontology:DE_000000020 .
+    rdfs:subPropertyOf deo:DE_000000020 .
 
-data_entity_ontology:DE_000000034 a owl:ObjectProperty ;
+deo:DE_000000034 a owl:ObjectProperty ;
     rdfs:label "op:defined by"@en ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2019-03-27T20:53:01+00:00"^^xsd:dateTime ;
-    rdfs:subPropertyOf data_entity_ontology:DE_000000039 .
+    rdfs:subPropertyOf deo:DE_000000039 .
 
-data_entity_ontology:DE_000000038 a owl:ObjectProperty ;
+deo:DE_000000038 a owl:ObjectProperty ;
     rdfs:label "op:specifies"@en ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2019-03-27T20:56:46+00:00"^^xsd:dateTime ;
-    rdfs:subPropertyOf data_entity_ontology:DE_000000014 ;
-    owl:inverseOf data_entity_ontology:DE_000000039 .
+    rdfs:subPropertyOf deo:DE_000000014 ;
+    owl:inverseOf deo:DE_000000039 .
 
 data_entity_ontology1:data_property a owl:DatatypeProperty ;
     rdfs:label "data property"@en ;
@@ -603,185 +603,185 @@ data_entity_ontology1:data_property a owl:DatatypeProperty ;
 
 <http://ex.com/patients_1.xlsx/cls/table#patients_1> a owl:Class ;
     rdfs:label "cls:patients_1 table" ;
-    rdfs:subClassOf data_entity_ontology:DE_000000018 .
+    rdfs:subClassOf deo:DE_000000018 .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_0.birth_date> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#birth_date> ;
     rdfs:label "patients_1.row_0.birth_date" ;
-    data_entity_ontology:DE_000000008 "1950-01-01" .
+    deo:DE_000000008 "1950-01-01" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_0.gender> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#gender> ;
     rdfs:label "patients_1.row_0.gender" ;
-    data_entity_ontology:DE_000000008 "M" .
+    deo:DE_000000008 "M" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_0.patient_id> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#patient_id> ;
     rdfs:label "patients_1.row_0.patient_id" ;
-    data_entity_ontology:DE_000000008 "10001" .
+    deo:DE_000000008 "10001" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_0.tooth_surface> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#tooth_surface> ;
     rdfs:label "patients_1.row_0.tooth_surface" ;
-    data_entity_ontology:DE_000000008 "d",
+    deo:DE_000000008 "d",
         "m",
         "o" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_1.birth_date> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#birth_date> ;
     rdfs:label "patients_1.row_1.birth_date" ;
-    data_entity_ontology:DE_000000008 "1960-01-02" .
+    deo:DE_000000008 "1960-01-02" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_1.gender> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#gender> ;
     rdfs:label "patients_1.row_1.gender" ;
-    data_entity_ontology:DE_000000008 "F" .
+    deo:DE_000000008 "F" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_1.patient_id> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#patient_id> ;
     rdfs:label "patients_1.row_1.patient_id" ;
-    data_entity_ontology:DE_000000008 "10002" .
+    deo:DE_000000008 "10002" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_1.tooth_surface> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#tooth_surface> ;
     rdfs:label "patients_1.row_1.tooth_surface" ;
-    data_entity_ontology:DE_000000008 "d",
+    deo:DE_000000008 "d",
         "m",
         "o" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_2.birth_date> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#birth_date> ;
     rdfs:label "patients_1.row_2.birth_date" ;
-    data_entity_ontology:DE_000000008 "1970-01-03" .
+    deo:DE_000000008 "1970-01-03" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_2.gender> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#gender> ;
     rdfs:label "patients_1.row_2.gender" ;
-    data_entity_ontology:DE_000000008 "M" .
+    deo:DE_000000008 "M" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_2.patient_id> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#patient_id> ;
     rdfs:label "patients_1.row_2.patient_id" ;
-    data_entity_ontology:DE_000000008 "10003" .
+    deo:DE_000000008 "10003" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_2.tooth_surface> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#tooth_surface> ;
     rdfs:label "patients_1.row_2.tooth_surface" ;
-    data_entity_ontology:DE_000000008 "d",
+    deo:DE_000000008 "d",
         "m",
         "o" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_3.birth_date> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#birth_date> ;
     rdfs:label "patients_1.row_3.birth_date" ;
-    data_entity_ontology:DE_000000008 "1980-01-04" .
+    deo:DE_000000008 "1980-01-04" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_3.gender> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#gender> ;
     rdfs:label "patients_1.row_3.gender" ;
-    data_entity_ontology:DE_000000008 "F" .
+    deo:DE_000000008 "F" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_3.patient_id> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#patient_id> ;
     rdfs:label "patients_1.row_3.patient_id" ;
-    data_entity_ontology:DE_000000008 "10004" .
+    deo:DE_000000008 "10004" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_3.tooth_surface> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#tooth_surface> ;
     rdfs:label "patients_1.row_3.tooth_surface" ;
-    data_entity_ontology:DE_000000008 "d",
+    deo:DE_000000008 "d",
         "m",
         "o" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_4.birth_date> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#birth_date> ;
     rdfs:label "patients_1.row_4.birth_date" ;
-    data_entity_ontology:DE_000000008 "1990-01-05" .
+    deo:DE_000000008 "1990-01-05" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_4.gender> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#gender> ;
     rdfs:label "patients_1.row_4.gender" ;
-    data_entity_ontology:DE_000000008 "M" .
+    deo:DE_000000008 "M" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_4.patient_id> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#patient_id> ;
     rdfs:label "patients_1.row_4.patient_id" ;
-    data_entity_ontology:DE_000000008 "10005" .
+    deo:DE_000000008 "10005" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_4.tooth_surface> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#tooth_surface> ;
     rdfs:label "patients_1.row_4.tooth_surface" ;
-    data_entity_ontology:DE_000000008 "d",
+    deo:DE_000000008 "d",
         "m",
         "o" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_5.birth_date> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#birth_date> ;
     rdfs:label "patients_1.row_5.birth_date" ;
-    data_entity_ontology:DE_000000008 "1955-01-06" .
+    deo:DE_000000008 "1955-01-06" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_5.gender> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#gender> ;
     rdfs:label "patients_1.row_5.gender" ;
-    data_entity_ontology:DE_000000008 "F" .
+    deo:DE_000000008 "F" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_5.patient_id> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#patient_id> ;
     rdfs:label "patients_1.row_5.patient_id" ;
-    data_entity_ontology:DE_000000008 "10006" .
+    deo:DE_000000008 "10006" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_5.tooth_surface> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#tooth_surface> ;
     rdfs:label "patients_1.row_5.tooth_surface" ;
-    data_entity_ontology:DE_000000008 "d",
+    deo:DE_000000008 "d",
         "m",
         "o" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_6.birth_date> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#birth_date> ;
     rdfs:label "patients_1.row_6.birth_date" ;
-    data_entity_ontology:DE_000000008 "1965-01-07" .
+    deo:DE_000000008 "1965-01-07" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_6.gender> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#gender> ;
     rdfs:label "patients_1.row_6.gender" ;
-    data_entity_ontology:DE_000000008 "M" .
+    deo:DE_000000008 "M" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_6.patient_id> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#patient_id> ;
     rdfs:label "patients_1.row_6.patient_id" ;
-    data_entity_ontology:DE_000000008 "10007" .
+    deo:DE_000000008 "10007" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_6.tooth_surface> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#tooth_surface> ;
     rdfs:label "patients_1.row_6.tooth_surface" ;
-    data_entity_ontology:DE_000000008 "d",
+    deo:DE_000000008 "d",
         "m",
         "o" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_7.birth_date> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#birth_date> ;
     rdfs:label "patients_1.row_7.birth_date" ;
-    data_entity_ontology:DE_000000008 "1975-01-08" .
+    deo:DE_000000008 "1975-01-08" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_7.gender> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#gender> ;
     rdfs:label "patients_1.row_7.gender" ;
-    data_entity_ontology:DE_000000008 "F" .
+    deo:DE_000000008 "F" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_7.patient_id> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#patient_id> ;
     rdfs:label "patients_1.row_7.patient_id" ;
-    data_entity_ontology:DE_000000008 "10008" .
+    deo:DE_000000008 "10008" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_7.tooth_surface> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#tooth_surface> ;
     rdfs:label "patients_1.row_7.tooth_surface" ;
-    data_entity_ontology:DE_000000008 "d",
+    deo:DE_000000008 "d",
         "m",
         "o" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_8.birth_date> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#birth_date> ;
     rdfs:label "patients_1.row_8.birth_date" ;
-    data_entity_ontology:DE_000000008 "1985-01-09" .
+    deo:DE_000000008 "1985-01-09" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_8.gender> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#gender> ;
     rdfs:label "patients_1.row_8.gender" ;
-    data_entity_ontology:DE_000000008 "M" .
+    deo:DE_000000008 "M" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_8.patient_id> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#patient_id> ;
     rdfs:label "patients_1.row_8.patient_id" ;
-    data_entity_ontology:DE_000000008 "10009" .
+    deo:DE_000000008 "10009" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_8.tooth_surface> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#tooth_surface> ;
     rdfs:label "patients_1.row_8.tooth_surface" ;
-    data_entity_ontology:DE_000000008 "d",
+    deo:DE_000000008 "d",
         "m",
         "o" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_9.birth_date> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#birth_date> ;
     rdfs:label "patients_1.row_9.birth_date" ;
-    data_entity_ontology:DE_000000008 "1995-01-10" .
+    deo:DE_000000008 "1995-01-10" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_9.gender> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#gender> ;
     rdfs:label "patients_1.row_9.gender" ;
-    data_entity_ontology:DE_000000008 "F" .
+    deo:DE_000000008 "F" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_9.patient_id> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#patient_id> ;
     rdfs:label "patients_1.row_9.patient_id" ;
-    data_entity_ontology:DE_000000008 "10010" .
+    deo:DE_000000008 "10010" .
 
 <http://ex.com/patients_1.xlsx/i/field/patients_1#row_9.tooth_surface> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#tooth_surface> ;
     rdfs:label "patients_1.row_9.tooth_surface" ;
-    data_entity_ontology:DE_000000008 "d",
+    deo:DE_000000008 "d",
         "m",
         "o" .
 
@@ -904,67 +904,67 @@ oboInOwl:ObsoleteClass a owl:Class ;
     dc:date "2018-05-28T14:20:18+00:00"^^xsd:dateTime ;
     rdfs:subClassOf owl:Thing .
 
-data_entity_ontology:DE_000000004 a owl:Class ;
+deo:DE_000000004 a owl:Class ;
     rdfs:label "cls:data row"@en ;
     obo:IAO_0000115 "A data collection that consists of an horizontally structured ordered list of related data fields within a data table in which each data field belongs to a different data column." ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2018-07-20T02:18:58+00:00"^^xsd:dateTime ;
-    rdfs:subClassOf data_entity_ontology:DE_000000002 .
+    rdfs:subClassOf deo:DE_000000002 .
 
-data_entity_ontology:DE_000000007 a owl:Class ;
+deo:DE_000000007 a owl:Class ;
     rdfs:label "cls:data field"@en ;
     obo:IAO_0000115 "A datum that is a member of some record." ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2018-07-20T02:20:17+00:00"^^xsd:dateTime ;
-    rdfs:subClassOf data_entity_ontology:DE_000000017 .
+    rdfs:subClassOf deo:DE_000000017 .
 
-data_entity_ontology:DE_000000018 a owl:Class ;
+deo:DE_000000018 a owl:Class ;
     rdfs:label "cls:data table"@en ;
     obo:IAO_0000115 "A data collection that consists of one or more data colums and zero or more data rows." ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2018-07-20T04:01:52+00:00"^^xsd:dateTime ;
-    rdfs:subClassOf data_entity_ontology:DE_000000002 .
+    rdfs:subClassOf deo:DE_000000002 .
 
-data_entity_ontology:DE_000000039 a owl:ObjectProperty ;
+deo:DE_000000039 a owl:ObjectProperty ;
     rdfs:label "op:specified by"@en ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2019-03-27T20:57:02+00:00"^^xsd:dateTime ;
-    rdfs:subPropertyOf data_entity_ontology:DE_000000014 .
+    rdfs:subPropertyOf deo:DE_000000014 .
 
-data_entity_ontology:DE_000000014 a owl:ObjectProperty ;
+deo:DE_000000014 a owl:ObjectProperty ;
     rdfs:label "op:is about"@en ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2018-07-19T22:57:17+00:00"^^xsd:dateTime ;
     rdfs:subPropertyOf data_entity_ontology1:object_property ;
-    owl:inverseOf data_entity_ontology:DE_000000021 .
+    owl:inverseOf deo:DE_000000021 .
 
-data_entity_ontology:DE_000000017 a owl:Class ;
+deo:DE_000000017 a owl:Class ;
     rdfs:label "cls:datum"@en ;
     obo:IAO_0000600 "An  atomic (or single) data entity." ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2018-07-20T02:20:23+00:00"^^xsd:dateTime ;
-    rdfs:subClassOf data_entity_ontology:DE_000000000 .
+    rdfs:subClassOf deo:DE_000000000 .
 
-data_entity_ontology:DE_000000019 a owl:ObjectProperty ;
+deo:DE_000000019 a owl:ObjectProperty ;
     rdfs:label "op:has member"@en ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2018-07-20T04:06:45+00:00"^^xsd:dateTime ;
     rdfs:subPropertyOf data_entity_ontology1:object_property ;
-    owl:inverseOf data_entity_ontology:DE_000000020 .
+    owl:inverseOf deo:DE_000000020 .
 
-data_entity_ontology:entity a owl:Class ;
+deo:entity a owl:Class ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2018-05-28T14:19:23+00:00"^^xsd:dateTime ;
     rdfs:subClassOf owl:Thing .
 
-data_entity_ontology:DE_000000010 a owl:DatatypeProperty ;
+deo:DE_000000010 a owl:DatatypeProperty ;
     rdfs:label "dp:metadata property"@en ;
     obo:IAO_0000600 "A data property in which the data value is used to provide information about another entity or value." ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2018-07-19T22:35:34+00:00"^^xsd:dateTime ;
     rdfs:subPropertyOf data_entity_ontology1:obsolete_data_property .
 
-data_entity_ontology:DE_000000020 a owl:ObjectProperty ;
+deo:DE_000000020 a owl:ObjectProperty ;
     rdfs:label "op:member of"@en ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2018-07-20T04:07:02+00:00"^^xsd:dateTime ;
@@ -982,22 +982,22 @@ data_entity_ontology1:obsolete_data_property a owl:DatatypeProperty ;
 
 <http://ex.com/patients_1.xlsx/cls/field#patients_1> a owl:Class ;
     rdfs:label "cls:patients_1 field" ;
-    rdfs:subClassOf data_entity_ontology:DE_000000007 .
+    rdfs:subClassOf deo:DE_000000007 .
 
 <http://ex.com/patients_1.xlsx/dp#patients_1> a owl:DatatypeProperty ;
     rdfs:label "dp:patients_1 value" ;
-    rdfs:subPropertyOf data_entity_ontology:DE_000000008 .
+    rdfs:subPropertyOf deo:DE_000000008 .
 
 <http://ex.com/patients_1.xlsx/op#patients_1> a owl:ObjectProperty ;
     rdfs:label "op:patients_1 property" ;
-    rdfs:subPropertyOf data_entity_ontology:DE_000000022 .
+    rdfs:subPropertyOf deo:DE_000000022 .
 
-data_entity_ontology:DE_000000000 a owl:Class ;
+deo:DE_000000000 a owl:Class ;
     rdfs:label "cls:data entity"@en ;
     obo:IAO_0000600 "Information that exists (or is concretized) as a sequence of symbols that can undergo information processing." ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2018-07-19T21:34:07+00:00"^^xsd:dateTime ;
-    rdfs:subClassOf data_entity_ontology:entity .
+    rdfs:subClassOf deo:entity .
 
 obo:IAO_0000125 a owl:NamedIndividual ;
     rdfs:label "pending final vetting"@en ;
@@ -1007,12 +1007,12 @@ obo:IAO_0000122 a owl:NamedIndividual ;
     rdfs:label "ready for release"@en ;
     obo:IAO_0000115 "Class has undergone final review, is ready for use, and will be included in the next release. Any class lacking \"ready_for_release\" should be considered likely to change place in hierarchy, have its definition refined, or be obsoleted in the next release.  Those classes deemed \"ready_for_release\" will also derived from a chain of ancestor classes that are also \"ready_for_release.\""@en .
 
-data_entity_ontology:DE_000000002 a owl:Class ;
+deo:DE_000000002 a owl:Class ;
     rdfs:label "cls:data collection"@en ;
     obo:IAO_0000115 "A data entity that consists of (or has its members) one or more data entities." ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2018-07-19T21:55:42+00:00"^^xsd:dateTime ;
-    rdfs:subClassOf data_entity_ontology:DE_000000000 .
+    rdfs:subClassOf deo:DE_000000000 .
 
 <http://ex.com/patients_1.xlsx/cls/field/patients_1#birth_date> a owl:Class ;
     rdfs:label "cls:patients_1.birth_date field" ;
@@ -1032,46 +1032,7 @@ data_entity_ontology:DE_000000002 a owl:Class ;
 
 <http://ex.com/patients_1.xlsx/cls/row#patients_1> a owl:Class ;
     rdfs:label "cls:patients_1 row" ;
-    rdfs:subClassOf data_entity_ontology:DE_000000004 .
-
-[] a owl:Axiom ;
-    oboInOwl:is_inferred "true"^^xsd:string ;
-    owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource data_entity_ontology:DE_000000007 ;
-    owl:annotatedTarget data_entity_ontology:DE_000000017 .
-
-[] a owl:Axiom ;
-    oboInOwl:is_inferred "true"^^xsd:string ;
-    owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource data_entity_ontology:DE_000000004 ;
-    owl:annotatedTarget data_entity_ontology:DE_000000002 .
-
-[] a owl:Axiom ;
-    oboInOwl:is_inferred "true"^^xsd:string ;
-    owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource data_entity_ontology:DE_000000017 ;
-    owl:annotatedTarget data_entity_ontology:DE_000000000 .
-
-[] a owl:AllDifferent ;
-    owl:distinctMembers ( obo:IAO_0000226 obo:IAO_0000227 obo:IAO_0000228 obo:IAO_0000229 ) .
-
-[] a owl:Axiom ;
-    oboInOwl:is_inferred "true"^^xsd:string ;
-    owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource data_entity_ontology:DE_000000018 ;
-    owl:annotatedTarget data_entity_ontology:DE_000000002 .
-
-[] a owl:Axiom ;
-    oboInOwl:is_inferred "true"^^xsd:string ;
-    owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource data_entity_ontology:DE_000000000 ;
-    owl:annotatedTarget data_entity_ontology:entity .
-
-[] a owl:Axiom ;
-    oboInOwl:is_inferred "true"^^xsd:string ;
-    owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource data_entity_ontology:entity ;
-    owl:annotatedTarget owl:Thing .
+    rdfs:subClassOf deo:DE_000000004 .
 
 [] a owl:AllDifferent ;
     owl:distinctMembers ( obo:IAO_0000120 obo:IAO_0000121 obo:IAO_0000122 obo:IAO_0000123 obo:IAO_0000124 obo:IAO_0000125 obo:IAO_0000423 obo:IAO_0000428 ) .
@@ -1079,24 +1040,63 @@ data_entity_ontology:DE_000000002 a owl:Class ;
 [] a owl:Axiom ;
     oboInOwl:is_inferred "true"^^xsd:string ;
     owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource data_entity_ontology:DE_000000002 ;
-    owl:annotatedTarget data_entity_ontology:DE_000000000 .
-
-[] a owl:Axiom ;
-    oboInOwl:is_inferred "true"^^xsd:string ;
-    owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource data_entity_ontology:DE_000000003 ;
-    owl:annotatedTarget data_entity_ontology:DE_000000002 .
-
-[] a owl:Axiom ;
-    oboInOwl:is_inferred "true"^^xsd:string ;
-    owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource data_entity_ontology:DE_000000006 ;
-    owl:annotatedTarget data_entity_ontology:DE_000000002 .
-
-[] a owl:Axiom ;
-    oboInOwl:is_inferred "true"^^xsd:string ;
-    owl:annotatedProperty rdfs:subClassOf ;
     owl:annotatedSource oboInOwl:ObsoleteClass ;
     owl:annotatedTarget owl:Thing .
+
+[] a owl:Axiom ;
+    oboInOwl:is_inferred "true"^^xsd:string ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource deo:DE_000000000 ;
+    owl:annotatedTarget deo:entity .
+
+[] a owl:Axiom ;
+    oboInOwl:is_inferred "true"^^xsd:string ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource deo:DE_000000017 ;
+    owl:annotatedTarget deo:DE_000000000 .
+
+[] a owl:Axiom ;
+    oboInOwl:is_inferred "true"^^xsd:string ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource deo:entity ;
+    owl:annotatedTarget owl:Thing .
+
+[] a owl:AllDifferent ;
+    owl:distinctMembers ( obo:IAO_0000226 obo:IAO_0000227 obo:IAO_0000228 obo:IAO_0000229 ) .
+
+[] a owl:Axiom ;
+    oboInOwl:is_inferred "true"^^xsd:string ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource deo:DE_000000004 ;
+    owl:annotatedTarget deo:DE_000000002 .
+
+[] a owl:Axiom ;
+    oboInOwl:is_inferred "true"^^xsd:string ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource deo:DE_000000007 ;
+    owl:annotatedTarget deo:DE_000000017 .
+
+[] a owl:Axiom ;
+    oboInOwl:is_inferred "true"^^xsd:string ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource deo:DE_000000006 ;
+    owl:annotatedTarget deo:DE_000000002 .
+
+[] a owl:Axiom ;
+    oboInOwl:is_inferred "true"^^xsd:string ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource deo:DE_000000018 ;
+    owl:annotatedTarget deo:DE_000000002 .
+
+[] a owl:Axiom ;
+    oboInOwl:is_inferred "true"^^xsd:string ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource deo:DE_000000002 ;
+    owl:annotatedTarget deo:DE_000000000 .
+
+[] a owl:Axiom ;
+    oboInOwl:is_inferred "true"^^xsd:string ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource deo:DE_000000003 ;
+    owl:annotatedTarget deo:DE_000000002 .
 
