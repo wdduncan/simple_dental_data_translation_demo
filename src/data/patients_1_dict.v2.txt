@@ -39,6 +39,12 @@
 					"type": "http://ex.com/patients_1.xlsx/cls/field#patients_1",
 					"iri": "http://ex.com/patients_1.xlsx/cls/field/patients_1#birth_date",
 					"rdfs:label": "cls:patients_1.birth_date field"
+				},
+				"tooth_surface":
+				{
+					"type": "http://ex.com/patients_1.xlsx/cls/field#tooth_surface",
+					"iri": "http://ex.com/patients_1.xlsx/cls/field/patients_1#tooth_surface",
+					"rdfs:label": "cls:patients_1.tooth_surface field"
 				}
 			}
 		}
@@ -78,7 +84,13 @@
 					"type": "http://ex.com/patients_1.xlsx/cls/field/patients_1#birth_date",
 					"rdfs:label": "cls:patients_1.birth_date field",
 					"field_name": "birth_date"
-				}
+				},
+				"tooth_surface":
+				{
+					"type": "http://ex.com/patients_1.xlsx/cls/field/patients_1#tooth_surface",
+					"rdfs:label": "cls:patients_1.tooth_surface field",
+					"field_name": "tooth_surface"
+				},
 			}
 		}
 	},
@@ -107,6 +119,12 @@
 				"type": "http://ex.com/patients_1.xlsx/dp#patients_1",
 				"iri": "http://ex.com/patients_1.xlsx/dp/patients_1#birth_date",
 				"rdfs:label": "dp:patients_1.birth_date"
+			},
+			"tooth_surface":
+			{
+				"type": "http://ex.com/patients_1.xlsx/dp#tooth_surface",
+				"iri": "http://ex.com/patients_1.xlsx/dp/patients_1#tooth_surface",
+				"rdfs:label": "dp:patients_1.tooth_surface"
 			}
 		}
 	},
@@ -135,6 +153,12 @@
 				"type": "http://ex.com/patients_1.xlsx/op#patients_1",
 				"iri": "http://ex.com/patients_1.xlsx/op/patients_1#birth_date",
 				"rdfs:label": "op:patients_1.birth_date"
+			},
+			"tooth_surface":
+			{
+				"type": "http://ex.com/patients_1.xlsx/op#tooth_surface",
+				"iri": "http://ex.com/patients_1.xlsx/op/patients_1#tooth_surface",
+				"rdfs:label": "op:patients_1.tooth_surface"
 			}
 		}
 	}

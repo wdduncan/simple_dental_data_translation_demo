@@ -13,22 +13,17 @@ def explode_surfaces(df_services):
     return df
 
 
-def jsonify_haxis(series):
-    temp = series.astype(str).to_dict() # convert row to string dict
-    data = \
-        {key:{"_value":value} for key, value in temp.items()}
-
-    # json_data = {f"{haxis}": data}
-    # if id and len(id_key) > 0: json_data.update({f"{id_key}": f"{id}"}) # update haxis id
-    # if type and len(type_key) > 0: json_data.update({f"{type_key}": f"{type}"}) # update haxis type
-
-    return json.dumps(data) # return data as json
-
-
 def jsonify_series(series):
-    temp = series.astype(str).to_dict() # convert row to string dict
-    data = \
-        {key:{"value":value} for key, value in temp.items()}
+    def convert(value):
+        if type([]) == type(value) or type(()) == type(value):
+            new_value = list(map(lambda v: {"_value": str(v)}, value))
+        else:
+            new_value = {"_value": str(value)}
+        return new_value
+
+    ## for each item in series dictionary items, convert the item value into the form {"_value": value}
+    ## note: the convert function is needed for cases in which value is a list
+    data = {key: convert(value) for key, value in series.to_dict().items()}
     return json.dumps(data) # return data as json
 
 
@@ -140,12 +135,19 @@ def jsonldify_row(row, data_type_dict, value_property="value", member_property="
 
 
 def append_json_column(df, json_column_name="json"):
-    df[json_column_name] =  df.apply(lambda row: jsonify_haxis(row), axis=1)
+    df[json_column_name] =  df.apply(lambda row: jsonify_series(row), axis=1)
     # df[json_column_name] =  df.apply(lambda row: jsonify_row(row, str(row.name)), axis=1)
     return df
 
 
 def append_jsonld_column(df, data_type_dict, jsonld_column_name="jsonld", json_column_name="json", haxis="row"):
+    def convert_data(data):
+        if type([]) == type(data):
+            new_data = list(map(lambda d: json_update(json.dumps(d), "_type", field_type), data))
+        else:
+            new_data = json_update(json.dumps(data), "_type", field_type)
+        return new_data
+
     # create json data with table iri and relate to data using "has_row" key
     df[jsonld_column_name] = \
         df[json_column_name].map(lambda row: jsonldify_values(row, data_type_dict))
@@ -159,6 +161,21 @@ def append_jsonld_column(df, data_type_dict, jsonld_column_name="jsonld", json_c
         json_data = json_update(json_data, update_key="_label", update_value=row_label, data_key="has_row")
 
         df.at[idx, jsonld_column_name] = json_data # update data frame
+
+
+    fields = data_type_dict["i"]["field"]["subtype"]
+    for idx, json_data in df[[jsonld_column_name]].itertuples():
+        jdata = json_as_dict(json_data)
+        for field in fields:
+            # print(field)
+            field_data = jdata["has_row"][field]
+            field_type = fields[field]["type"]
+            field_data = convert_data(field_data)
+
+            # print(field_data)
+            jdata["has_row"][field] = field_data
+        # print(jdata)
+        df.at[idx, jsonld_column_name] = json_data  # update data frame
 
     return df
 
@@ -257,6 +274,11 @@ if __name__ == "__main__":
     with open("data/patients_1_dict.v2.txt", "r") as dict_file:
         patients_1_type_dict = eval(dict_file.read())
 
+    ## append surfaces column for testing
+    df_patients1["tooth_surface"] = "mod"
+    df_patients1["tooth_surface"] = df_patients1["tooth_surface"].map(list)
+    # print(df_patients1)
+
     with open("data/patients_1_context.v2.txt", "r") as context_file:
         patients_1_context = context_file.read()
 
@@ -265,7 +287,7 @@ if __name__ == "__main__":
     graph.serialize(destination="output/patients_1.ttl", format="turtle")
     # print(graph.serialize(format='turtle').decode("utf-8"))
     print(patients_1_graph.serialize(format='turtle').decode("utf-8"))
-    #
+
     # df_patients2 = pds.read_excel("data/patients_2.xlsx")
     # with open("data/patients_2_dict.txt", "r") as dict_file:
     #     patients_2_type_dict = eval(dict_file.read())

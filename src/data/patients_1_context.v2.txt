@@ -14,5 +14,6 @@
 	"dp": "http://ex.com/patients_1.xlsx/dp/patients_1#",
 	"patient_id": "dp:patient_id",
 	"gender": "dp:gender",
-	"birth_date": "dp:birth_date"
+	"birth_date": "dp:birth_date",
+	"tooth_surface": "dp:tooth_surface"
 }

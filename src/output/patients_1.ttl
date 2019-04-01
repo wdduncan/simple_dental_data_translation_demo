@@ -169,6 +169,10 @@ data_entity_ontology1:obsolete_annotation_property a owl:AnnotationProperty ;
     rdfs:label "cls:patients_1.patient_id field" ;
     rdfs:subClassOf <http://ex.com/patients_1.xlsx/cls/field#patients_1> .
 
+<http://ex.com/patients_1.xlsx/cls/field/patients_1#tooth_surface> a owl:Class ;
+    rdfs:label "cls:patients_1.tooth_surface field" ;
+    rdfs:subClassOf <http://ex.com/patients_1.xlsx/cls/field#tooth_surface> .
+
 <http://ex.com/patients_1.xlsx/cls/row#patients_1> a owl:Class ;
     rdfs:label "cls:patients_1 row" ;
     rdfs:subClassOf data_entity_ontology:DE_000000004 .
@@ -184,6 +188,10 @@ dp:gender a owl:DatatypeProperty ;
 dp:patient_id a owl:DatatypeProperty ;
     rdfs:label "dp:patients_1.patient_id" ;
     rdfs:subPropertyOf <http://ex.com/patients_1.xlsx/dp#patients_1> .
+
+dp:tooth_surface a owl:DatatypeProperty ;
+    rdfs:label "dp:patients_1.tooth_surface" ;
+    rdfs:subPropertyOf <http://ex.com/patients_1.xlsx/dp#tooth_surface> .
 
 <http://ex.com/patients_1.xlsx/i/table#patients_1> a <http://ex.com/patients_1.xlsx/cls/table#patients_1>,
         owl:NamedIndividual ;
@@ -210,6 +218,10 @@ op:gender a owl:ObjectProperty ;
 op:patient_id a owl:ObjectProperty ;
     rdfs:label "op:patients_1.patient_id" ;
     rdfs:subPropertyOf <http://ex.com/patients_1.xlsx/op#patients_1> .
+
+op:tooth_surface a owl:ObjectProperty ;
+    rdfs:label "op:patients_1.tooth_surface" ;
+    rdfs:subPropertyOf <http://ex.com/patients_1.xlsx/op#tooth_surface> .
 
 protege:defaultLanguage a owl:AnnotationProperty .
 
@@ -617,61 +629,91 @@ data_entity_ontology1:data_property a owl:DatatypeProperty ;
     rdfs:label "patients_1.row_0" ;
     dp:birth_date "1950-01-01" ;
     dp:gender "M" ;
-    dp:patient_id "10001" .
+    dp:patient_id "10001" ;
+    dp:tooth_surface "d",
+        "m",
+        "o" .
 
 <http://ex.com/patients_1.xlsx/i/row/patients_1#row_1> a <http://data_entity_ontology.owl/#DE_000000004> ;
     rdfs:label "patients_1.row_1" ;
     dp:birth_date "1960-01-02" ;
     dp:gender "F" ;
-    dp:patient_id "10002" .
+    dp:patient_id "10002" ;
+    dp:tooth_surface "d",
+        "m",
+        "o" .
 
 <http://ex.com/patients_1.xlsx/i/row/patients_1#row_2> a <http://data_entity_ontology.owl/#DE_000000004> ;
     rdfs:label "patients_1.row_2" ;
     dp:birth_date "1970-01-03" ;
     dp:gender "M" ;
-    dp:patient_id "10003" .
+    dp:patient_id "10003" ;
+    dp:tooth_surface "d",
+        "m",
+        "o" .
 
 <http://ex.com/patients_1.xlsx/i/row/patients_1#row_3> a <http://data_entity_ontology.owl/#DE_000000004> ;
     rdfs:label "patients_1.row_3" ;
     dp:birth_date "1980-01-04" ;
     dp:gender "F" ;
-    dp:patient_id "10004" .
+    dp:patient_id "10004" ;
+    dp:tooth_surface "d",
+        "m",
+        "o" .
 
 <http://ex.com/patients_1.xlsx/i/row/patients_1#row_4> a <http://data_entity_ontology.owl/#DE_000000004> ;
     rdfs:label "patients_1.row_4" ;
     dp:birth_date "1990-01-05" ;
     dp:gender "M" ;
-    dp:patient_id "10005" .
+    dp:patient_id "10005" ;
+    dp:tooth_surface "d",
+        "m",
+        "o" .
 
 <http://ex.com/patients_1.xlsx/i/row/patients_1#row_5> a <http://data_entity_ontology.owl/#DE_000000004> ;
     rdfs:label "patients_1.row_5" ;
     dp:birth_date "1955-01-06" ;
     dp:gender "F" ;
-    dp:patient_id "10006" .
+    dp:patient_id "10006" ;
+    dp:tooth_surface "d",
+        "m",
+        "o" .
 
 <http://ex.com/patients_1.xlsx/i/row/patients_1#row_6> a <http://data_entity_ontology.owl/#DE_000000004> ;
     rdfs:label "patients_1.row_6" ;
     dp:birth_date "1965-01-07" ;
     dp:gender "M" ;
-    dp:patient_id "10007" .
+    dp:patient_id "10007" ;
+    dp:tooth_surface "d",
+        "m",
+        "o" .
 
 <http://ex.com/patients_1.xlsx/i/row/patients_1#row_7> a <http://data_entity_ontology.owl/#DE_000000004> ;
     rdfs:label "patients_1.row_7" ;
     dp:birth_date "1975-01-08" ;
     dp:gender "F" ;
-    dp:patient_id "10008" .
+    dp:patient_id "10008" ;
+    dp:tooth_surface "d",
+        "m",
+        "o" .
 
 <http://ex.com/patients_1.xlsx/i/row/patients_1#row_8> a <http://data_entity_ontology.owl/#DE_000000004> ;
     rdfs:label "patients_1.row_8" ;
     dp:birth_date "1985-01-09" ;
     dp:gender "M" ;
-    dp:patient_id "10009" .
+    dp:patient_id "10009" ;
+    dp:tooth_surface "d",
+        "m",
+        "o" .
 
 <http://ex.com/patients_1.xlsx/i/row/patients_1#row_9> a <http://data_entity_ontology.owl/#DE_000000004> ;
     rdfs:label "patients_1.row_9" ;
     dp:birth_date "1995-01-10" ;
     dp:gender "F" ;
-    dp:patient_id "10010" .
+    dp:patient_id "10010" ;
+    dp:tooth_surface "d",
+        "m",
+        "o" .
 
 obo:IAO_0000120 a owl:NamedIndividual ;
     rdfs:label "metadata complete"@en ;
@@ -832,22 +874,13 @@ data_entity_ontology:DE_000000002 a owl:Class ;
     dc:date "2018-07-19T21:55:42+00:00"^^xsd:dateTime ;
     rdfs:subClassOf data_entity_ontology:DE_000000000 .
 
-[] a owl:Axiom ;
-    oboInOwl:is_inferred "true"^^xsd:string ;
-    owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource data_entity_ontology:DE_000000004 ;
-    owl:annotatedTarget data_entity_ontology:DE_000000002 .
+[] a owl:AllDifferent ;
+    owl:distinctMembers ( obo:IAO_0000120 obo:IAO_0000121 obo:IAO_0000122 obo:IAO_0000123 obo:IAO_0000124 obo:IAO_0000125 obo:IAO_0000423 obo:IAO_0000428 ) .
 
 [] a owl:Axiom ;
     oboInOwl:is_inferred "true"^^xsd:string ;
     owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource data_entity_ontology:DE_000000003 ;
-    owl:annotatedTarget data_entity_ontology:DE_000000002 .
-
-[] a owl:Axiom ;
-    oboInOwl:is_inferred "true"^^xsd:string ;
-    owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource data_entity_ontology:DE_000000017 ;
+    owl:annotatedSource data_entity_ontology:DE_000000002 ;
     owl:annotatedTarget data_entity_ontology:DE_000000000 .
 
 [] a owl:Axiom ;
@@ -859,17 +892,8 @@ data_entity_ontology:DE_000000002 a owl:Class ;
 [] a owl:Axiom ;
     oboInOwl:is_inferred "true"^^xsd:string ;
     owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource data_entity_ontology:DE_000000002 ;
-    owl:annotatedTarget data_entity_ontology:DE_000000000 .
-
-[] a owl:AllDifferent ;
-    owl:distinctMembers ( obo:IAO_0000120 obo:IAO_0000121 obo:IAO_0000122 obo:IAO_0000123 obo:IAO_0000124 obo:IAO_0000125 obo:IAO_0000423 obo:IAO_0000428 ) .
-
-[] a owl:Axiom ;
-    oboInOwl:is_inferred "true"^^xsd:string ;
-    owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource data_entity_ontology:DE_000000006 ;
-    owl:annotatedTarget data_entity_ontology:DE_000000002 .
+    owl:annotatedSource data_entity_ontology:entity ;
+    owl:annotatedTarget owl:Thing .
 
 [] a owl:Axiom ;
     oboInOwl:is_inferred "true"^^xsd:string ;
@@ -880,7 +904,13 @@ data_entity_ontology:DE_000000002 a owl:Class ;
 [] a owl:Axiom ;
     oboInOwl:is_inferred "true"^^xsd:string ;
     owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource data_entity_ontology:entity ;
+    owl:annotatedSource data_entity_ontology:DE_000000004 ;
+    owl:annotatedTarget data_entity_ontology:DE_000000002 .
+
+[] a owl:Axiom ;
+    oboInOwl:is_inferred "true"^^xsd:string ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource oboInOwl:ObsoleteClass ;
     owl:annotatedTarget owl:Thing .
 
 [] a owl:AllDifferent ;
@@ -889,12 +919,24 @@ data_entity_ontology:DE_000000002 a owl:Class ;
 [] a owl:Axiom ;
     oboInOwl:is_inferred "true"^^xsd:string ;
     owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource oboInOwl:ObsoleteClass ;
-    owl:annotatedTarget owl:Thing .
+    owl:annotatedSource data_entity_ontology:DE_000000003 ;
+    owl:annotatedTarget data_entity_ontology:DE_000000002 .
 
 [] a owl:Axiom ;
     oboInOwl:is_inferred "true"^^xsd:string ;
     owl:annotatedProperty rdfs:subClassOf ;
     owl:annotatedSource data_entity_ontology:DE_000000000 ;
     owl:annotatedTarget data_entity_ontology:entity .
+
+[] a owl:Axiom ;
+    oboInOwl:is_inferred "true"^^xsd:string ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource data_entity_ontology:DE_000000017 ;
+    owl:annotatedTarget data_entity_ontology:DE_000000000 .
+
+[] a owl:Axiom ;
+    oboInOwl:is_inferred "true"^^xsd:string ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource data_entity_ontology:DE_000000006 ;
+    owl:annotatedTarget data_entity_ontology:DE_000000002 .
 
