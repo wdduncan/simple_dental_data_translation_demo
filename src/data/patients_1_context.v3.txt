@@ -1,0 +1,19 @@
+"@context":
+{
+  "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+	"_label": "rdfs:label", 
+	"deo": "http://data_entity_ontology.owl#",
+	"data_record": "deo:DE_000000003",
+	"data_field": "deo:DE_000000007",
+	"data_row": "deo:DE_000000004",
+	"_value": "http://data_entity_ontology.owl#DE_000000008",
+	"_id": "@id",
+	"_type": "@type",
+	"has_row": {"@id": "deo:DE_000000030", "@type": "@id"},
+	"op": "http://ex.com/patients_1.xlsx/op/patients_1#",
+	"dp": "http://ex.com/patients_1.xlsx/dp/patients_1#",
+	"patient_id": "op:patient_id",
+	"gender": "op:gender",
+	"birth_date": "op:birth_date",
+	"tooth_surface": "op:tooth_surface"
+}
