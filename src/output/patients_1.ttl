@@ -157,26 +157,6 @@ data_entity_ontology1:obsolete_annotation_property a owl:AnnotationProperty ;
         "Phil Whalen" ;
     owl:versionIRI <http://data_entity_ontology/2019-03-27/data_entity.owl> .
 
-<http://ex.com/patients_1.xlsx/cls/field/patients_1#birth_date> a owl:Class ;
-    rdfs:label "cls:patients_1.birth_date field" ;
-    rdfs:subClassOf <http://ex.com/patients_1.xlsx/cls/field#patients_1> .
-
-<http://ex.com/patients_1.xlsx/cls/field/patients_1#gender> a owl:Class ;
-    rdfs:label "cls:patients_1.gender field" ;
-    rdfs:subClassOf <http://ex.com/patients_1.xlsx/cls/field#patients_1> .
-
-<http://ex.com/patients_1.xlsx/cls/field/patients_1#patient_id> a owl:Class ;
-    rdfs:label "cls:patients_1.patient_id field" ;
-    rdfs:subClassOf <http://ex.com/patients_1.xlsx/cls/field#patients_1> .
-
-<http://ex.com/patients_1.xlsx/cls/field/patients_1#tooth_surface> a owl:Class ;
-    rdfs:label "cls:patients_1.tooth_surface field" ;
-    rdfs:subClassOf <http://ex.com/patients_1.xlsx/cls/field#tooth_surface> .
-
-<http://ex.com/patients_1.xlsx/cls/row#patients_1> a owl:Class ;
-    rdfs:label "cls:patients_1 row" ;
-    rdfs:subClassOf data_entity_ontology:DE_000000004 .
-
 dp:birth_date a owl:DatatypeProperty ;
     rdfs:label "dp:patients_1.birth_date" ;
     rdfs:subPropertyOf <http://ex.com/patients_1.xlsx/dp#patients_1> .
@@ -191,7 +171,7 @@ dp:patient_id a owl:DatatypeProperty ;
 
 dp:tooth_surface a owl:DatatypeProperty ;
     rdfs:label "dp:patients_1.tooth_surface" ;
-    rdfs:subPropertyOf <http://ex.com/patients_1.xlsx/dp#tooth_surface> .
+    rdfs:subPropertyOf <http://ex.com/patients_1.xlsx/dp#patients_1> .
 
 <http://ex.com/patients_1.xlsx/i/table#patients_1> a <http://ex.com/patients_1.xlsx/cls/table#patients_1>,
         owl:NamedIndividual ;
@@ -221,7 +201,7 @@ op:patient_id a owl:ObjectProperty ;
 
 op:tooth_surface a owl:ObjectProperty ;
     rdfs:label "op:patients_1.tooth_surface" ;
-    rdfs:subPropertyOf <http://ex.com/patients_1.xlsx/op#tooth_surface> .
+    rdfs:subPropertyOf <http://ex.com/patients_1.xlsx/op#patients_1> .
 
 protege:defaultLanguage a owl:AnnotationProperty .
 
@@ -625,95 +605,255 @@ data_entity_ontology1:data_property a owl:DatatypeProperty ;
     rdfs:label "cls:patients_1 table" ;
     rdfs:subClassOf data_entity_ontology:DE_000000018 .
 
-<http://ex.com/patients_1.xlsx/i/row/patients_1#row_0> a <http://data_entity_ontology.owl/#DE_000000004> ;
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_0.birth_date> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#birth_date> ;
+    rdfs:label "patients_1.row_0.birth_date" ;
+    data_entity_ontology:DE_000000008 "1950-01-01" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_0.gender> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#gender> ;
+    rdfs:label "patients_1.row_0.gender" ;
+    data_entity_ontology:DE_000000008 "M" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_0.patient_id> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#patient_id> ;
+    rdfs:label "patients_1.row_0.patient_id" ;
+    data_entity_ontology:DE_000000008 "10001" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_0.tooth_surface> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#tooth_surface> ;
+    rdfs:label "patients_1.row_0.tooth_surface" ;
+    data_entity_ontology:DE_000000008 "d",
+        "m",
+        "o" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_1.birth_date> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#birth_date> ;
+    rdfs:label "patients_1.row_1.birth_date" ;
+    data_entity_ontology:DE_000000008 "1960-01-02" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_1.gender> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#gender> ;
+    rdfs:label "patients_1.row_1.gender" ;
+    data_entity_ontology:DE_000000008 "F" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_1.patient_id> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#patient_id> ;
+    rdfs:label "patients_1.row_1.patient_id" ;
+    data_entity_ontology:DE_000000008 "10002" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_1.tooth_surface> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#tooth_surface> ;
+    rdfs:label "patients_1.row_1.tooth_surface" ;
+    data_entity_ontology:DE_000000008 "d",
+        "m",
+        "o" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_2.birth_date> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#birth_date> ;
+    rdfs:label "patients_1.row_2.birth_date" ;
+    data_entity_ontology:DE_000000008 "1970-01-03" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_2.gender> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#gender> ;
+    rdfs:label "patients_1.row_2.gender" ;
+    data_entity_ontology:DE_000000008 "M" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_2.patient_id> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#patient_id> ;
+    rdfs:label "patients_1.row_2.patient_id" ;
+    data_entity_ontology:DE_000000008 "10003" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_2.tooth_surface> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#tooth_surface> ;
+    rdfs:label "patients_1.row_2.tooth_surface" ;
+    data_entity_ontology:DE_000000008 "d",
+        "m",
+        "o" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_3.birth_date> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#birth_date> ;
+    rdfs:label "patients_1.row_3.birth_date" ;
+    data_entity_ontology:DE_000000008 "1980-01-04" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_3.gender> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#gender> ;
+    rdfs:label "patients_1.row_3.gender" ;
+    data_entity_ontology:DE_000000008 "F" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_3.patient_id> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#patient_id> ;
+    rdfs:label "patients_1.row_3.patient_id" ;
+    data_entity_ontology:DE_000000008 "10004" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_3.tooth_surface> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#tooth_surface> ;
+    rdfs:label "patients_1.row_3.tooth_surface" ;
+    data_entity_ontology:DE_000000008 "d",
+        "m",
+        "o" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_4.birth_date> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#birth_date> ;
+    rdfs:label "patients_1.row_4.birth_date" ;
+    data_entity_ontology:DE_000000008 "1990-01-05" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_4.gender> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#gender> ;
+    rdfs:label "patients_1.row_4.gender" ;
+    data_entity_ontology:DE_000000008 "M" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_4.patient_id> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#patient_id> ;
+    rdfs:label "patients_1.row_4.patient_id" ;
+    data_entity_ontology:DE_000000008 "10005" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_4.tooth_surface> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#tooth_surface> ;
+    rdfs:label "patients_1.row_4.tooth_surface" ;
+    data_entity_ontology:DE_000000008 "d",
+        "m",
+        "o" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_5.birth_date> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#birth_date> ;
+    rdfs:label "patients_1.row_5.birth_date" ;
+    data_entity_ontology:DE_000000008 "1955-01-06" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_5.gender> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#gender> ;
+    rdfs:label "patients_1.row_5.gender" ;
+    data_entity_ontology:DE_000000008 "F" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_5.patient_id> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#patient_id> ;
+    rdfs:label "patients_1.row_5.patient_id" ;
+    data_entity_ontology:DE_000000008 "10006" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_5.tooth_surface> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#tooth_surface> ;
+    rdfs:label "patients_1.row_5.tooth_surface" ;
+    data_entity_ontology:DE_000000008 "d",
+        "m",
+        "o" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_6.birth_date> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#birth_date> ;
+    rdfs:label "patients_1.row_6.birth_date" ;
+    data_entity_ontology:DE_000000008 "1965-01-07" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_6.gender> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#gender> ;
+    rdfs:label "patients_1.row_6.gender" ;
+    data_entity_ontology:DE_000000008 "M" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_6.patient_id> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#patient_id> ;
+    rdfs:label "patients_1.row_6.patient_id" ;
+    data_entity_ontology:DE_000000008 "10007" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_6.tooth_surface> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#tooth_surface> ;
+    rdfs:label "patients_1.row_6.tooth_surface" ;
+    data_entity_ontology:DE_000000008 "d",
+        "m",
+        "o" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_7.birth_date> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#birth_date> ;
+    rdfs:label "patients_1.row_7.birth_date" ;
+    data_entity_ontology:DE_000000008 "1975-01-08" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_7.gender> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#gender> ;
+    rdfs:label "patients_1.row_7.gender" ;
+    data_entity_ontology:DE_000000008 "F" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_7.patient_id> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#patient_id> ;
+    rdfs:label "patients_1.row_7.patient_id" ;
+    data_entity_ontology:DE_000000008 "10008" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_7.tooth_surface> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#tooth_surface> ;
+    rdfs:label "patients_1.row_7.tooth_surface" ;
+    data_entity_ontology:DE_000000008 "d",
+        "m",
+        "o" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_8.birth_date> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#birth_date> ;
+    rdfs:label "patients_1.row_8.birth_date" ;
+    data_entity_ontology:DE_000000008 "1985-01-09" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_8.gender> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#gender> ;
+    rdfs:label "patients_1.row_8.gender" ;
+    data_entity_ontology:DE_000000008 "M" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_8.patient_id> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#patient_id> ;
+    rdfs:label "patients_1.row_8.patient_id" ;
+    data_entity_ontology:DE_000000008 "10009" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_8.tooth_surface> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#tooth_surface> ;
+    rdfs:label "patients_1.row_8.tooth_surface" ;
+    data_entity_ontology:DE_000000008 "d",
+        "m",
+        "o" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_9.birth_date> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#birth_date> ;
+    rdfs:label "patients_1.row_9.birth_date" ;
+    data_entity_ontology:DE_000000008 "1995-01-10" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_9.gender> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#gender> ;
+    rdfs:label "patients_1.row_9.gender" ;
+    data_entity_ontology:DE_000000008 "F" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_9.patient_id> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#patient_id> ;
+    rdfs:label "patients_1.row_9.patient_id" ;
+    data_entity_ontology:DE_000000008 "10010" .
+
+<http://ex.com/patients_1.xlsx/i/field/patients_1#row_9.tooth_surface> a <http://ex.com/patients_1.xlsx/cls/field/patients_1#tooth_surface> ;
+    rdfs:label "patients_1.row_9.tooth_surface" ;
+    data_entity_ontology:DE_000000008 "d",
+        "m",
+        "o" .
+
+<http://ex.com/patients_1.xlsx/i/row/patients_1#row_0> a <http://ex.com/patients_1.xlsx/cls/row#patients_1> ;
     rdfs:label "patients_1.row_0" ;
-    dp:birth_date "1950-01-01" ;
-    dp:gender "M" ;
-    dp:patient_id "10001" ;
-    dp:tooth_surface "d",
-        "m",
-        "o" .
+    op:birth_date <http://ex.com/patients_1.xlsx/i/field/patients_1#row_0.birth_date> ;
+    op:gender <http://ex.com/patients_1.xlsx/i/field/patients_1#row_0.gender> ;
+    op:patient_id <http://ex.com/patients_1.xlsx/i/field/patients_1#row_0.patient_id> ;
+    op:tooth_surface <http://ex.com/patients_1.xlsx/i/field/patients_1#row_0.tooth_surface> .
 
-<http://ex.com/patients_1.xlsx/i/row/patients_1#row_1> a <http://data_entity_ontology.owl/#DE_000000004> ;
+<http://ex.com/patients_1.xlsx/i/row/patients_1#row_1> a <http://ex.com/patients_1.xlsx/cls/row#patients_1> ;
     rdfs:label "patients_1.row_1" ;
-    dp:birth_date "1960-01-02" ;
-    dp:gender "F" ;
-    dp:patient_id "10002" ;
-    dp:tooth_surface "d",
-        "m",
-        "o" .
+    op:birth_date <http://ex.com/patients_1.xlsx/i/field/patients_1#row_1.birth_date> ;
+    op:gender <http://ex.com/patients_1.xlsx/i/field/patients_1#row_1.gender> ;
+    op:patient_id <http://ex.com/patients_1.xlsx/i/field/patients_1#row_1.patient_id> ;
+    op:tooth_surface <http://ex.com/patients_1.xlsx/i/field/patients_1#row_1.tooth_surface> .
 
-<http://ex.com/patients_1.xlsx/i/row/patients_1#row_2> a <http://data_entity_ontology.owl/#DE_000000004> ;
+<http://ex.com/patients_1.xlsx/i/row/patients_1#row_2> a <http://ex.com/patients_1.xlsx/cls/row#patients_1> ;
     rdfs:label "patients_1.row_2" ;
-    dp:birth_date "1970-01-03" ;
-    dp:gender "M" ;
-    dp:patient_id "10003" ;
-    dp:tooth_surface "d",
-        "m",
-        "o" .
+    op:birth_date <http://ex.com/patients_1.xlsx/i/field/patients_1#row_2.birth_date> ;
+    op:gender <http://ex.com/patients_1.xlsx/i/field/patients_1#row_2.gender> ;
+    op:patient_id <http://ex.com/patients_1.xlsx/i/field/patients_1#row_2.patient_id> ;
+    op:tooth_surface <http://ex.com/patients_1.xlsx/i/field/patients_1#row_2.tooth_surface> .
 
-<http://ex.com/patients_1.xlsx/i/row/patients_1#row_3> a <http://data_entity_ontology.owl/#DE_000000004> ;
+<http://ex.com/patients_1.xlsx/i/row/patients_1#row_3> a <http://ex.com/patients_1.xlsx/cls/row#patients_1> ;
     rdfs:label "patients_1.row_3" ;
-    dp:birth_date "1980-01-04" ;
-    dp:gender "F" ;
-    dp:patient_id "10004" ;
-    dp:tooth_surface "d",
-        "m",
-        "o" .
+    op:birth_date <http://ex.com/patients_1.xlsx/i/field/patients_1#row_3.birth_date> ;
+    op:gender <http://ex.com/patients_1.xlsx/i/field/patients_1#row_3.gender> ;
+    op:patient_id <http://ex.com/patients_1.xlsx/i/field/patients_1#row_3.patient_id> ;
+    op:tooth_surface <http://ex.com/patients_1.xlsx/i/field/patients_1#row_3.tooth_surface> .
 
-<http://ex.com/patients_1.xlsx/i/row/patients_1#row_4> a <http://data_entity_ontology.owl/#DE_000000004> ;
+<http://ex.com/patients_1.xlsx/i/row/patients_1#row_4> a <http://ex.com/patients_1.xlsx/cls/row#patients_1> ;
     rdfs:label "patients_1.row_4" ;
-    dp:birth_date "1990-01-05" ;
-    dp:gender "M" ;
-    dp:patient_id "10005" ;
-    dp:tooth_surface "d",
-        "m",
-        "o" .
+    op:birth_date <http://ex.com/patients_1.xlsx/i/field/patients_1#row_4.birth_date> ;
+    op:gender <http://ex.com/patients_1.xlsx/i/field/patients_1#row_4.gender> ;
+    op:patient_id <http://ex.com/patients_1.xlsx/i/field/patients_1#row_4.patient_id> ;
+    op:tooth_surface <http://ex.com/patients_1.xlsx/i/field/patients_1#row_4.tooth_surface> .
 
-<http://ex.com/patients_1.xlsx/i/row/patients_1#row_5> a <http://data_entity_ontology.owl/#DE_000000004> ;
+<http://ex.com/patients_1.xlsx/i/row/patients_1#row_5> a <http://ex.com/patients_1.xlsx/cls/row#patients_1> ;
     rdfs:label "patients_1.row_5" ;
-    dp:birth_date "1955-01-06" ;
-    dp:gender "F" ;
-    dp:patient_id "10006" ;
-    dp:tooth_surface "d",
-        "m",
-        "o" .
+    op:birth_date <http://ex.com/patients_1.xlsx/i/field/patients_1#row_5.birth_date> ;
+    op:gender <http://ex.com/patients_1.xlsx/i/field/patients_1#row_5.gender> ;
+    op:patient_id <http://ex.com/patients_1.xlsx/i/field/patients_1#row_5.patient_id> ;
+    op:tooth_surface <http://ex.com/patients_1.xlsx/i/field/patients_1#row_5.tooth_surface> .
 
-<http://ex.com/patients_1.xlsx/i/row/patients_1#row_6> a <http://data_entity_ontology.owl/#DE_000000004> ;
+<http://ex.com/patients_1.xlsx/i/row/patients_1#row_6> a <http://ex.com/patients_1.xlsx/cls/row#patients_1> ;
     rdfs:label "patients_1.row_6" ;
-    dp:birth_date "1965-01-07" ;
-    dp:gender "M" ;
-    dp:patient_id "10007" ;
-    dp:tooth_surface "d",
-        "m",
-        "o" .
+    op:birth_date <http://ex.com/patients_1.xlsx/i/field/patients_1#row_6.birth_date> ;
+    op:gender <http://ex.com/patients_1.xlsx/i/field/patients_1#row_6.gender> ;
+    op:patient_id <http://ex.com/patients_1.xlsx/i/field/patients_1#row_6.patient_id> ;
+    op:tooth_surface <http://ex.com/patients_1.xlsx/i/field/patients_1#row_6.tooth_surface> .
 
-<http://ex.com/patients_1.xlsx/i/row/patients_1#row_7> a <http://data_entity_ontology.owl/#DE_000000004> ;
+<http://ex.com/patients_1.xlsx/i/row/patients_1#row_7> a <http://ex.com/patients_1.xlsx/cls/row#patients_1> ;
     rdfs:label "patients_1.row_7" ;
-    dp:birth_date "1975-01-08" ;
-    dp:gender "F" ;
-    dp:patient_id "10008" ;
-    dp:tooth_surface "d",
-        "m",
-        "o" .
+    op:birth_date <http://ex.com/patients_1.xlsx/i/field/patients_1#row_7.birth_date> ;
+    op:gender <http://ex.com/patients_1.xlsx/i/field/patients_1#row_7.gender> ;
+    op:patient_id <http://ex.com/patients_1.xlsx/i/field/patients_1#row_7.patient_id> ;
+    op:tooth_surface <http://ex.com/patients_1.xlsx/i/field/patients_1#row_7.tooth_surface> .
 
-<http://ex.com/patients_1.xlsx/i/row/patients_1#row_8> a <http://data_entity_ontology.owl/#DE_000000004> ;
+<http://ex.com/patients_1.xlsx/i/row/patients_1#row_8> a <http://ex.com/patients_1.xlsx/cls/row#patients_1> ;
     rdfs:label "patients_1.row_8" ;
-    dp:birth_date "1985-01-09" ;
-    dp:gender "M" ;
-    dp:patient_id "10009" ;
-    dp:tooth_surface "d",
-        "m",
-        "o" .
+    op:birth_date <http://ex.com/patients_1.xlsx/i/field/patients_1#row_8.birth_date> ;
+    op:gender <http://ex.com/patients_1.xlsx/i/field/patients_1#row_8.gender> ;
+    op:patient_id <http://ex.com/patients_1.xlsx/i/field/patients_1#row_8.patient_id> ;
+    op:tooth_surface <http://ex.com/patients_1.xlsx/i/field/patients_1#row_8.tooth_surface> .
 
-<http://ex.com/patients_1.xlsx/i/row/patients_1#row_9> a <http://data_entity_ontology.owl/#DE_000000004> ;
+<http://ex.com/patients_1.xlsx/i/row/patients_1#row_9> a <http://ex.com/patients_1.xlsx/cls/row#patients_1> ;
     rdfs:label "patients_1.row_9" ;
-    dp:birth_date "1995-01-10" ;
-    dp:gender "F" ;
-    dp:patient_id "10010" ;
-    dp:tooth_surface "d",
-        "m",
-        "o" .
+    op:birth_date <http://ex.com/patients_1.xlsx/i/field/patients_1#row_9.birth_date> ;
+    op:gender <http://ex.com/patients_1.xlsx/i/field/patients_1#row_9.gender> ;
+    op:patient_id <http://ex.com/patients_1.xlsx/i/field/patients_1#row_9.patient_id> ;
+    op:tooth_surface <http://ex.com/patients_1.xlsx/i/field/patients_1#row_9.tooth_surface> .
 
 obo:IAO_0000120 a owl:NamedIndividual ;
     rdfs:label "metadata complete"@en ;
@@ -817,18 +957,6 @@ data_entity_ontology:entity a owl:Class ;
     dc:date "2018-05-28T14:19:23+00:00"^^xsd:dateTime ;
     rdfs:subClassOf owl:Thing .
 
-<http://ex.com/patients_1.xlsx/cls/field#patients_1> a owl:Class ;
-    rdfs:label "cls:patients_1 field" ;
-    rdfs:subClassOf data_entity_ontology:DE_000000007 .
-
-<http://ex.com/patients_1.xlsx/dp#patients_1> a owl:DatatypeProperty ;
-    rdfs:label "dp:patients_1 value" ;
-    rdfs:subPropertyOf data_entity_ontology:DE_000000008 .
-
-<http://ex.com/patients_1.xlsx/op#patients_1> a owl:ObjectProperty ;
-    rdfs:label "op:patients_1 property" ;
-    rdfs:subPropertyOf data_entity_ontology:DE_000000022 .
-
 data_entity_ontology:DE_000000010 a owl:DatatypeProperty ;
     rdfs:label "dp:metadata property"@en ;
     obo:IAO_0000600 "A data property in which the data value is used to provide information about another entity or value." ;
@@ -852,6 +980,18 @@ data_entity_ontology1:obsolete_data_property a owl:DatatypeProperty ;
     dc:creator "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"^^xsd:string ;
     dc:date "2018-07-19T22:19:27+00:00"^^xsd:dateTime .
 
+<http://ex.com/patients_1.xlsx/cls/field#patients_1> a owl:Class ;
+    rdfs:label "cls:patients_1 field" ;
+    rdfs:subClassOf data_entity_ontology:DE_000000007 .
+
+<http://ex.com/patients_1.xlsx/dp#patients_1> a owl:DatatypeProperty ;
+    rdfs:label "dp:patients_1 value" ;
+    rdfs:subPropertyOf data_entity_ontology:DE_000000008 .
+
+<http://ex.com/patients_1.xlsx/op#patients_1> a owl:ObjectProperty ;
+    rdfs:label "op:patients_1 property" ;
+    rdfs:subPropertyOf data_entity_ontology:DE_000000022 .
+
 data_entity_ontology:DE_000000000 a owl:Class ;
     rdfs:label "cls:data entity"@en ;
     obo:IAO_0000600 "Information that exists (or is concretized) as a sequence of symbols that can undergo information processing." ;
@@ -874,26 +1014,25 @@ data_entity_ontology:DE_000000002 a owl:Class ;
     dc:date "2018-07-19T21:55:42+00:00"^^xsd:dateTime ;
     rdfs:subClassOf data_entity_ontology:DE_000000000 .
 
-[] a owl:AllDifferent ;
-    owl:distinctMembers ( obo:IAO_0000120 obo:IAO_0000121 obo:IAO_0000122 obo:IAO_0000123 obo:IAO_0000124 obo:IAO_0000125 obo:IAO_0000423 obo:IAO_0000428 ) .
+<http://ex.com/patients_1.xlsx/cls/field/patients_1#birth_date> a owl:Class ;
+    rdfs:label "cls:patients_1.birth_date field" ;
+    rdfs:subClassOf <http://ex.com/patients_1.xlsx/cls/field#patients_1> .
 
-[] a owl:Axiom ;
-    oboInOwl:is_inferred "true"^^xsd:string ;
-    owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource data_entity_ontology:DE_000000002 ;
-    owl:annotatedTarget data_entity_ontology:DE_000000000 .
+<http://ex.com/patients_1.xlsx/cls/field/patients_1#gender> a owl:Class ;
+    rdfs:label "cls:patients_1.gender field" ;
+    rdfs:subClassOf <http://ex.com/patients_1.xlsx/cls/field#patients_1> .
 
-[] a owl:Axiom ;
-    oboInOwl:is_inferred "true"^^xsd:string ;
-    owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource data_entity_ontology:DE_000000018 ;
-    owl:annotatedTarget data_entity_ontology:DE_000000002 .
+<http://ex.com/patients_1.xlsx/cls/field/patients_1#patient_id> a owl:Class ;
+    rdfs:label "cls:patients_1.patient_id field" ;
+    rdfs:subClassOf <http://ex.com/patients_1.xlsx/cls/field#patients_1> .
 
-[] a owl:Axiom ;
-    oboInOwl:is_inferred "true"^^xsd:string ;
-    owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource data_entity_ontology:entity ;
-    owl:annotatedTarget owl:Thing .
+<http://ex.com/patients_1.xlsx/cls/field/patients_1#tooth_surface> a owl:Class ;
+    rdfs:label "cls:patients_1.tooth_surface field" ;
+    rdfs:subClassOf <http://ex.com/patients_1.xlsx/cls/field#patients_1> .
+
+<http://ex.com/patients_1.xlsx/cls/row#patients_1> a owl:Class ;
+    rdfs:label "cls:patients_1 row" ;
+    rdfs:subClassOf data_entity_ontology:DE_000000004 .
 
 [] a owl:Axiom ;
     oboInOwl:is_inferred "true"^^xsd:string ;
@@ -910,8 +1049,8 @@ data_entity_ontology:DE_000000002 a owl:Class ;
 [] a owl:Axiom ;
     oboInOwl:is_inferred "true"^^xsd:string ;
     owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource oboInOwl:ObsoleteClass ;
-    owl:annotatedTarget owl:Thing .
+    owl:annotatedSource data_entity_ontology:DE_000000017 ;
+    owl:annotatedTarget data_entity_ontology:DE_000000000 .
 
 [] a owl:AllDifferent ;
     owl:distinctMembers ( obo:IAO_0000226 obo:IAO_0000227 obo:IAO_0000228 obo:IAO_0000229 ) .
@@ -919,7 +1058,7 @@ data_entity_ontology:DE_000000002 a owl:Class ;
 [] a owl:Axiom ;
     oboInOwl:is_inferred "true"^^xsd:string ;
     owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource data_entity_ontology:DE_000000003 ;
+    owl:annotatedSource data_entity_ontology:DE_000000018 ;
     owl:annotatedTarget data_entity_ontology:DE_000000002 .
 
 [] a owl:Axiom ;
@@ -931,12 +1070,33 @@ data_entity_ontology:DE_000000002 a owl:Class ;
 [] a owl:Axiom ;
     oboInOwl:is_inferred "true"^^xsd:string ;
     owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource data_entity_ontology:DE_000000017 ;
+    owl:annotatedSource data_entity_ontology:entity ;
+    owl:annotatedTarget owl:Thing .
+
+[] a owl:AllDifferent ;
+    owl:distinctMembers ( obo:IAO_0000120 obo:IAO_0000121 obo:IAO_0000122 obo:IAO_0000123 obo:IAO_0000124 obo:IAO_0000125 obo:IAO_0000423 obo:IAO_0000428 ) .
+
+[] a owl:Axiom ;
+    oboInOwl:is_inferred "true"^^xsd:string ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource data_entity_ontology:DE_000000002 ;
     owl:annotatedTarget data_entity_ontology:DE_000000000 .
+
+[] a owl:Axiom ;
+    oboInOwl:is_inferred "true"^^xsd:string ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource data_entity_ontology:DE_000000003 ;
+    owl:annotatedTarget data_entity_ontology:DE_000000002 .
 
 [] a owl:Axiom ;
     oboInOwl:is_inferred "true"^^xsd:string ;
     owl:annotatedProperty rdfs:subClassOf ;
     owl:annotatedSource data_entity_ontology:DE_000000006 ;
     owl:annotatedTarget data_entity_ontology:DE_000000002 .
+
+[] a owl:Axiom ;
+    oboInOwl:is_inferred "true"^^xsd:string ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource oboInOwl:ObsoleteClass ;
+    owl:annotatedTarget owl:Thing .
 

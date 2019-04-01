@@ -42,7 +42,7 @@
 				},
 				"tooth_surface":
 				{
-					"type": "http://ex.com/patients_1.xlsx/cls/field#tooth_surface",
+					"type": "http://ex.com/patients_1.xlsx/cls/field#patients_1",
 					"iri": "http://ex.com/patients_1.xlsx/cls/field/patients_1#tooth_surface",
 					"rdfs:label": "cls:patients_1.tooth_surface field"
 				}
@@ -60,7 +60,8 @@
 		},
 		"row":
 		{
-			"ns": "http://ex.com/patients_1.xlsx/i/row/patients_1#"
+			"ns": "http://ex.com/patients_1.xlsx/i/row/patients_1#",
+			"type": "http://ex.com/patients_1.xlsx/cls/row#patients_1"
 		},
 		"field":
 		{
@@ -122,7 +123,7 @@
 			},
 			"tooth_surface":
 			{
-				"type": "http://ex.com/patients_1.xlsx/dp#tooth_surface",
+				"type": "http://ex.com/patients_1.xlsx/dp#patients_1",
 				"iri": "http://ex.com/patients_1.xlsx/dp/patients_1#tooth_surface",
 				"rdfs:label": "dp:patients_1.tooth_surface"
 			}
@@ -156,7 +157,7 @@
 			},
 			"tooth_surface":
 			{
-				"type": "http://ex.com/patients_1.xlsx/op#tooth_surface",
+				"type": "http://ex.com/patients_1.xlsx/op#patients_1",
 				"iri": "http://ex.com/patients_1.xlsx/op/patients_1#tooth_surface",
 				"rdfs:label": "op:patients_1.tooth_surface"
 			}

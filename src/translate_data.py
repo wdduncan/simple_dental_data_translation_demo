@@ -2,6 +2,7 @@ from rdflib import Graph, ConjunctiveGraph, URIRef, RDF, OWL, RDFS, Literal
 import json
 import pandas as pds
 from requests.utils import requote_uri
+from urllib.parse import quote
 from textwrap import dedent
 
 def explode_surfaces(df_services):
@@ -52,11 +53,18 @@ def json_as_dict(json_data, data_key=None):
 
 
 def json_update(json_data, update_key, update_value, data_key=None):
-    jdata = json_as_dict(json_data)  # load json data into dict
+    # load json data into dict
+    if type({}) == type(json_data):
+        jdata = json_data
+    else:
+        jdata = json_as_dict(json_data)
+
     if data_key:
         jdata[data_key].update({f"{update_key}": f"{update_value}"})
     else:
         jdata.update({f"{update_key}": f"{update_value}"})  # add key:value info
+
+    # print('jdata: ', json_data, ' type: ', type(jdata), ' data_key: ', data_key)
     return json.dumps(jdata)
 
 
@@ -149,8 +157,46 @@ def append_jsonld_column(df, data_type_dict, jsonld_column_name="jsonld", json_c
         return new_data
 
     # create json data with table iri and relate to data using "has_row" key
+    row_type = data_type_dict["i"]["row"]["type"]
     df[jsonld_column_name] = \
-        df[json_column_name].map(lambda row: jsonldify_values(row, data_type_dict))
+        df[json_column_name].map(lambda row: jsonldify_values(row, data_type_dict, _type=row_type))
+
+    # add id & label info to each "has_row" data block
+    for idx, json_data in df[[jsonld_column_name]].itertuples():
+        row_id = data_type_dict["i"]["row"]["ns"] + "row_" + str(idx) # build id
+        json_data = json_update(json_data, update_key="_id", update_value=row_id, data_key="has_row")
+
+        row_label = data_type_dict["i"]["table"]["table_name"] + ".row_" + str(idx) # build label
+        json_data = json_update(json_data, update_key="_label", update_value=row_label, data_key="has_row")
+
+        df.at[idx, jsonld_column_name] = json_data # update data frame
+
+    return df
+
+
+def append_jsonld_column2(df, data_type_dict, jsonld_column_name="jsonld", json_column_name="json", haxis="row"):
+    def convert_data(data):
+        if type([]) == type(data):
+            new_data = list(map(lambda d: json_update(json.dumps(d), "_type", field_type), data))
+        else:
+            new_data = json_update(json.dumps(data), "_type", field_type)
+        return new_data
+
+    def update_data(data, udate_key, update_value):
+        ## if data is in a list; update each item;
+        ## json_update returns a string (i.e., json) so use loads to convert to a dict
+        if type([]) == type(data):
+            new_data = \
+                list(map(lambda d: json.loads(json_update(d, udate_key, update_value)), data))
+        else:
+            new_data = \
+                json.loads(json_update(data, udate_key, update_value))
+        return new_data
+
+    # create json data with table iri and relate to data using "has_row" key
+    row_type = data_type_dict["i"]["row"]["type"]
+    df[jsonld_column_name] = \
+        df[json_column_name].map(lambda row: jsonldify_values(row, data_type_dict, _type=row_type))
 
     # add id & label info to each "has_row" data block
     for idx, json_data in df[[jsonld_column_name]].itertuples():
@@ -168,17 +214,32 @@ def append_jsonld_column(df, data_type_dict, jsonld_column_name="jsonld", json_c
         jdata = json_as_dict(json_data)
         for field in fields:
             # print(field)
+
             field_data = jdata["has_row"][field]
             field_type = fields[field]["type"]
-            field_data = convert_data(field_data)
+            # field_data = convert_data(field_data)
+            # field_data = update_data(field_data, "_type", fields[field]["type"])
+            field_data = update_data(field_data, "_type", field_type)
+
+            field_id = data_type_dict["i"]["field"]["ns"] + "row_" + str(idx) + "." + quote(field)  # build id
+            # field_data = json_update(field_data, update_key="_id", update_value=field_id)
+            field_data = update_data(field_data, "_id", field_id)
+
+            field_label = data_type_dict["i"]["table"]["table_name"] + ".row_" + str(idx) + "." + field  # build label
+            # field_data = json_update(field_data, update_key="_label", update_value=field_label)
+            field_data = update_data(field_data, "_label", field_label)
 
             # print(field_data)
+            # print(jdata["has_row"][field])
             jdata["has_row"][field] = field_data
+            # print(jdata["has_row"][field])
+            # print(jdata)
+            df.at[idx, jsonld_column_name] = json.dumps(jdata)
+
         # print(jdata)
-        df.at[idx, jsonld_column_name] = json_data  # update data frame
+        # df.at[idx, jsonld_column_name] = json_data  # update data frame
 
     return df
-
 
 def make_data_framework(df, data_type_dict):
     def add_entity(entity, owl_type):
@@ -254,7 +315,7 @@ def translate_data(df, data_type_dict, context, print_graph=False):
     df = append_json_column(df)
 
     # df = append_jsonld_column(df, data_type_dict)
-    df = append_jsonld_column(df, data_type_dict)
+    df = append_jsonld_column2(df, data_type_dict) # **********
     # print(str(df.jsonld))
 
     framework_graph = make_data_framework(df, data_type_dict)
@@ -279,7 +340,7 @@ if __name__ == "__main__":
     df_patients1["tooth_surface"] = df_patients1["tooth_surface"].map(list)
     # print(df_patients1)
 
-    with open("data/patients_1_context.v2.txt", "r") as context_file:
+    with open("data/patients_1_context.v3.txt", "r") as context_file: # **********
         patients_1_context = context_file.read()
 
     patients_1_graph = translate_data(df_patients1, patients_1_type_dict, patients_1_context)
