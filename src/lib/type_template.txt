@@ -1,0 +1,79 @@
+{
+	"base_iri": "",
+	"ontology_iri": "",
+	"subtype_template":
+	{
+		"type": "",
+		"iri": "",
+	  "rdfs:label": ""
+	},
+	"cls":
+	{
+		"table":
+		{
+		 "type": "http://data_entity_ontology.owl#DE_000000018",
+		 "rdfs:label": "",
+		 "iri": ""
+		},
+		"row":
+		{
+			"type": "http://data_entity_ontology.owl#DE_000000004",
+			"rdfs:label": "",
+			"iri": ""
+		},
+		"field":
+		{
+			"type": "http://data_entity_ontology.owl#DE_000000007",
+			"rdfs:label": "",
+			"iri": "",
+			"subtype":
+			{
+			
+			}
+		}
+	},	 
+	"i":
+	{
+		"table":
+		{
+			"table_name": "",
+			"type": "",
+			"rdfs:label": "",
+			"iri": ""
+		},
+		"row":
+		{
+			"ns": "",
+			"type": ""
+		},
+		"field":
+		{
+			"ns": "http://ex.com/patients_1.xlsx/i/field/patients_1#",
+			"subtype":
+			{
+			
+			}
+		}
+	},
+	"dp":
+	{
+		"ns": "",
+		"type": "http://data_entity_ontology.owl#DE_000000008",
+		"iri": "",
+		"rdfs:label": "",
+		"subtype":
+		{
+
+		}
+	},
+	"op":
+	{
+		"ns": "",
+		"type": "http://data_entity_ontology.owl#DE_000000022",
+		"iri": "",
+		"rdfs:label": "",
+		"subtype":
+		{
+		}
+	}
+}
