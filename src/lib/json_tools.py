@@ -1,4 +1,5 @@
 import json
+from urllib.parse import quote
 
 def jsonify_series(series):
     def convert(value):

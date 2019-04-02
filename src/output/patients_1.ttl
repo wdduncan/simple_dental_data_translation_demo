@@ -1034,35 +1034,11 @@ deo:DE_000000002 a owl:Class ;
     rdfs:label "cls:patients_1 row" ;
     rdfs:subClassOf deo:DE_000000004 .
 
-[] a owl:AllDifferent ;
-    owl:distinctMembers ( obo:IAO_0000120 obo:IAO_0000121 obo:IAO_0000122 obo:IAO_0000123 obo:IAO_0000124 obo:IAO_0000125 obo:IAO_0000423 obo:IAO_0000428 ) .
-
 [] a owl:Axiom ;
     oboInOwl:is_inferred "true"^^xsd:string ;
     owl:annotatedProperty rdfs:subClassOf ;
     owl:annotatedSource oboInOwl:ObsoleteClass ;
     owl:annotatedTarget owl:Thing .
-
-[] a owl:Axiom ;
-    oboInOwl:is_inferred "true"^^xsd:string ;
-    owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource deo:DE_000000000 ;
-    owl:annotatedTarget deo:entity .
-
-[] a owl:Axiom ;
-    oboInOwl:is_inferred "true"^^xsd:string ;
-    owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource deo:DE_000000017 ;
-    owl:annotatedTarget deo:DE_000000000 .
-
-[] a owl:Axiom ;
-    oboInOwl:is_inferred "true"^^xsd:string ;
-    owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource deo:entity ;
-    owl:annotatedTarget owl:Thing .
-
-[] a owl:AllDifferent ;
-    owl:distinctMembers ( obo:IAO_0000226 obo:IAO_0000227 obo:IAO_0000228 obo:IAO_0000229 ) .
 
 [] a owl:Axiom ;
     oboInOwl:is_inferred "true"^^xsd:string ;
@@ -1073,20 +1049,8 @@ deo:DE_000000002 a owl:Class ;
 [] a owl:Axiom ;
     oboInOwl:is_inferred "true"^^xsd:string ;
     owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource deo:DE_000000007 ;
-    owl:annotatedTarget deo:DE_000000017 .
-
-[] a owl:Axiom ;
-    oboInOwl:is_inferred "true"^^xsd:string ;
-    owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource deo:DE_000000006 ;
-    owl:annotatedTarget deo:DE_000000002 .
-
-[] a owl:Axiom ;
-    oboInOwl:is_inferred "true"^^xsd:string ;
-    owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource deo:DE_000000018 ;
-    owl:annotatedTarget deo:DE_000000002 .
+    owl:annotatedSource deo:DE_000000000 ;
+    owl:annotatedTarget deo:entity .
 
 [] a owl:Axiom ;
     oboInOwl:is_inferred "true"^^xsd:string ;
@@ -1098,5 +1062,41 @@ deo:DE_000000002 a owl:Class ;
     oboInOwl:is_inferred "true"^^xsd:string ;
     owl:annotatedProperty rdfs:subClassOf ;
     owl:annotatedSource deo:DE_000000003 ;
+    owl:annotatedTarget deo:DE_000000002 .
+
+[] a owl:Axiom ;
+    oboInOwl:is_inferred "true"^^xsd:string ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource deo:DE_000000018 ;
+    owl:annotatedTarget deo:DE_000000002 .
+
+[] a owl:AllDifferent ;
+    owl:distinctMembers ( obo:IAO_0000226 obo:IAO_0000227 obo:IAO_0000228 obo:IAO_0000229 ) .
+
+[] a owl:Axiom ;
+    oboInOwl:is_inferred "true"^^xsd:string ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource deo:entity ;
+    owl:annotatedTarget owl:Thing .
+
+[] a owl:Axiom ;
+    oboInOwl:is_inferred "true"^^xsd:string ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource deo:DE_000000017 ;
+    owl:annotatedTarget deo:DE_000000000 .
+
+[] a owl:Axiom ;
+    oboInOwl:is_inferred "true"^^xsd:string ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource deo:DE_000000007 ;
+    owl:annotatedTarget deo:DE_000000017 .
+
+[] a owl:AllDifferent ;
+    owl:distinctMembers ( obo:IAO_0000120 obo:IAO_0000121 obo:IAO_0000122 obo:IAO_0000123 obo:IAO_0000124 obo:IAO_0000125 obo:IAO_0000423 obo:IAO_0000428 ) .
+
+[] a owl:Axiom ;
+    oboInOwl:is_inferred "true"^^xsd:string ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource deo:DE_000000006 ;
     owl:annotatedTarget deo:DE_000000002 .
 

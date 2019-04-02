@@ -1,6 +1,6 @@
 from rdflib import Graph, ConjunctiveGraph, URIRef, RDF, OWL, RDFS, Literal
 import pandas as pds
-from .lib import json_tools as jt
+from src.lib import json_tools as jt
 import json
 # from requests.utils import requote_uri
 from urllib.parse import quote
