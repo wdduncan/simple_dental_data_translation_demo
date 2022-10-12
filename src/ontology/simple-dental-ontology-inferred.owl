@@ -515,6 +515,7 @@
         </rdfs:subClassOf>
         <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan (https://orcid.org/0000-0001-9625-1899)</terms:creator>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-09-05T20:30:54Z</terms:date>
+        <rdfs:label>jaw</rdfs:label>
     </owl:Class>
     
 
