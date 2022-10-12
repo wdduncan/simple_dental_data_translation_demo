@@ -918,7 +918,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://simple-dental-ontology.owl/part_of"/>
-                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/human"/>
+                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/jaw"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
