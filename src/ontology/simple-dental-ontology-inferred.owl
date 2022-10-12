@@ -279,6 +279,21 @@
     
 
 
+    <!-- http://simple-dental-ontology.owl/D2391 -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/D2391">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/service_code"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://simple-dental-ontology.owl/is_about"/>
+                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/resin_restoration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>D2391</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://simple-dental-ontology.owl/amalagam -->
 
     <owl:Class rdf:about="http://simple-dental-ontology.owl/amalagam">
@@ -954,6 +969,12 @@
 
     <owl:Class rdf:about="http://simple-dental-ontology.owl/service_code">
         <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/entity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://simple-dental-ontology.owl/is_about"/>
+                <owl:someValuesFrom rdf:resource="http://simple-dental-ontology.owl/restoration_procedure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan &lt;http://orcid.org/0000-0001-9625-1899&gt;</obo:IAO_0000117>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-09T04:34:25Z</dc:date>
         <rdfs:label>service code</rdfs:label>
