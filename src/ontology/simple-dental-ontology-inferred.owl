@@ -307,7 +307,7 @@
         <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/restoration_procedure"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T04:02:37Z</dc:date>
-        <rdfs:label>amalgam restoration</rdfs:label>
+        <rdfs:label>amalgam restoration procedure</rdfs:label>
     </owl:Class>
     
 
@@ -820,7 +820,7 @@
         <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/restoration_procedure"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T04:02:48Z</dc:date>
-        <rdfs:label>resin restoration</rdfs:label>
+        <rdfs:label>resin restoration procedure</rdfs:label>
     </owl:Class>
     
 
