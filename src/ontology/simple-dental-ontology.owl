@@ -316,6 +316,15 @@
     
 
 
+    <!-- http://simple-dental-ontology.owl/anatomical_structure -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/anatomical_structure">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/material_entity"/>
+        <rdfs:label>anatomical structure</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://simple-dental-ontology.owl/anterior_tooth -->
 
     <owl:Class rdf:about="http://simple-dental-ontology.owl/anterior_tooth">
@@ -442,7 +451,7 @@
     <!-- http://simple-dental-ontology.owl/gender -->
 
     <owl:Class rdf:about="http://simple-dental-ontology.owl/gender">
-        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/entity"/>
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/social_role"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:46:25Z</dc:date>
         <rdfs:label>gender</rdfs:label>
@@ -453,7 +462,7 @@
     <!-- http://simple-dental-ontology.owl/human -->
 
     <owl:Class rdf:about="http://simple-dental-ontology.owl/human">
-        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/entity"/>
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/material_entity"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:46:32Z</dc:date>
         <rdfs:label>human</rdfs:label>
@@ -505,7 +514,7 @@
     <!-- http://simple-dental-ontology.owl/jaw -->
 
     <owl:Class rdf:about="http://simple-dental-ontology.owl/jaw">
-        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/entity"/>
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/anatomical_structure"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://simple-dental-ontology.owl/part_of"/>
@@ -565,7 +574,7 @@
     <!-- http://simple-dental-ontology.owl/mandible -->
 
     <owl:Class rdf:about="http://simple-dental-ontology.owl/mandible">
-        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/entity"/>
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/anatomical_structure"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://simple-dental-ontology.owl/part_of"/>
@@ -600,10 +609,19 @@
     
 
 
+    <!-- http://simple-dental-ontology.owl/material_entity -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/material_entity">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/entity"/>
+        <rdfs:label>material entity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://simple-dental-ontology.owl/maxilla -->
 
     <owl:Class rdf:about="http://simple-dental-ontology.owl/maxilla">
-        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/entity"/>
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/anatomical_structure"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://simple-dental-ontology.owl/part_of"/>
@@ -774,6 +792,15 @@
     
 
 
+    <!-- http://simple-dental-ontology.owl/process -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/process">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/entity"/>
+        <rdfs:label>process</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://simple-dental-ontology.owl/provider -->
 
     <owl:Class rdf:about="http://simple-dental-ontology.owl/provider">
@@ -826,7 +853,7 @@
     <!-- http://simple-dental-ontology.owl/restoration_material -->
 
     <owl:Class rdf:about="http://simple-dental-ontology.owl/restoration_material">
-        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/entity"/>
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/material_entity"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:48:04Z</dc:date>
         <rdfs:label>restoration material</rdfs:label>
@@ -837,7 +864,7 @@
     <!-- http://simple-dental-ontology.owl/restoration_procedure -->
 
     <owl:Class rdf:about="http://simple-dental-ontology.owl/restoration_procedure">
-        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/entity"/>
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/process"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://simple-dental-ontology.owl/has_participant"/>
@@ -918,6 +945,15 @@
     
 
 
+    <!-- http://simple-dental-ontology.owl/social_role -->
+
+    <owl:Class rdf:about="http://simple-dental-ontology.owl/social_role">
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/entity"/>
+        <rdfs:label>social role</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://simple-dental-ontology.owl/tooth -->
 
     <owl:Class rdf:about="http://simple-dental-ontology.owl/tooth">
@@ -927,7 +963,7 @@
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/entity"/>
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/anatomical_structure"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://simple-dental-ontology.owl/part_of"/>
@@ -1488,7 +1524,7 @@
     <!-- http://simple-dental-ontology.owl/tooth_surface -->
 
     <owl:Class rdf:about="http://simple-dental-ontology.owl/tooth_surface">
-        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/entity"/>
+        <rdfs:subClassOf rdf:resource="http://simple-dental-ontology.owl/anatomical_structure"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://simple-dental-ontology.owl/part_of"/>
