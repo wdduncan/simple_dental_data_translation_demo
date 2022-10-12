@@ -385,6 +385,7 @@
     <owl:Class rdf:about="http://simple-dental-ontology.owl/entity">
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Duncan</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-30T03:46:01Z</dc:date>
+        <rdfs:label>entity</rdfs:label>
     </owl:Class>
     
 
