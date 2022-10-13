@@ -1,0 +1,48 @@
+{
+	"excludeSingletons": "true",
+	"styles": [
+		"filled",
+        "rounded"
+    ],
+    "fillcolor": "azure",
+    "penwidth": 1,
+    "relationProperties": {
+    	"rdfs:subClassOf": {
+            "color": "black",
+            "penwidth": 2,
+            "arrowhead": "open",
+            "label": "is a"
+        },
+        "is_a": {
+            "color": "black",
+            "penwith": 3,
+            "arrowhead": "open",
+            "label":  "ⓘ"
+        },
+        "BFO:0000050": {
+            "arrowhead": "tee",
+            "color": "blue"
+        },
+    	"http://simple-dental-ontology.owl/part_of": {
+            "arrowhead": "diamond",
+            "penwith": 4,
+            "color": "blue",
+            "label": "part of"
+        },
+        "http://simple-dental-ontology.owl/has_participant": {
+            "arrowhead": "crow",
+            "penwith": 4,
+            "color": "red",
+            "label": "inputs"
+        },
+        "http://simple-dental-ontology.owl/is_about": {
+            "arrowhead": "tee",
+            "penwith": 4,
+            "color": "gray",
+            "label": "about"
+        }
+    },
+    "cliqueRelations": [
+        "equivalent_to", "same_as", "xref"
+    ]
+}

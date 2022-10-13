@@ -1,0 +1,1678 @@
+{
+  "graphs" : [ {
+    "id" : "http://simple-dental-ontology.owl",
+    "nodes" : [ {
+      "id" : "http://simple-dental-ontology.owl/D2140",
+      "lbl" : "D2140",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2018-01-09T04:34:54Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/D2150",
+      "lbl" : "D2150",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2018-01-09T04:35:03Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/D2160",
+      "lbl" : "D2160",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2018-01-09T04:35:10Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/D2161",
+      "lbl" : "D2161",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2018-01-09T04:35:17Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/D2330",
+      "lbl" : "D2330",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2018-01-09T04:35:36Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/D2331",
+      "lbl" : "D2331",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2018-01-09T04:35:41Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/D2332",
+      "lbl" : "D2332",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2018-01-09T04:35:51Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/D2335",
+      "lbl" : "D2335",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2018-01-09T04:36:26Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/amalagam",
+      "lbl" : "amalgam",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:48:13Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/amalgam_restoration",
+      "lbl" : "amalgam restoration procedure",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T04:02:37Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/anatomical_structure",
+      "lbl" : "anatomical structure",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://simple-dental-ontology.owl/anterior_tooth",
+      "lbl" : "anterior tooth",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "Bill Duncan (https://orcid.org/0000-0001-9625-1899)"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2021-09-04T16:49:44Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/birth_date",
+      "lbl" : "birth date",
+      "type" : "PROPERTY",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-12-11T18:33:13Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/buccal",
+      "lbl" : "buccal",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2018-01-09T05:56:09Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/canine",
+      "lbl" : "canine",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:51:17Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/distal",
+      "lbl" : "distal",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2018-01-09T05:55:43Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/entity",
+      "lbl" : "entity",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:46:01Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/facial",
+      "lbl" : "facial",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2018-01-09T05:55:46Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/female_gender",
+      "lbl" : "female gender",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:47:07Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/female_patient",
+      "lbl" : "female patient",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:47:29Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/gender",
+      "lbl" : "gender",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:46:25Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/has_part",
+      "lbl" : "has part",
+      "type" : "PROPERTY",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T04:03:20Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/has_participant",
+      "lbl" : "has participant",
+      "type" : "PROPERTY",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T04:04:10Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/has_quality",
+      "lbl" : "has quality",
+      "type" : "PROPERTY"
+    }, {
+      "id" : "http://simple-dental-ontology.owl/human",
+      "lbl" : "human",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:46:32Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/incisal",
+      "lbl" : "incisal",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2018-01-09T05:56:41Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/incisor",
+      "lbl" : "incisor",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:51:26Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/is_about",
+      "lbl" : "is about",
+      "type" : "PROPERTY",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2018-01-09T04:33:50Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/jaw",
+      "lbl" : "jaw",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "Bill Duncan (https://orcid.org/0000-0001-9625-1899)"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2021-09-05T20:30:54Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/lingual",
+      "lbl" : "lingual",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2018-01-09T05:56:04Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/male_gender",
+      "lbl" : "male gender",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:47:01Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/male_patient",
+      "lbl" : "male patient",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:47:21Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/mandible",
+      "lbl" : "mandible",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "Bill Duncan (https://orcid.org/0000-0001-9625-1899)"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2021-09-05T20:20:21Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/mandibular_tooth",
+      "lbl" : "mandibular tooth",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "Bill Duncan (https://orcid.org/0000-0001-9625-1899)"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2021-09-04T16:55:25Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/material_entity",
+      "lbl" : "material entity",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://simple-dental-ontology.owl/maxilla",
+      "lbl" : "maxilla",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "Bill Duncan (https://orcid.org/0000-0001-9625-1899)"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2021-09-05T20:21:02Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/maxillary_tooth",
+      "lbl" : "maxillary tooth",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "Bill Duncan (https://orcid.org/0000-0001-9625-1899)"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2021-09-04T16:52:49Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/mesial",
+      "lbl" : "mesial",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2018-01-09T05:55:26Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/molar",
+      "lbl" : "molar",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:51:21Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/occlusal",
+      "lbl" : "occlusal",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2018-01-09T05:55:39Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/part_of",
+      "lbl" : "part of",
+      "type" : "PROPERTY",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T04:03:17Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/particpates_in",
+      "lbl" : "participates in",
+      "type" : "PROPERTY",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T04:04:00Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/patient",
+      "lbl" : "patient",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:46:36Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/posterior_tooth",
+      "lbl" : "posterior tooth",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "Bill Duncan (https://orcid.org/0000-0001-9625-1899)"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2021-09-04T16:47:17Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/premolar",
+      "lbl" : "premolar",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:51:24Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/process",
+      "lbl" : "process",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://simple-dental-ontology.owl/provider",
+      "lbl" : "provider",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:46:42Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/quality_of",
+      "lbl" : "quality of",
+      "type" : "PROPERTY",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T04:05:04Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/resin",
+      "lbl" : "resin",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:48:19Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/resin_restoration",
+      "lbl" : "resin restoration procedure",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T04:02:48Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/restoration_material",
+      "lbl" : "restoration material",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:48:04Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/restoration_procedure",
+      "lbl" : "restoration procedure",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:47:48Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/restored_surface",
+      "lbl" : "restored surface",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2018-01-10T04:41:23Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/restored_tooth",
+      "lbl" : "restored tooth",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2018-01-10T04:42:05Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/service_code",
+      "lbl" : "service code",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2018-01-09T04:34:25Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/service_date",
+      "lbl" : "service date",
+      "type" : "PROPERTY",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2018-01-09T04:32:40Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/social_role",
+      "lbl" : "social role",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://simple-dental-ontology.owl/tooth",
+      "lbl" : "tooth",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:47:52Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/tooth_1",
+      "lbl" : "tooth 1",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:48:49Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/tooth_10",
+      "lbl" : "tooth 10",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:49:29Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/tooth_11",
+      "lbl" : "tooth 11",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:49:33Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/tooth_12",
+      "lbl" : "tooth 12",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:49:36Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/tooth_13",
+      "lbl" : "tooth 13",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:49:40Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/tooth_14",
+      "lbl" : "tooth 14",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:49:46Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/tooth_15",
+      "lbl" : "tooth 15",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:49:49Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/tooth_16",
+      "lbl" : "tooth 16",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:49:53Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/tooth_17",
+      "lbl" : "tooth 17",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:49:57Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/tooth_18",
+      "lbl" : "tooth 18",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:50:01Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/tooth_19",
+      "lbl" : "tooth 19",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:50:04Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/tooth_2",
+      "lbl" : "tooth 2",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2021-09-08T16:36:27Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "Bill Duncan (https://orcid.org/0000-0001-9625-1899)"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/tooth_20",
+      "lbl" : "tooth 20",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:50:08Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/tooth_21",
+      "lbl" : "tooth 21",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:58:29Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/tooth_22",
+      "lbl" : "tooth 22",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:50:10Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/tooth_23",
+      "lbl" : "tooth 23",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:50:14Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/tooth_24",
+      "lbl" : "tooth 24",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:50:18Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/tooth_25",
+      "lbl" : "tooth 25",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:50:21Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/tooth_26",
+      "lbl" : "tooth 26",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:50:25Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/tooth_27",
+      "lbl" : "tooth 27",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:50:30Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/tooth_28",
+      "lbl" : "tooth 28",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:50:33Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/tooth_29",
+      "lbl" : "tooth 29",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:50:37Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/tooth_2_instance",
+      "lbl" : "tooth 2 instance",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "Bill Duncan (https://orcid.org/0000-0001-9625-1899)"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2021-09-08T16:41:00Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/tooth_3",
+      "lbl" : "tooth 3",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:48:59Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/tooth_30",
+      "lbl" : "tooth 30",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:50:40Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/tooth_31",
+      "lbl" : "tooth 31",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:50:43Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/tooth_32",
+      "lbl" : "tooth 32",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:50:46Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/tooth_4",
+      "lbl" : "tooth 4",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "Bill Duncan (https://orcid.org/0000-0001-9625-1899)"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2021-09-08T16:36:27Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/tooth_5",
+      "lbl" : "tooth 5",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2021-09-08T16:36:27Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "Bill Duncan (https://orcid.org/0000-0001-9625-1899)"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/tooth_5_instance",
+      "lbl" : "tooth 5 instance",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "Bill Duncan (https://orcid.org/0000-0001-9625-1899)"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2021-09-08T16:41:27Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/tooth_6",
+      "lbl" : "tooth 6",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:49:11Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/tooth_7",
+      "lbl" : "tooth 7",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:49:15Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/tooth_8",
+      "lbl" : "tooth 8",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:49:18Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/tooth_9",
+      "lbl" : "tooth 9",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Bill Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-09-30T03:49:24Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/tooth_number",
+      "lbl" : "tooth number",
+      "type" : "PROPERTY",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "Bill Duncan (https://orcid.org/0000-0001-9625-1899)"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2021-09-07T16:11:12Z"
+        } ]
+      }
+    }, {
+      "id" : "http://simple-dental-ontology.owl/tooth_surface",
+      "lbl" : "tooth surface",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Bill Duncan <http://orcid.org/0000-0001-9625-1899>"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2018-01-09T05:55:22Z"
+        } ]
+      }
+    } ],
+    "edges" : [ {
+      "sub" : "http://simple-dental-ontology.owl/D2140",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/service_code"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/D2150",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/service_code"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/D2160",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/service_code"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/D2161",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/service_code"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/D2330",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/service_code"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/D2331",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/service_code"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/D2332",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/service_code"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/D2335",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/service_code"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/amalagam",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/restoration_material"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/amalgam_restoration",
+      "pred" : "http://simple-dental-ontology.owl/has_participant",
+      "obj" : "http://simple-dental-ontology.owl/amalagam"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/anatomical_structure",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/material_entity"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/buccal",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth_surface"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/distal",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth_surface"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/facial",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth_surface"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/female_gender",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/gender"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/gender",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/social_role"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/human",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/material_entity"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/incisal",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth_surface"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/jaw",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/anatomical_structure"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/jaw",
+      "pred" : "http://simple-dental-ontology.owl/part_of",
+      "obj" : "http://simple-dental-ontology.owl/human"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/lingual",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth_surface"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/male_gender",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/gender"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/mandible",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/anatomical_structure"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/mandible",
+      "pred" : "http://simple-dental-ontology.owl/part_of",
+      "obj" : "http://simple-dental-ontology.owl/jaw"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/material_entity",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/entity"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/maxilla",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/anatomical_structure"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/maxilla",
+      "pred" : "http://simple-dental-ontology.owl/part_of",
+      "obj" : "http://simple-dental-ontology.owl/jaw"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/mesial",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth_surface"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/occlusal",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth_surface"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/patient",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/human"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/process",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/entity"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/provider",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/human"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/resin",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/restoration_material"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/resin_restoration",
+      "pred" : "http://simple-dental-ontology.owl/has_participant",
+      "obj" : "http://simple-dental-ontology.owl/resin"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/restoration_material",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/material_entity"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/restoration_procedure",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/process"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/restoration_procedure",
+      "pred" : "http://simple-dental-ontology.owl/has_participant",
+      "obj" : "http://simple-dental-ontology.owl/restoration_material"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/restoration_procedure",
+      "pred" : "http://simple-dental-ontology.owl/has_participant",
+      "obj" : "http://simple-dental-ontology.owl/tooth"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/service_code",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/entity"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/social_role",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/entity"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/anatomical_structure"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth",
+      "pred" : "http://simple-dental-ontology.owl/part_of",
+      "obj" : "http://simple-dental-ontology.owl/jaw"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_1",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_1",
+      "pred" : "http://simple-dental-ontology.owl/part_of",
+      "obj" : "http://simple-dental-ontology.owl/maxilla"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_10",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_10",
+      "pred" : "http://simple-dental-ontology.owl/part_of",
+      "obj" : "http://simple-dental-ontology.owl/maxilla"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_11",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_11",
+      "pred" : "http://simple-dental-ontology.owl/part_of",
+      "obj" : "http://simple-dental-ontology.owl/maxilla"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_12",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_12",
+      "pred" : "http://simple-dental-ontology.owl/part_of",
+      "obj" : "http://simple-dental-ontology.owl/maxilla"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_13",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_13",
+      "pred" : "http://simple-dental-ontology.owl/part_of",
+      "obj" : "http://simple-dental-ontology.owl/maxilla"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_14",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_14",
+      "pred" : "http://simple-dental-ontology.owl/part_of",
+      "obj" : "http://simple-dental-ontology.owl/maxilla"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_15",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_15",
+      "pred" : "http://simple-dental-ontology.owl/part_of",
+      "obj" : "http://simple-dental-ontology.owl/maxilla"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_16",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_16",
+      "pred" : "http://simple-dental-ontology.owl/part_of",
+      "obj" : "http://simple-dental-ontology.owl/maxilla"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_17",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_17",
+      "pred" : "http://simple-dental-ontology.owl/part_of",
+      "obj" : "http://simple-dental-ontology.owl/mandible"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_18",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_18",
+      "pred" : "http://simple-dental-ontology.owl/part_of",
+      "obj" : "http://simple-dental-ontology.owl/mandible"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_19",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_19",
+      "pred" : "http://simple-dental-ontology.owl/part_of",
+      "obj" : "http://simple-dental-ontology.owl/mandible"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_2",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_2",
+      "pred" : "http://simple-dental-ontology.owl/part_of",
+      "obj" : "http://simple-dental-ontology.owl/maxilla"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_20",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_20",
+      "pred" : "http://simple-dental-ontology.owl/part_of",
+      "obj" : "http://simple-dental-ontology.owl/mandible"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_21",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_21",
+      "pred" : "http://simple-dental-ontology.owl/part_of",
+      "obj" : "http://simple-dental-ontology.owl/mandible"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_22",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_22",
+      "pred" : "http://simple-dental-ontology.owl/part_of",
+      "obj" : "http://simple-dental-ontology.owl/mandible"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_23",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_23",
+      "pred" : "http://simple-dental-ontology.owl/part_of",
+      "obj" : "http://simple-dental-ontology.owl/mandible"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_24",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_24",
+      "pred" : "http://simple-dental-ontology.owl/part_of",
+      "obj" : "http://simple-dental-ontology.owl/mandible"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_25",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_25",
+      "pred" : "http://simple-dental-ontology.owl/part_of",
+      "obj" : "http://simple-dental-ontology.owl/mandible"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_26",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_26",
+      "pred" : "http://simple-dental-ontology.owl/part_of",
+      "obj" : "http://simple-dental-ontology.owl/mandible"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_27",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_27",
+      "pred" : "http://simple-dental-ontology.owl/part_of",
+      "obj" : "http://simple-dental-ontology.owl/mandible"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_28",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_28",
+      "pred" : "http://simple-dental-ontology.owl/part_of",
+      "obj" : "http://simple-dental-ontology.owl/mandible"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_29",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_29",
+      "pred" : "http://simple-dental-ontology.owl/part_of",
+      "obj" : "http://simple-dental-ontology.owl/mandible"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_3",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_3",
+      "pred" : "http://simple-dental-ontology.owl/part_of",
+      "obj" : "http://simple-dental-ontology.owl/maxilla"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_30",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_30",
+      "pred" : "http://simple-dental-ontology.owl/part_of",
+      "obj" : "http://simple-dental-ontology.owl/mandible"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_31",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_31",
+      "pred" : "http://simple-dental-ontology.owl/part_of",
+      "obj" : "http://simple-dental-ontology.owl/mandible"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_32",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_32",
+      "pred" : "http://simple-dental-ontology.owl/part_of",
+      "obj" : "http://simple-dental-ontology.owl/mandible"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_4",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_4",
+      "pred" : "http://simple-dental-ontology.owl/part_of",
+      "obj" : "http://simple-dental-ontology.owl/maxilla"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_5",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_5",
+      "pred" : "http://simple-dental-ontology.owl/part_of",
+      "obj" : "http://simple-dental-ontology.owl/maxilla"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_6",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_6",
+      "pred" : "http://simple-dental-ontology.owl/part_of",
+      "obj" : "http://simple-dental-ontology.owl/maxilla"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_7",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_7",
+      "pred" : "http://simple-dental-ontology.owl/part_of",
+      "obj" : "http://simple-dental-ontology.owl/maxilla"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_8",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_8",
+      "pred" : "http://simple-dental-ontology.owl/part_of",
+      "obj" : "http://simple-dental-ontology.owl/maxilla"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_9",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/tooth"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_9",
+      "pred" : "http://simple-dental-ontology.owl/part_of",
+      "obj" : "http://simple-dental-ontology.owl/maxilla"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_surface",
+      "pred" : "is_a",
+      "obj" : "http://simple-dental-ontology.owl/anatomical_structure"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/tooth_surface",
+      "pred" : "http://simple-dental-ontology.owl/part_of",
+      "obj" : "http://simple-dental-ontology.owl/tooth"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/has_part",
+      "pred" : "inverseOf",
+      "obj" : "http://simple-dental-ontology.owl/part_of"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/has_participant",
+      "pred" : "inverseOf",
+      "obj" : "http://simple-dental-ontology.owl/particpates_in"
+    }, {
+      "sub" : "http://simple-dental-ontology.owl/has_quality",
+      "pred" : "inverseOf",
+      "obj" : "http://simple-dental-ontology.owl/quality_of"
+    } ],
+    "logicalDefinitionAxioms" : [ {
+      "definedClassId" : "http://simple-dental-ontology.owl/amalgam_restoration",
+      "genusIds" : [ "http://simple-dental-ontology.owl/restoration_procedure" ],
+      "restrictions" : [ {
+        "propertyId" : "http://simple-dental-ontology.owl/has_participant",
+        "fillerId" : "http://simple-dental-ontology.owl/amalagam"
+      } ]
+    }, {
+      "definedClassId" : "http://simple-dental-ontology.owl/female_patient",
+      "genusIds" : [ "http://simple-dental-ontology.owl/patient" ],
+      "restrictions" : [ {
+        "propertyId" : "http://simple-dental-ontology.owl/has_quality",
+        "fillerId" : "http://simple-dental-ontology.owl/female_gender"
+      } ]
+    }, {
+      "definedClassId" : "http://simple-dental-ontology.owl/male_patient",
+      "genusIds" : [ "http://simple-dental-ontology.owl/patient" ],
+      "restrictions" : [ {
+        "propertyId" : "http://simple-dental-ontology.owl/has_quality",
+        "fillerId" : "http://simple-dental-ontology.owl/male_gender"
+      } ]
+    }, {
+      "definedClassId" : "http://simple-dental-ontology.owl/mandibular_tooth",
+      "genusIds" : [ "http://simple-dental-ontology.owl/tooth" ],
+      "restrictions" : [ {
+        "propertyId" : "http://simple-dental-ontology.owl/part_of",
+        "fillerId" : "http://simple-dental-ontology.owl/mandible"
+      } ]
+    }, {
+      "definedClassId" : "http://simple-dental-ontology.owl/maxillary_tooth",
+      "genusIds" : [ "http://simple-dental-ontology.owl/tooth" ],
+      "restrictions" : [ {
+        "propertyId" : "http://simple-dental-ontology.owl/part_of",
+        "fillerId" : "http://simple-dental-ontology.owl/maxilla"
+      } ]
+    }, {
+      "definedClassId" : "http://simple-dental-ontology.owl/resin_restoration",
+      "genusIds" : [ "http://simple-dental-ontology.owl/restoration_procedure" ],
+      "restrictions" : [ {
+        "propertyId" : "http://simple-dental-ontology.owl/has_participant",
+        "fillerId" : "http://simple-dental-ontology.owl/resin"
+      } ]
+    }, {
+      "definedClassId" : "http://simple-dental-ontology.owl/restored_surface",
+      "genusIds" : [ "http://simple-dental-ontology.owl/tooth_surface" ],
+      "restrictions" : [ {
+        "propertyId" : "http://simple-dental-ontology.owl/has_part",
+        "fillerId" : "http://simple-dental-ontology.owl/restoration_material"
+      } ]
+    } ]
+  } ]
+}
