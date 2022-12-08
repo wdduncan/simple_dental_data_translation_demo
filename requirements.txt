@@ -1,4 +1,4 @@
-certifi==2019.3.9
+certifi==2022.12.7
 chardet==3.0.4
 conda==4.3.16
 dedent==0.5
