@@ -4,7 +4,7 @@ conda==4.3.16
 dedent==0.5
 idna==2.8
 isodate==0.6.0
-numpy==1.16.2
+numpy==1.22.0
 pandas==0.24.2
 pandasql==0.7.3
 pycosat==0.6.3
